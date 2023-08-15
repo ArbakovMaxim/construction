@@ -12,7 +12,7 @@ export const App = () => {
       <Suspense fallback={<h1>Loading....</h1>}>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />}></Route>
+            <Route index element={<Home />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
@@ -21,3 +21,5 @@ export const App = () => {
     </>
   );
 };
+
+// export default App;

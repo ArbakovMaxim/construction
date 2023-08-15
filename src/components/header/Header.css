@@ -1,0 +1,14 @@
+.header {
+  padding: 20px 0;
+}
+
+.header__conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+}
+
+.header__wrapper--logoNavBlock {
+  display: flex;
+}

@@ -1,0 +1,67 @@
+.contentHero__wrapper {
+  max-width: 577px;
+  width: 100%;
+}
+
+.contentHero__title {
+  color: #fff;
+
+  font-family: Ubuntu;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 1px;
+}
+
+.contentHero__span {
+  color: #ff5a30;
+}
+
+.contentHero__text {
+  color: #fff;
+
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  margin-top: 24px;
+}
+
+.contentHero__button {
+  height: 52px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #fff;
+
+  color: #fff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  transition: background 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+    border 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.contentHero__button:hover,
+.contentHero__button:focus {
+  background: #ff5a30;
+  border: 1px solid #ff5a30;
+}
+
+.contentHero__button--submit {
+  margin-left: 24px;
+}
+
+.contentHero__button--wrapper {
+  margin-top: 61px;
+}

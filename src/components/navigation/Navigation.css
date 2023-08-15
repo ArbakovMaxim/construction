@@ -1,0 +1,23 @@
+.nav__list {
+  margin-left: 60px;
+
+  display: flex;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.nav__item {
+  margin-left: 40px;
+}
+
+.nav__link--passive {
+  color: #424551;
+}
+
+.nav__link--active {
+  color: #ff5a30;
+}
