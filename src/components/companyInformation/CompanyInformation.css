@@ -1,0 +1,113 @@
+.compInfo-title {
+  color: #1e212c;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.compInfo-text {
+  margin-top: 24px;
+
+  color: #787a80;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.compInfo-video--container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+
+  margin-top: 60px;
+  margin-bottom: 180px;
+}
+
+.compInfo-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.compInfo__list {
+  --mission-gap: 94px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 27px;
+  gap: calc(var(--mission-gap) * 2);
+
+  margin-top: 60px;
+}
+
+.compInfo__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.compInfo__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: calc(-1 * var(--mission-gap));
+  background: linear-gradient(
+    315deg,
+    rgba(218, 219, 221, 0) 0%,
+    rgba(218, 219, 221, 0.5) 12.33%,
+    #dadbdd 51.91%,
+    rgba(218, 219, 221, 0.5) 87.85%,
+    rgba(218, 219, 221, 0) 100%
+  );
+  top: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.compInfo__values--text {
+  margin-top: 8px;
+  color: #787a80;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.compInfo__values--title {
+  margin-top: 24px;
+  color: #1e212c;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
