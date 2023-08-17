@@ -1,0 +1,137 @@
+.serviceHome__section {
+  background-color: #f4f5f6;
+  margin-top: -92px;
+  padding-top: 212px;
+  padding-bottom: 85px;
+}
+
+.serviceHome__title {
+  color: #1e212c;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.serviceHome__text {
+  color: #787a80;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.serviceHome__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.serviceHome__item--fon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 285px;
+  height: 285px;
+
+  background-color: #fff;
+  color: #1e212c;
+
+  border-radius: 4px;
+  border: 1px solid #e5e8ed;
+  background: #fff;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.serviceHome__item--fon:hover,
+.serviceHome__item--fon:focus {
+  color: #fff;
+
+  transform: scale(1.05);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-image: url(../../image/ServiceHomeInterior.jpg); */
+}
+
+.serviceHome__item--fon1:hover,
+.serviceHome__item--fon1:focus {
+  background-image: url(../../image/ServiceHomeConstruction.jpg);
+}
+
+.serviceHome__item--fon2:hover,
+.serviceHome__item--fon2:focus {
+  background-image: url(../../image/ServiceHomeProject.jpg);
+}
+
+.serviceHome__item--fon3:hover,
+.serviceHome__item--fon3:focus {
+  background-image: url(../../image/ServiceHomeInterior.jpg);
+}
+
+.serviceHome__item--fon4:hover,
+.serviceHome__item--fon4:focus {
+  background-image: url(../../image/ServiceHomeRepair.jpg);
+}
+
+.serviceHome__item--text {
+  margin-top: 24px;
+
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+
+  transition: color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.serviceHome__service--swrapper {
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceHome__service--title {
+  margin-right: 40px;
+
+  color: #1e212c;
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.serviceHome__service--button {
+  height: 52px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  border-radius: 4px;
+  background: #ff5a30;
+  border: 0;
+
+  color: #fff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}

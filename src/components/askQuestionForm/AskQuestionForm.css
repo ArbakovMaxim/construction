@@ -1,3 +1,8 @@
+.askForm__container {
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+}
 .askForm {
   display: flex;
   align-items: flex-end;
