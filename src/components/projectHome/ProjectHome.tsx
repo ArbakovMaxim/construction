@@ -26,7 +26,7 @@ export const ProjectHome = () => {
 
   const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
     <div
-      className="project__home--custom-arrow"
+      className="project__home--custom-arrow project__home--custom-arrowRight"
       onClick={onClick}
       onMouseEnter={() => setHoveredRight(true)}
       onMouseLeave={() => setHoveredRight(false)}
@@ -37,7 +37,7 @@ export const ProjectHome = () => {
 
   const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
     <div
-      className="project__home--custom-arrow"
+      className="project__home--custom-arrow project__home--custom-arrowLeft"
       onClick={onClick}
       onMouseEnter={() => setHoveredLeft(true)}
       onMouseLeave={() => setHoveredLeft(false)}
@@ -58,76 +58,78 @@ export const ProjectHome = () => {
   return (
     <section className="section">
       <div className="container">
-        <div className="project__home--wrapper">
-          <h2 className="project__home--title">
-            Browse our selected projects <br /> and learn more about our work
-          </h2>
-          <Slider {...settings}>
-            <div>
-              <CardWork
-                backgroundImage={ourWork1}
-                title="Cubes Building"
-                text="Business Centers"
-              />
-            </div>
-            <div>
-              <CardWork
-                backgroundImage={ourWork2}
-                title="Modern Cottage"
-                text="Private houses"
-              />
-            </div>
-            <div>
-              <CardWork
-                backgroundImage={ourWork3}
-                title="Luxury Beach House"
-                text="Private houses"
-              />
-            </div>
-            <div>
-              <CardWork
-                backgroundImage={ourWork4}
-                title="Modern Double Bedroom"
-                text="Apartments & flats"
-              />
-            </div>
-            <div>
-              <CardWork
-                backgroundImage={ourWork5}
-                title="Kids Bedroom With Decorations"
-                text="Apartments & flats"
-              />
-            </div>
-            <div>
-              <CardWork
-                backgroundImage={ourWork6}
-                title="The Pencil Building"
-                text="Stores & Malls"
-              />
-            </div>
-            <div>
-              <CardWork
-                backgroundImage={ourWork7}
-                title="Red Finger Building"
-                text="Business Centers"
-              />
-            </div>
-            <div>
-              <CardWork
-                backgroundImage={ourWork8}
-                title="Scandinavian Style Interior"
-                text="Private houses"
-              />
-            </div>
-            <div>
-              <CardWork
-                backgroundImage={ourWork9}
-                title="Brown and Gray Painted House"
-                text="Private houses"
-              />
-            </div>
-          </Slider>
-        </div>
+        <h2 className="project__home--title">
+          Browse our selected projects <br /> and learn more about our work
+        </h2>
+        <Slider {...settings}>
+          <div>
+            <CardWork
+              backgroundImage={ourWork1}
+              title="Cubes Building"
+              text="Business Centers"
+            />
+          </div>
+          <div>
+            <CardWork
+              backgroundImage={ourWork2}
+              title="Modern Cottage"
+              text="Private houses"
+            />
+          </div>
+          <div>
+            <CardWork
+              backgroundImage={ourWork3}
+              title="Luxury Beach House"
+              text="Private houses"
+            />
+          </div>
+          <div>
+            <CardWork
+              backgroundImage={ourWork4}
+              title="Modern Double Bedroom"
+              text="Apartments & flats"
+            />
+          </div>
+          <div>
+            <CardWork
+              backgroundImage={ourWork5}
+              title="Kids Bedroom With Decorations"
+              text="Apartments & flats"
+            />
+          </div>
+          <div>
+            <CardWork
+              backgroundImage={ourWork6}
+              title="The Pencil Building"
+              text="Stores & Malls"
+            />
+          </div>
+          <div>
+            <CardWork
+              backgroundImage={ourWork7}
+              title="Red Finger Building"
+              text="Business Centers"
+            />
+          </div>
+          <div>
+            <CardWork
+              backgroundImage={ourWork8}
+              title="Scandinavian Style Interior"
+              text="Private houses"
+            />
+          </div>
+          <div>
+            <CardWork
+              backgroundImage={ourWork9}
+              title="Brown and Gray Painted House"
+              text="Private houses"
+            />
+          </div>
+        </Slider>
+      </div>
+      <div className="project__home--wrapperBottom">
+        <h2 className="project__home--titleTwo">Explore all our works</h2>
+        <button className="project__home--button">View portfolio</button>
       </div>
     </section>
   );

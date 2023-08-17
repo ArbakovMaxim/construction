@@ -1,0 +1,29 @@
+.partnersHome__section {
+  padding: 80px 0 120px 0;
+  background-color: #f4f5f6;
+}
+
+.partnersHome__title {
+  color: #1e212c;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.partnersHome__slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 188px;
+  height: 144px;
+}
+
+.partnersHome__wrapper--reviews {
+  margin-top: 140px;
+  display: flex;
+  justify-content: space-between;
+}
