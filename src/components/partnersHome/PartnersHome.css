@@ -1,5 +1,5 @@
 .partnersHome__section {
-  padding: 80px 0 120px 0;
+  padding: 80px 0 0 0;
   background-color: #f4f5f6;
 }
 
@@ -23,7 +23,28 @@
 }
 
 .partnersHome__wrapper--reviews {
-  margin-top: 140px;
   display: flex;
   justify-content: space-between;
+  margin-top: 140px;
+}
+
+.partnersHome__wrapper--reviewsSlider {
+  width: 600px;
+}
+
+.partnersHome__title--reviews {
+  margin-bottom: 60px;
+}
+
+.partnersHome__wrapper--img {
+  position: relative;
+  /* width: 495px;
+  height: 550px; */
+}
+
+.partnersHome__img {
+  position: relative;
+  border-radius: 4px;
+  z-index: 1;
+  margin-bottom: -60px;
 }

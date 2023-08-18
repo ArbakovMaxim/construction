@@ -1,0 +1,9 @@
+.circle__text {
+  color: var #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}

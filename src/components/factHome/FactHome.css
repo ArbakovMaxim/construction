@@ -1,0 +1,50 @@
+.factHome__section {
+  position: relative;
+  padding: 180px 0 125px 0;
+}
+
+.factHome__section::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: -195px;
+  width: 570px;
+  height: 1065px;
+  background-image: url(../../image/FactHome.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.factHome__title {
+  margin-bottom: 60px;
+  color: #1e212c;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.factHome__list {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.factHome__text {
+  margin-top: 20px;
+
+  color: #1e212c;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.factHome__item:not(:first-child) {
+  margin-left: 48px;
+}
