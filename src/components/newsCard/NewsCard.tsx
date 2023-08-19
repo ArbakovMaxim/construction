@@ -8,6 +8,7 @@ interface Props {
   category: string;
   date: string;
   comments: string;
+  cardNoraml?: boolean;
 }
 
 export const NewsCard = ({
@@ -16,11 +17,22 @@ export const NewsCard = ({
   category,
   date,
   comments,
+  cardNoraml = true,
 }: Props) => {
   return (
-    <div className="newsCard__wrapper">
-      <img src={foto} alt="foto news" className="newsCard__img" />
-      <div className="newsCard__conteiner ">
+    <div
+      className={cardNoraml ? "newsCard__wrapper" : "newsCard__wrapper--small"}
+    >
+      <img
+        src={foto}
+        alt="foto news"
+        className={cardNoraml ? "newsCard__img" : "newsCard__img--small"}
+      />
+      <div
+        className={
+          cardNoraml ? "newsCard__conteiner" : "newsCard__conteiner--small"
+        }
+      >
         <h2 className="newsCard__title">
           <NavLink to="/">{nameNews}</NavLink>
         </h2>
@@ -34,11 +46,13 @@ export const NewsCard = ({
           <Comments />
           <span className="newsCard__comments">{comments} comments</span>
         </div>
-        <p className="newsCard__text">
-          Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus.
-          Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis
-          convallis enim, nibh convallis...
-        </p>
+        {cardNoraml ? (
+          <p className="newsCard__text">
+            Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas
+            faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer
+            bibendum turpis convallis enim, nibh convallis...
+          </p>
+        ) : null}
       </div>
     </div>
   );

@@ -97,6 +97,13 @@
   background-color: #fff;
   border-radius: 4px;
   border: 1px solid #ff5a30;
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+.workCard__button:focus,
+.workCard__button:hover {
+  background-color: #ff5a30;
+  color: #fff;
 }
 
 .workCard:hover .workCard__button {

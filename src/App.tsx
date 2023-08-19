@@ -1,6 +1,7 @@
 import { ToastContainer } from "react-toastify";
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import "react-toastify/dist/ReactToastify.css";
 
 const Layout = lazy(() => import("./layout/Layout"));
 const Home = lazy(() => import("./pages/Home"));
@@ -17,7 +18,7 @@ export const App = () => {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Suspense>
-      <ToastContainer />
+      <ToastContainer autoClose={2000} />
     </>
   );
 };

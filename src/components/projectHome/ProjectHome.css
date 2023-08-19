@@ -73,4 +73,10 @@
   line-height: 52px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  transition: background-color 0.5s ease;
+}
+
+.project__home--button:focus,
+.project__home--button:hover {
+  background-color: #e64c20;
 }

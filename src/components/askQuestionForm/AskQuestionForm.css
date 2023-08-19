@@ -70,6 +70,7 @@
 }
 
 .askForm__button {
+  cursor: pointer;
   height: 44px;
   padding: 0 32px;
   border: 0;
@@ -85,4 +86,10 @@
   line-height: 44px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  transition: background-color 0.5s ease;
+}
+
+.askForm__button:hover,
+.askForm__button:focus {
+  background-color: #e64c20;
 }

@@ -116,6 +116,7 @@
 }
 
 .serviceHome__service--button {
+  cursor: pointer;
   height: 52px;
 
   padding-left: 40px;
@@ -134,4 +135,10 @@
   line-height: 52px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  transition: background-color 0.5s ease;
+}
+
+.serviceHome__service--button:hover,
+.serviceHome__service--button:focus {
+  background-color: #e64c20;
 }
