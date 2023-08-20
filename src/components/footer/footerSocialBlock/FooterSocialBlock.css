@@ -1,0 +1,16 @@
+.footer__wrapper--socialBlock {
+  margin-left: 60px;
+  display: flex;
+  width: 184px;
+  justify-content: space-between;
+}
+
+.social-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  transform: scale(1.1);
+}

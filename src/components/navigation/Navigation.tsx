@@ -14,7 +14,7 @@ export const Navigation = () => {
           setNavActive("home");
         }}
       >
-        <Logo />
+        <Logo color="#1E212C" />
         <NavLink to="/" />
       </div>
       <nav>
