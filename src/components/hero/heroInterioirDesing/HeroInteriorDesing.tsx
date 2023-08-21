@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "../../../ui/container.css";
+import "../heroServices/HeroServices.css";
 import "./HeroInteriorDesing.css";
 
 export const HeroInteriorDesing = () => {

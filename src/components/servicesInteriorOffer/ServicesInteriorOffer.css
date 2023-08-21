@@ -1,0 +1,70 @@
+.servicesInteriorOffer__section {
+  padding: 120px 0 90px 0;
+}
+
+.servicesInteriorOffer__wrapper {
+  display: flex;
+}
+
+.servicesInteriorOffer__wrappe--svgMinus {
+  margin-top: 10px;
+  min-width: 24px;
+}
+
+.servicesInteriorOffer__wrappe--svgPlus {
+  margin-top: 10px;
+}
+
+.servicesInteriorOffer__wrapper--offer {
+  margin-left: 105px;
+}
+
+.servicesInteriorOffer__title {
+  color: #1e212c;
+
+  font-family: Lato;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 130%;
+}
+
+.servicesInteriorOffer__title--PlusAndMinus {
+  color: #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.servicesInteriorOffer__title--Plus {
+  margin-left: 20px;
+}
+
+.servicesInteriorOffer__wrapper--plus {
+  margin-top: 24px;
+  display: flex;
+}
+
+.servicesInteriorOffer__wrapper--minus {
+  max-width: 376px;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+}
+
+.servicesInteriorOffer__wrapper--text {
+  margin-left: 20px;
+}
+
+.servicesInteriorOffer__text {
+  color: #787a80;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
