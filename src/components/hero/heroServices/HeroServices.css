@@ -1,0 +1,74 @@
+.heroServices__section {
+  position: relative;
+  padding: 152px 0 110px 0;
+  background-color: #f4f5f6;
+  margin-top: -92px;
+}
+
+.heroServices__section::before {
+  content: "";
+  max-width: 975px;
+  width: 100%;
+  height: 620px;
+  position: absolute;
+  top: -92px;
+  right: 0;
+
+  background-image: url("../../../image/HeroServices.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* .heroServices__img {
+  max-width: 975px;
+  width: 100%;
+  height: 620px;
+  background-image: url("../../../image/HeroServices.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.heroServices__wraper--content {
+  width: 600px;
+}
+
+.heroServices__link {
+  color: #424551;
+}
+
+.heroServices__link--text {
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #9a9ca5;
+}
+
+.heroServices__link--span {
+  margin: 0 8px;
+}
+
+.heroServices__title {
+  margin-top: 40px;
+  color: #1e212c;
+  font-family: Ubuntu;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 1px;
+}
+
+.heroServices__text {
+  margin-top: 24px;
+  color: #787a80;
+
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}

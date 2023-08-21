@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Layout = lazy(() => import("./layout/Layout"));
 const Home = lazy(() => import("./pages/Home"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound/PageNotFound"));
+const Services = lazy(() => import("./pages/servicesPage/Services"));
 
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="/Services" element={<Services />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

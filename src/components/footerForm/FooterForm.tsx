@@ -14,7 +14,7 @@ export const FooterForm = () => {
   };
 
   return (
-    <section className="footerForm__section">
+    <section className="footerForm__section" id="footerForm">
       <div className="container footerForm__container">
         <Formik
           initialValues={{ name: "", phone: "", email: "", massage: "" }}

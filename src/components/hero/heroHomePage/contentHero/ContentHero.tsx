@@ -16,7 +16,9 @@ export const ContentHero = () => {
         <div className="contentHero__button--wrapper">
           <button className="contentHero__button">Learn more about us</button>
           <button className="contentHero__button contentHero__button--submit ">
-            SUBMIT REQUEST
+            <a className="contentHero__button--link" href="#footerForm">
+              SUBMIT REQUEST
+            </a>
           </button>
         </div>
       </div>

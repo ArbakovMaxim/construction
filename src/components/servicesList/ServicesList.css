@@ -1,0 +1,129 @@
+.services__section {
+  padding: 120px 0 180px 0;
+}
+
+.services__item {
+  display: flex;
+}
+
+.services__item:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.services__item:not(:first-child) {
+  margin-top: 120px;
+}
+
+.services__img {
+  border-radius: 4px;
+}
+
+.services__wrapper-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services__wrapper-contentEvent {
+  position: relative;
+  margin-right: 80px;
+}
+
+.services__wrapper--bg4 {
+  position: relative;
+}
+
+.services__wrapper--bg4::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: -700px;
+  top: 300px;
+  width: 791px;
+  height: 638px;
+  background-image: url(../../image/FactHome.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services__wrapper--bg2 {
+  position: relative;
+}
+
+.services__wrapper--bg2::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  right: -700px;
+  top: 300px;
+  width: 791px;
+  height: 638px;
+  background-image: url(../../image/FactHome.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services__wrapper-contentAdd {
+  margin-left: 80px;
+}
+
+.services__title {
+  color: #1e212c;
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.services__text {
+  margin-top: 24px;
+  color: #787a80;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.services__button {
+  max-width: 176px;
+  width: 100%;
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 52px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #ff5a30;
+
+  color: #ff5a30;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  transition: background 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+    border 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+    color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.services__button:hover,
+.services__button:focus {
+  background: #ff5a30;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.services__link {
+  padding: 0 32px;
+}

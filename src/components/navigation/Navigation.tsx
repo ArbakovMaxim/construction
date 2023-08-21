@@ -9,13 +9,13 @@ export const Navigation = () => {
   return (
     <>
       <div
-        style={{ cursor: "pointer" }}
+        className="nav__logo--wrapper"
         onClick={() => {
           setNavActive("home");
         }}
       >
         <Logo color="#1E212C" />
-        <NavLink to="/" />
+        <NavLink className="nav__logo--link" to="/" />
       </div>
       <nav>
         <ul className="nav__list">
@@ -47,7 +47,7 @@ export const Navigation = () => {
                   ? "nav__link--active"
                   : "nav__link--passive"
               }
-              to="/"
+              to="/Services"
             >
               Services
             </NavLink>

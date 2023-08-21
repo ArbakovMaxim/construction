@@ -10,7 +10,7 @@ import { ServicesHome } from "../components/servicesHome/ServicesHome";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <HeroHome />
       <CompanyInformation />
       <AskQuestionForm />
@@ -20,7 +20,7 @@ const Home = () => {
       <FactHome />
       <NewsHome />
       <FooterForm />
-    </div>
+    </>
   );
 };
 
