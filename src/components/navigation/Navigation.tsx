@@ -1,10 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useMatch } from "react-router-dom";
 import "./Navigation.css";
 import { useState } from "react";
 import { Logo } from "../../image/svg/Logo";
 
 export const Navigation = () => {
   const [navActive, setNavActive] = useState("home");
+  const url = useLocation();
+  const match = useMatch({
+    path: url.pathname,
+    end: url.pathname.length === 1,
+  });
+
+  console.log(match);
 
   return (
     <>

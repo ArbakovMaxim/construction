@@ -7,6 +7,9 @@ const Layout = lazy(() => import("./layout/Layout"));
 const Home = lazy(() => import("./pages/Home"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound/PageNotFound"));
 const Services = lazy(() => import("./pages/servicesPage/Services"));
+const InteriorDesing = lazy(
+  () => import("./pages/interiorDesing/InteriorDesing")
+);
 
 export const App = () => {
   return (
@@ -16,6 +19,7 @@ export const App = () => {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/Services" element={<Services />} />
+            <Route path="/Services/Interior" element={<InteriorDesing />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

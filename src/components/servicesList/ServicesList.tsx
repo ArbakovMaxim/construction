@@ -72,7 +72,7 @@ export const ServicesList = () => {
                 elementum pretium.
               </p>
               <button className="services__button">
-                <NavLink className="services__link" to="/">
+                <NavLink className="services__link" to="/Services/Interior">
                   Learn more
                 </NavLink>
               </button>
