@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import { ArrowsRight } from "../../image/svg/ArrowsRight";
 import { ArrowsLeft } from "../../image/svg/ArrowsLeft";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 interface CustomArrowProps {
   onClick?: () => void;
@@ -78,7 +79,17 @@ export const ProjectSlider = ({ works, title }: Props) => {
       </div>
       <div className="project__home--wrapperBottom">
         <h2 className="project__home--titleTwo">Explore all our works</h2>
-        <button className="project__home--button">View portfolio</button>
+        <button className="project__home--button">
+          <NavLink
+            className="project__home__portfolio--link"
+            to="/Work"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            View portfolio
+          </NavLink>
+        </button>
       </div>
     </section>
   );

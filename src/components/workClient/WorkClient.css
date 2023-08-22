@@ -1,9 +1,9 @@
-.partnersHome__section {
+.work__section {
   padding: 80px 0 0 0;
   background-color: #f4f5f6;
 }
 
-.partnersHome__title {
+.work__title {
   color: #1e212c;
   text-align: center;
 
@@ -14,7 +14,7 @@
   line-height: 130%;
 }
 
-.partnersHome__slide {
+.work__slide {
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -22,27 +22,31 @@
   height: 144px;
 }
 
-.partnersHome__wrapper--reviews {
+.work__wrapper--reviews {
   display: flex;
   justify-content: space-between;
   margin-top: 140px;
 }
 
-.partnersHome__wrapper--reviewsSlider {
+.work__wrapper--reviewsSlider {
   width: 600px;
 }
 
-.partnersHome__title--reviews {
+.work__title--reviews {
   margin-bottom: 60px;
 }
 
-.partnersHome__wrapper--img {
+.work__wrapper--img {
   position: relative;
 }
 
-.partnersHome__img {
+.work__img {
   position: relative;
   border-radius: 4px;
   z-index: 1;
   margin-bottom: -60px;
+}
+
+.workClients__section {
+  padding: 120px 0 92px 0;
 }
