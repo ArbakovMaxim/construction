@@ -6,8 +6,16 @@ import { ServiceItem } from "./FuncServiceItem";
 import "../../ui/container.css";
 import "./ServicesHome.css";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const ServicesHome = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (path: string) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <section className="serviceHome__section">
       <div className="container">
@@ -17,28 +25,40 @@ export const ServicesHome = () => {
           of construction services.
         </p>
         <ul className="serviceHome__list">
-          <li>
+          <li
+            className="serviceHome__item"
+            onClick={() => handleClick("/Services/Construction")}
+          >
             <ServiceItem
               icon={Construction}
               text="Construction"
               className="serviceHome__item--fon1"
             />
           </li>
-          <li>
+          <li
+            className="serviceHome__item"
+            onClick={() => handleClick("/Services/Development")}
+          >
             <ServiceItem
               icon={Plan}
               text="Project Development"
               className="serviceHome__item--fon2"
             />
           </li>
-          <li>
+          <li
+            className="serviceHome__item"
+            onClick={() => handleClick("/Services/Interior")}
+          >
             <ServiceItem
               icon={Panton}
               text="Interior Design"
               className="serviceHome__item--fon3"
             />
           </li>
-          <li>
+          <li
+            className="serviceHome__item"
+            onClick={() => handleClick("/Services/Repairs")}
+          >
             <ServiceItem
               icon={Paint}
               text="Repairs"

@@ -3,7 +3,12 @@ import "../../../ui/container.css";
 import "../heroServices/HeroServices.css";
 import "./HeroInteriorDesing.css";
 
-export const HeroInteriorDesing = () => {
+interface Props {
+  link: string;
+  name: string;
+}
+
+export const HeroInteriorDesing = ({ link, name }: Props) => {
   return (
     <section className="heroServices__section--InteriorDesing">
       <div className="container">
@@ -17,9 +22,9 @@ export const HeroInteriorDesing = () => {
               Services
             </NavLink>
             <span className="heroServices__link--span ">/</span>
-            interior desing
+            {link}
           </p>
-          <h1 className="heroServices__title">INTERIOR DESIGN</h1>
+          <h1 className="heroServices__title">{name}</h1>
           <p className="heroServices__text">
             If you are looking for a full-service construction company, look
             to Createx Construction Bureau. We are doing our best

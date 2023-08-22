@@ -10,6 +10,11 @@ const Services = lazy(() => import("./pages/servicesPage/Services"));
 const InteriorDesing = lazy(
   () => import("./pages/interiorDesing/InteriorDesing")
 );
+const Construction = lazy(() => import("./pages/construction/Construction"));
+const ProjectDevelopment = lazy(
+  () => import("./pages/projectDevelopment/ProjectDevelopment")
+);
+const Repairs = lazy(() => import("./pages/repair/Repair"));
 
 export const App = () => {
   return (
@@ -20,6 +25,12 @@ export const App = () => {
             <Route index element={<Home />} />
             <Route path="/Services" element={<Services />} />
             <Route path="/Services/Interior" element={<InteriorDesing />} />
+            <Route path="/Services/Construction" element={<Construction />} />
+            <Route
+              path="/Services/Development"
+              element={<ProjectDevelopment />}
+            />
+            <Route path="/Services/Repairs" element={<Repairs />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

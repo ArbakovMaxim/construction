@@ -32,7 +32,7 @@ export const FooterForm = () => {
               .max(150, "Must be 150 characters or less")
               .required("Required"),
           })}
-          onSubmit={(values, { setSubmitting }) => {
+          onSubmit={(values) => {
             if (isChecked) {
               toast.success("Your application has been successfully accepted");
               console.log(values);
@@ -50,6 +50,8 @@ export const FooterForm = () => {
                 Name*
               </label>
               <Field
+                autoComplete="name"
+                id="name"
                 name="name"
                 type="text"
                 placeholder="Your name"
@@ -65,6 +67,8 @@ export const FooterForm = () => {
                 Phone*
               </label>
               <Field
+                autoComplete="phone"
+                id="phone"
                 name="phone"
                 type="text"
                 placeholder="Your phone number"
@@ -80,6 +84,8 @@ export const FooterForm = () => {
                 Email
               </label>
               <Field
+                autoComplete="email"
+                id="email"
                 name="email"
                 type="email"
                 placeholder="Your working email"
@@ -95,6 +101,7 @@ export const FooterForm = () => {
                 Massage*
               </label>
               <Field
+                id="massage"
                 name="massage"
                 type="text"
                 placeholder="Your message"
@@ -108,6 +115,7 @@ export const FooterForm = () => {
             <div className="footerForm__chekbox--wrapper">
               <label className="footerForm__chekbox--massege">
                 <input
+                  id="checkbox"
                   type="checkbox"
                   checked={isChecked}
                   onChange={toggleCheckbox}

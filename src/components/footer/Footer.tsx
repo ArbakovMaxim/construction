@@ -42,6 +42,8 @@ export const Footer = () => {
             <h2 className="footer__touch--title">Let’s stay in touch</h2>
             <div className="footer__input--wrapper">
               <input
+                autoComplete="email"
+                id="email"
                 className="footer__input"
                 type="email"
                 placeholder="Your email address"

@@ -31,6 +31,10 @@
   margin-top: 60px;
 }
 
+.serviceHome__item {
+  cursor: pointer;
+}
+
 .serviceHome__item--fon {
   display: flex;
   flex-direction: column;

@@ -28,6 +28,7 @@
 }
 
 .askForm__label {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -92,4 +93,18 @@
 .askForm__button:hover,
 .askForm__button:focus {
   background-color: #e64c20;
+}
+
+.askForm__error {
+  position: absolute;
+  top: -12px;
+  right: 0;
+
+  color: #ff5a30;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.5px;
 }

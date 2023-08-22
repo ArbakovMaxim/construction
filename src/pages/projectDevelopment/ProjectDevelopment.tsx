@@ -5,20 +5,23 @@ import { ServicesBenefits } from "../../components/servicesBenefits/ServicesBene
 import { ServicesDoIT } from "../../components/servicesDoIT/ServicesDoIT";
 import { ServicesInteriorOffer } from "../../components/servicesInteriorOffer/ServicesInteriorOffer";
 import { ServicesPricing } from "../../components/servicesPricing/ServicesPricing";
-import InteriorProgect from "../../util/InteriorWork.json";
+import HomeWork from "../../util/Homework.json";
 
-const InteriorDesing = () => {
+const ProjectDevelopment = () => {
   return (
     <>
-      <HeroInteriorDesing name="INTERIOR DESIGN" link="Interior Design" />
+      <HeroInteriorDesing
+        name="PROJECT DEVELOPMENT"
+        link="Project Development"
+      />
       <ServicesInteriorOffer />
       <ServicesDoIT />
       <ServicesBenefits />
-      <ProjectSlider works={InteriorProgect} title="Related projects" />
+      <ProjectSlider works={HomeWork} title="Related projects" />
       <ServicesPricing />
       <FooterForm />
     </>
   );
 };
 
-export default InteriorDesing;
+export default ProjectDevelopment;

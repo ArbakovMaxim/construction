@@ -28,7 +28,13 @@ export const ServicesList = () => {
                 vestibulum.
               </p>
               <button className="services__button">
-                <NavLink className="services__link" to="/">
+                <NavLink
+                  className="services__link"
+                  to="/Services/Construction"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                >
                   Learn more
                 </NavLink>
               </button>
@@ -49,7 +55,13 @@ export const ServicesList = () => {
                 eget.
               </p>
               <button className="services__button">
-                <NavLink className="services__link" to="/">
+                <NavLink
+                  className="services__link"
+                  to="/Services/Development"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                >
                   Learn more
                 </NavLink>
               </button>
@@ -72,7 +84,13 @@ export const ServicesList = () => {
                 elementum pretium.
               </p>
               <button className="services__button">
-                <NavLink className="services__link" to="/Services/Interior">
+                <NavLink
+                  className="services__link"
+                  to="/Services/Interior"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                >
                   Learn more
                 </NavLink>
               </button>
@@ -92,7 +110,13 @@ export const ServicesList = () => {
                 egestas mattis. Turpis viverra nec urna ultrices urna.
               </p>
               <button className="services__button">
-                <NavLink className="services__link" to="/">
+                <NavLink
+                  className="services__link"
+                  to="/Services/Repairs"
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                >
                   Learn more
                 </NavLink>
               </button>
