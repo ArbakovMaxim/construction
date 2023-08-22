@@ -1,0 +1,136 @@
+.servicesBenefits__section {
+  position: relative;
+  padding: 80px 0 126px 0;
+  background-color: #1e212c;
+}
+
+.servicesBenefits__conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicesBenefits__title {
+  color: #fff;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.servicesBenefits__text {
+  padding-top: 24px;
+
+  color: #fff;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  opacity: 0.6;
+}
+
+.servicesBenefits__list {
+  margin-top: 60px;
+  display: flex;
+}
+
+.servicesBenefits__item {
+  position: relative;
+  text-align: center;
+  max-width: 380px;
+  width: 100%;
+}
+
+.servicesBenefits__item--centr {
+  max-width: 475px;
+  width: 100%;
+}
+
+.servicesBenefits__item:not(:last-child) {
+  padding-right: 95px;
+}
+
+.servicesBenefits__item:not(:first-child) {
+  padding-left: 95px;
+}
+
+.servicesBenefits__item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 188px;
+
+  opacity: 0.4;
+  background: linear-gradient(
+    315deg,
+    rgba(218, 219, 221, 0) 0%,
+    rgba(218, 219, 221, 0.5) 12.33%,
+    #dadbdd 51.91%,
+    rgba(218, 219, 221, 0.5) 87.85%,
+    rgba(218, 219, 221, 0) 100%
+  );
+}
+
+.servicesBenefits__item--title {
+  margin-top: 24px;
+  color: #fff;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.servicesBenefits__item--text {
+  margin-top: 8px;
+  color: #fff;
+
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+
+  opacity: 0.6;
+}
+
+.servicesBenefits__button {
+  cursor: pointer;
+  position: absolute;
+  bottom: -26px;
+  display: inline-flex;
+  border-radius: 4px;
+  background: #ff5a30;
+  border: 0;
+
+  color: #fff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease;
+}
+
+.servicesBenefits__button:focus,
+.servicesBenefits__button:hover {
+  background-color: #e64c20;
+}
+
+.servicesBenefits__link {
+  padding: 0 112px;
+}

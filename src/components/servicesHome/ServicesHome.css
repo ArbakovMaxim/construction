@@ -119,9 +119,6 @@
   cursor: pointer;
   height: 52px;
 
-  padding-left: 40px;
-  padding-right: 40px;
-
   border-radius: 4px;
   background: #ff5a30;
   border: 0;
@@ -141,4 +138,14 @@
 .serviceHome__service--button:hover,
 .serviceHome__service--button:focus {
   background-color: #e64c20;
+}
+
+.serviceHome__service--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+  height: 100%;
 }

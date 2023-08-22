@@ -19,8 +19,15 @@
 }
 
 .servicesDoIT__item {
+  position: relative;
   max-width: 285px;
   width: 100%;
+}
+
+.servicesDoIT__item:hover .servicesDoIT__number::before,
+.servicesDoIT__item:focus .servicesDoIT__number::before {
+  visibility: visible;
+  animation: pulse 2s infinite ease-in-out;
 }
 
 .servicesDoIT__number--wrapper {
@@ -37,6 +44,35 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+}
+
+.servicesDoIT__number::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, #ff5a30 30%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0.8;
+  z-index: -1;
+  visibility: hidden;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-50%) scale(1.2);
+    opacity: 0;
+  }
 }
 
 .servicesDoIT__title--item {

@@ -5,6 +5,7 @@ import { Plan } from "../../image/svg/Plan";
 import { ServiceItem } from "./FuncServiceItem";
 import "../../ui/container.css";
 import "./ServicesHome.css";
+import { NavLink } from "react-router-dom";
 
 export const ServicesHome = () => {
   return (
@@ -50,7 +51,15 @@ export const ServicesHome = () => {
             Learn more about our services
           </h2>
           <button className="serviceHome__service--button">
-            View services
+            <NavLink
+              className="serviceHome__service--link"
+              to="/Services"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              View services
+            </NavLink>
           </button>
         </div>
       </div>
