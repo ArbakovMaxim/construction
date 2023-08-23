@@ -5,7 +5,7 @@ import { ServicesBenefits } from "../../components/servicesBenefits/ServicesBene
 import { ServicesDoIT } from "../../components/servicesDoIT/ServicesDoIT";
 import { ServicesInteriorOffer } from "../../components/servicesInteriorOffer/ServicesInteriorOffer";
 import { ServicesPricing } from "../../components/servicesPricing/ServicesPricing";
-import HomeWork from "../../util/Homework.json";
+import Project from "../../util/Project.json";
 
 const ProjectDevelopment = () => {
   return (
@@ -17,7 +17,7 @@ const ProjectDevelopment = () => {
       <ServicesInteriorOffer />
       <ServicesDoIT />
       <ServicesBenefits />
-      <ProjectSlider works={HomeWork} title="Related projects" />
+      <ProjectSlider works={Project} title="Related projects" />
       <ServicesPricing />
       <FooterForm />
     </>
