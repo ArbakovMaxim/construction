@@ -1,0 +1,129 @@
+.heroCV__section--InteriorDesing {
+  position: relative;
+  padding: 152px 0 110px 0;
+  background-color: #f4f5f6;
+  margin-top: -92px;
+}
+
+.heroCV__section--InteriorDesing::before {
+  content: "";
+  max-width: 975px;
+  width: 100%;
+  height: 820px;
+  position: absolute;
+  top: 52px;
+  right: 0;
+  opacity: 0.6;
+
+  background-image: url("../../../image/FactHome.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heroCV__wraper--content {
+  position: relative;
+  z-index: 1;
+  width: 600px;
+}
+
+.heroCV__link {
+  color: #424551;
+}
+
+.heroCV__link--text {
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #9a9ca5;
+}
+
+.heroCV__link--span {
+  margin: 0 8px;
+}
+
+.heroCV__title {
+  margin-top: 40px;
+  color: #1e212c;
+  font-family: Ubuntu;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 1px;
+}
+
+.heroCV__wrapper--slider {
+  margin-top: 60px;
+}
+
+.heroCV__wrapper--info {
+  margin-top: 220px;
+  display: flex;
+}
+
+.heroCV__wrapper--projectGoal {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.heroCV__projectGoal--title {
+  color: #1e212c;
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.heroCV__projectGoal--text {
+  color: #424551;
+
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.heroCV__info__card {
+  background-color: #fff;
+  padding: 40px 60px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+
+.heroCV__item {
+  display: flex;
+}
+
+.heroCV__item:not(:first-child) {
+  margin-top: 16px;
+}
+
+.heroCV__item--text {
+  width: 98px;
+  color: #1e212c;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.heroCV__item--span {
+  margin-left: 32px;
+  color: #787a80;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}

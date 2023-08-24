@@ -1,5 +1,3 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider, { Settings } from "react-slick";
 import "./HeroHome.css";
 import { ArrowsRight } from "../../../image/svg/ArrowsRight";

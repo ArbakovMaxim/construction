@@ -16,6 +16,7 @@ interface WorkData {
   image: string;
   text: string;
   title: string;
+  id: string;
 }
 
 interface Props {
@@ -72,6 +73,7 @@ export const ProjectSlider = ({ works, title }: Props) => {
                 backgroundImage={work.image}
                 title={work.title}
                 text={work.text}
+                id={work.id}
               />
             </div>
           ))}

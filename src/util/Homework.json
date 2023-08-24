@@ -1,45 +1,54 @@
 [
   {
+    "id": "1",
     "image": "/img/ourWork1.png",
     "text": "Business Centers",
     "title": "Cubes Building"
   },
   {
+    "id": "2",
     "image": "/img/ourWork2.png",
     "text": "Private houses",
     "title": "Modern Cottage"
   },
   {
+    "id": "3",
     "image": "/img/ourWork3.png",
     "text": "Private houses",
     "title": "Luxury Beach House"
   },
   {
+    "id": "4",
     "image": "/img/ourWork4.png",
     "text": "Apartments & flats",
     "title": "Modern Double Bedroom"
   },
   {
+    "id": "5",
     "image": "/img/ourWork5.png",
     "text": "Apartments & flats",
     "title": "Kids Bedroom With Decorations"
   },
   {
+    "id": "6",
     "image": "/img/ourWork6.png",
     "text": "Stores & Malls",
     "title": "The Pencil Building"
   },
   {
+    "id": "7",
     "image": "/img/ourWork7.png",
     "text": "Business Centers",
     "title": "Red Finger Building"
   },
   {
+    "id": "8",
     "image": "/img/ourWork8.png",
     "text": "Private houses",
     "title": "Scandinavian Style Interior"
   },
   {
+    "id": "9",
     "image": "/img/ourWork9.png",
     "text": "Private houses",
     "title": "Brown and Gray Painted House"

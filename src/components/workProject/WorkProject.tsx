@@ -15,6 +15,7 @@ interface Work {
   image: string;
   title: string;
   text: string;
+  id: string;
 }
 
 export const WorkProject = () => {
@@ -134,6 +135,7 @@ export const WorkProject = () => {
                   backgroundImage={work.image}
                   title={work.title}
                   text={work.text}
+                  id={work.id}
                 />
               </li>
             ))}
