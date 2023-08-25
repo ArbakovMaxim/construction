@@ -9,6 +9,10 @@ import { Heart } from "../../image/svg/Heart";
 export const Footer = () => {
   const [email, setEmail] = useState("");
 
+  const up = () => {
+    window.scrollTo(0, 0);
+  };
+
   const handleEmailChange = (event: {
     target: { value: SetStateAction<string> };
   }) => {
@@ -26,8 +30,9 @@ export const Footer = () => {
           <div className="footer__wrapper--logoBlock ">
             <div className="footer__wrapper--logo">
               <div style={{ cursor: "pointer" }}>
-                <NavLink to="/" />
-                <Logo color="#fff" />
+                <NavLink to="/" onClick={up}>
+                  <Logo color="#fff" />
+                </NavLink>
               </div>
               <FooterSocialBlock />
             </div>
@@ -107,22 +112,25 @@ export const Footer = () => {
             <h2 className="footer__button--title">WHO WE ARE</h2>
             <ul className="footer__adresse--list">
               <li className="footer__adresse--item">
-                <NavLink to="/" />
-                <span className="footer__button--text footer__button--span">
-                  About Us
-                </span>
+                <NavLink to="/About" onClick={up}>
+                  <span className="footer__button--text footer__button--span">
+                    About Us
+                  </span>
+                </NavLink>
               </li>
               <li className="footer__adresse--item">
-                <NavLink to="/" />
-                <span className="footer__button--text footer__button--span">
-                  Available Positions
-                </span>
+                <NavLink to="/" onClick={up}>
+                  <span className="footer__button--text footer__button--span">
+                    Available Positions
+                  </span>
+                </NavLink>
               </li>
               <li className="footer__adresse--item">
-                <NavLink to="/" />
-                <span className="footer__button--text footer__button--span">
-                  Contacts
-                </span>
+                <NavLink to="/" onClick={up}>
+                  <span className="footer__button--text footer__button--span">
+                    Contacts
+                  </span>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -130,22 +138,25 @@ export const Footer = () => {
             <h2 className="footer__button--title">OUR EXPERIENCE</h2>
             <ul className="footer__adresse--list">
               <li className="footer__adresse--item">
-                <NavLink to="/" />
-                <span className="footer__button--text footer__button--span">
-                  Services
-                </span>
+                <NavLink to="/Services" onClick={up}>
+                  <span className="footer__button--text footer__button--span">
+                    Services
+                  </span>
+                </NavLink>
               </li>
               <li className="footer__adresse--item">
-                <NavLink to="/" />
-                <span className="footer__button--text footer__button--span">
-                  Work
-                </span>
+                <NavLink to="/Work" onClick={up}>
+                  <span className="footer__button--text footer__button--span">
+                    Work
+                  </span>
+                </NavLink>
               </li>
               <li className="footer__adresse--item">
-                <NavLink to="/" />
-                <span className="footer__button--text footer__button--span">
-                  News
-                </span>
+                <NavLink to="/" onClick={up}>
+                  <span className="footer__button--text footer__button--span">
+                    News
+                  </span>
+                </NavLink>
               </li>
             </ul>
           </div>

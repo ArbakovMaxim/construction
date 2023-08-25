@@ -10,7 +10,7 @@ interface Props {
 
 export const HeroInteriorDesing = ({ link, name }: Props) => {
   return (
-    <section className="heroServices__section--InteriorDesing">
+    <section className="heroInteriorDesing__section--InteriorDesing">
       <div className="container">
         <div className="heroServices__wraper--content">
           <p className="heroServices__link--text">

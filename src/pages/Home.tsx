@@ -1,4 +1,5 @@
 import { AskQuestionForm } from "../components/askQuestionForm/AskQuestionForm";
+import { CompaniValue } from "../components/companiValues/CompaniValue";
 import { CompanyInformation } from "../components/companyInformation/CompanyInformation";
 import { FactHome } from "../components/factHome/FactHome";
 import { FooterForm } from "../components/footerForm/FooterForm";
@@ -14,6 +15,7 @@ const Home = () => {
     <>
       <HeroHome />
       <CompanyInformation />
+      <CompaniValue backgroundColor="#fff" padding="0 0 120px 0" />
       <AskQuestionForm />
       <ServicesHome />
       <ProjectSlider

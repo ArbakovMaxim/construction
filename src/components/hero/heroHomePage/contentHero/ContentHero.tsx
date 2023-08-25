@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../../../../ui/container.css";
 import "./ContentHero.css";
 
@@ -14,7 +15,17 @@ export const ContentHero = () => {
           pellentesque integer ipsum elementum felis.
         </p>
         <div className="contentHero__button--wrapper">
-          <button className="contentHero__button">Learn more about us</button>
+          <button className="contentHero__button">
+            <NavLink
+              className="contentHero__button--link"
+              to="/About"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              Learn more about us
+            </NavLink>
+          </button>
           <button className="contentHero__button contentHero__button--submit ">
             <a className="contentHero__button--link" href="#footerForm">
               SUBMIT REQUEST

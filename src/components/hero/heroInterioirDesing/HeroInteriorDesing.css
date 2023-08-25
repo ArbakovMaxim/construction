@@ -1,11 +1,11 @@
-.heroServices__section--InteriorDesing {
+.heroInteriorDesing__section--InteriorDesing {
   position: relative;
   padding: 152px 0 110px 0;
   background-color: #f4f5f6;
   margin-top: -92px;
 }
 
-.heroServices__section--InteriorDesing::before {
+.heroInteriorDesing__section--InteriorDesing::before {
   content: "";
   max-width: 975px;
   width: 100%;

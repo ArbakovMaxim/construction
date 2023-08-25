@@ -2,24 +2,36 @@ import { useEffect, useState } from "react";
 
 interface Props {
   hovered: boolean;
+  greyColor?: boolean;
+  width?: string;
+  height?: string;
 }
 
-export const Paint = ({ hovered }: Props) => {
+export const Paint = ({
+  hovered,
+  greyColor = false,
+  width = "53",
+  height = "52",
+}: Props) => {
   const [color, setColor] = useState("#FF5A30");
 
   useEffect(() => {
-    if (hovered) {
-      setColor("#fff");
+    if (greyColor) {
+      setColor("#9A9CA5");
     } else {
-      setColor("#FF5A30");
+      if (hovered) {
+        setColor("#fff");
+      } else {
+        setColor("#FF5A30");
+      }
     }
-  }, [hovered]);
+  }, [greyColor, hovered]);
 
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="53"
-      height="52"
+      width={width}
+      height={height}
       viewBox="0 0 53 52"
       fill="none"
     >
