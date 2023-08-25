@@ -3,10 +3,14 @@ import "../../ui/container.css";
 import { useEffect, useState } from "react";
 import { WorldItemProject } from "./FuncWordProject";
 import { HomeLove } from "../../image/svg/HomeLove";
+import { Construction } from "../../image/svg/Construction";
+import { Plan } from "../../image/svg/Plan";
+import { Panton } from "../../image/svg/Panton";
+import { Paint } from "../../image/svg/Paint";
 import { CardWork } from "../cardWork/CardWork";
 import Works18 from "../../util/Homework--18.json";
 import Works from "../../util/Homework.json";
-import Construction from "../../util/Construction.json";
+import ConstructionJson from "../../util/Construction.json";
 import InteriorWork from "../../util/InteriorWork.json";
 import Project from "../../util/Project.json";
 import { LoadMore } from "../../image/svg/LoadMore";
@@ -28,7 +32,7 @@ export const WorkProject = () => {
       setJson(Works18);
     }
     if (activ === "Construction") {
-      setJson(Construction);
+      setJson(ConstructionJson);
     }
     if (activ === "Project Development") {
       setJson(Project);
@@ -69,7 +73,7 @@ export const WorkProject = () => {
             }}
           >
             <WorldItemProject
-              icon={HomeLove}
+              icon={Construction}
               text="Construction"
               className={
                 activ === "Construction" ? "workProject__wrapper--active" : ""
@@ -84,7 +88,7 @@ export const WorkProject = () => {
             }}
           >
             <WorldItemProject
-              icon={HomeLove}
+              icon={Plan}
               text="Project Development"
               className={
                 activ === "Project Development"
@@ -101,7 +105,7 @@ export const WorkProject = () => {
             }}
           >
             <WorldItemProject
-              icon={HomeLove}
+              icon={Panton}
               text="Interior Design"
               className={
                 activ === "Interior Design"
@@ -118,7 +122,7 @@ export const WorkProject = () => {
             }}
           >
             <WorldItemProject
-              icon={HomeLove}
+              icon={Paint}
               text="Repairs"
               className={
                 activ === "Repairs" ? "workProject__wrapper--active" : ""

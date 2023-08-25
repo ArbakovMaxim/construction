@@ -1,0 +1,191 @@
+[
+  {
+    "id": "1",
+    "image": [
+      "/img/Work/CubesBuilding1.png",
+      "/img/Work/CubesBuilding1.png",
+      "/img/Work/CubesBuilding1.png",
+      "/img/Work/CubesBuilding1.png",
+      "/img/Work/CubesBuilding1.png",
+      "/img/Work/CubesBuilding1.png"
+    ],
+    "info": "Business Centers",
+    "titleHouse": "Cubes Building",
+    "buildGoal": "Build a private house 840 sq. feet with a large living room, three bedrooms, two bathrooms, a terrace, a pool and a garage for two cars.",
+    "modernGoal": " Modern design and care for each family member to feel as comfortable as possible in the new home.",
+    "location": "2464 Royal Ln. Mesa, New Jersey",
+    "client": "Darlene Robertson",
+    "architet": "HIK Architecture",
+    "size": "840 sq. feet",
+    "value": "$2 million",
+    "complete": "May 2020"
+  },
+  {
+    "id": "2",
+    "image": [
+      "/img/Work/ModernCottage1.jpg",
+      "/img/Work/ModernCottage1.jpg",
+      "/img/Work/ModernCottage1.jpg",
+      "/img/Work/ModernCottage1.jpg",
+      "/img/Work/ModernCottage1.jpg",
+      "/img/Work/ModernCottage1.jpg"
+    ],
+    "info": "Private houses",
+    "titleHouse": "Modern Cottage",
+    "buildGoal": "Build a private house 840 sq. feet with a large living room, three bedrooms, two bathrooms, a terrace, a pool and a garage for two cars.",
+    "modernGoal": " Modern design and care for each family member to feel as comfortable as possible in the new home.",
+    "location": "2464 Royal Ln. Mesa, New Jersey",
+    "client": "Darlene Robertson",
+    "architet": "HIK Architecture",
+    "size": "840 sq. feet",
+    "value": "$2 million",
+    "complete": "May 2020"
+  },
+  {
+    "id": "3",
+    "image": [
+      "/img/Work/LuxuryBeach1.png",
+      "/img/Work/LuxuryBeach1.png",
+      "/img/Work/LuxuryBeach1.png",
+      "/img/Work/LuxuryBeach1.png",
+      "/img/Work/LuxuryBeach1.png",
+      "/img/Work/LuxuryBeach1.png"
+    ],
+    "info": "Private houses",
+    "titleHouse": "Luxury Beach House",
+    "buildGoal": "Build a private house 840 sq. feet with a large living room, three bedrooms, two bathrooms, a terrace, a pool and a garage for two cars.",
+    "modernGoal": " Modern design and care for each family member to feel as comfortable as possible in the new home.",
+    "location": "2464 Royal Ln. Mesa, New Jersey",
+    "client": "Darlene Robertson",
+    "architet": "HIK Architecture",
+    "size": "840 sq. feet",
+    "value": "$2 million",
+    "complete": "May 2020"
+  },
+  {
+    "id": "4",
+    "image": [
+      "/img/Work/DoubleBedroom1.png",
+      "/img/Work/DoubleBedroom1.png",
+      "/img/Work/DoubleBedroom1.png",
+      "/img/Work/DoubleBedroom1.png",
+      "/img/Work/DoubleBedroom1.png",
+      "/img/Work/DoubleBedroom1.png"
+    ],
+    "info": "Apartments & flats",
+    "titleHouse": "Modern Double Bedroom",
+    "buildGoal": "Build a private house 840 sq. feet with a large living room, three bedrooms, two bathrooms, a terrace, a pool and a garage for two cars.",
+    "modernGoal": " Modern design and care for each family member to feel as comfortable as possible in the new home.",
+    "location": "2464 Royal Ln. Mesa, New Jersey",
+    "client": "Darlene Robertson",
+    "architet": "HIK Architecture",
+    "size": "840 sq. feet",
+    "value": "$2 million",
+    "complete": "May 2020"
+  },
+  {
+    "id": "5",
+    "image": [
+      "/img/Work/KidsBedroom1.png",
+      "/img/Work/KidsBedroom1.png",
+      "/img/Work/KidsBedroom1.png",
+      "/img/Work/KidsBedroom1.png",
+      "/img/Work/KidsBedroom1.png",
+      "/img/Work/KidsBedroom1.png"
+    ],
+    "info": "Apartments & flats",
+    "titleHouse": "Kids Bedroom With Decorations",
+    "buildGoal": "Build a private house 840 sq. feet with a large living room, three bedrooms, two bathrooms, a terrace, a pool and a garage for two cars.",
+    "modernGoal": " Modern design and care for each family member to feel as comfortable as possible in the new home.",
+    "location": "2464 Royal Ln. Mesa, New Jersey",
+    "client": "Darlene Robertson",
+    "architet": "HIK Architecture",
+    "size": "840 sq. feet",
+    "value": "$2 million",
+    "complete": "May 2020"
+  },
+  {
+    "id": "6",
+    "image": [
+      "/img/Work/PencilBuilding1.png",
+      "/img/Work/PencilBuilding1.png",
+      "/img/Work/PencilBuilding1.png",
+      "/img/Work/PencilBuilding1.png",
+      "/img/Work/PencilBuilding1.png",
+      "/img/Work/PencilBuilding1.png"
+    ],
+    "info": "Stores & Malls",
+    "titleHouse": "The Pencil Building",
+    "buildGoal": "Build a private house 840 sq. feet with a large living room, three bedrooms, two bathrooms, a terrace, a pool and a garage for two cars.",
+    "modernGoal": " Modern design and care for each family member to feel as comfortable as possible in the new home.",
+    "location": "2464 Royal Ln. Mesa, New Jersey",
+    "client": "Darlene Robertson",
+    "architet": "HIK Architecture",
+    "size": "840 sq. feet",
+    "value": "$2 million",
+    "complete": "May 2020"
+  },
+  {
+    "id": "7",
+    "image": [
+      "/img/Work/RedFingerBuilding1.png",
+      "/img/Work/RedFingerBuilding1.png",
+      "/img/Work/RedFingerBuilding1.png",
+      "/img/Work/RedFingerBuilding1.png",
+      "/img/Work/RedFingerBuilding1.png",
+      "/img/Work/RedFingerBuilding1.png"
+    ],
+    "info": "Business Centers",
+    "titleHouse": "Red Finger Building",
+    "buildGoal": "Build a private house 840 sq. feet with a large living room, three bedrooms, two bathrooms, a terrace, a pool and a garage for two cars.",
+    "modernGoal": " Modern design and care for each family member to feel as comfortable as possible in the new home.",
+    "location": "2464 Royal Ln. Mesa, New Jersey",
+    "client": "Darlene Robertson",
+    "architet": "HIK Architecture",
+    "size": "840 sq. feet",
+    "value": "$2 million",
+    "complete": "May 2020"
+  },
+  {
+    "id": "8",
+    "image": [
+      "/img/Work/Scandinavian1.png",
+      "/img/Work/Scandinavian1.png",
+      "/img/Work/Scandinavian1.png",
+      "/img/Work/Scandinavian1.png",
+      "/img/Work/Scandinavian1.png",
+      "/img/Work/Scandinavian1.png"
+    ],
+    "info": "Private houses",
+    "titleHouse": "Scandinavian Style Interior",
+    "buildGoal": "Build a private house 840 sq. feet with a large living room, three bedrooms, two bathrooms, a terrace, a pool and a garage for two cars.",
+    "modernGoal": " Modern design and care for each family member to feel as comfortable as possible in the new home.",
+    "location": "2464 Royal Ln. Mesa, New Jersey",
+    "client": "Darlene Robertson",
+    "architet": "HIK Architecture",
+    "size": "840 sq. feet",
+    "value": "$2 million",
+    "complete": "May 2020"
+  },
+  {
+    "id": "9",
+    "image": [
+      "/img/Work/BrownandGray1.png",
+      "/img/Work/BrownandGray1.png",
+      "/img/Work/BrownandGray1.png",
+      "/img/Work/BrownandGray1.png",
+      "/img/Work/BrownandGray1.png",
+      "/img/Work/BrownandGray1.png"
+    ],
+    "info": "Private houses",
+    "titleHouse": "Brown and Gray Painted House",
+    "buildGoal": "Build a private house 840 sq. feet with a large living room, three bedrooms, two bathrooms, a terrace, a pool and a garage for two cars.",
+    "modernGoal": " Modern design and care for each family member to feel as comfortable as possible in the new home.",
+    "location": "2464 Royal Ln. Mesa, New Jersey",
+    "client": "Darlene Robertson",
+    "architet": "HIK Architecture",
+    "size": "840 sq. feet",
+    "value": "$2 million",
+    "complete": "May 2020"
+  }
+]

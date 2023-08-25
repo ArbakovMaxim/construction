@@ -1,0 +1,60 @@
+.projectConstructive__section {
+  padding: 80px 0 0 0;
+  background: #f4f5f6;
+}
+
+.projectConstructive__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectConstructive__wrapper--img {
+  position: relative;
+  margin-bottom: -60px;
+  width: 495px;
+  height: 550px;
+}
+
+.projectConstructive__img {
+  position: relative;
+}
+
+.projectConstructive__wrapper--ul {
+  max-width: 600px;
+  width: 100%;
+}
+
+.projectConstructive__title {
+  color: #1e212c;
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.projectConstructive__list {
+  margin-top: 60px;
+}
+
+.projectConstructive__item {
+  display: flex;
+}
+
+.projectConstructive__item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.projectConstructive__item--text {
+  margin-left: 16px;
+  color: #424551;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.projectConstructive__section--slider {
+  padding: 80px 0 125px 0;
+}

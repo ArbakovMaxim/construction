@@ -2,16 +2,16 @@ import { NavLink } from "react-router-dom";
 import "../../../ui/container.css";
 import "./HeroCV.css";
 import { SliderCV } from "../../sliderCV/SliderCV";
-import ModernCottage from "../../../util/CV/ModernCottage.json";
+import CV from "../../../util/CV/CV.json";
 
 interface Props {
-  link: string;
-  name: string;
+  ID: string | undefined;
 }
 
 interface ProjectData {
   id: string;
   image: string[];
+  info: string;
   titleHouse: string;
   buildGoal: string;
   modernGoal: string;
@@ -23,10 +23,17 @@ interface ProjectData {
   complete: string;
 }
 
-export const HeroCV = ({ link, name }: Props) => {
-  let info: ProjectData = ModernCottage;
+export const HeroCV = ({ ID }: Props) => {
+  const projectInfo = CV.find((item) => item.id === ID);
+
+  if (!projectInfo) {
+    return <div>Project not found</div>;
+  }
+
+  const info: ProjectData = projectInfo;
+
   return (
-    <section className="heroCV__section--InteriorDesing">
+    <section className="heroCV__section">
       <div className="container">
         <div className="heroCV__wraper--content">
           <p className="heroCV__link--text">
@@ -38,9 +45,9 @@ export const HeroCV = ({ link, name }: Props) => {
               Work
             </NavLink>
             <span className="heroCV__link--span ">/</span>
-            {link}
+            {info.titleHouse}
           </p>
-          <h1 className="heroCV__title">{name}</h1>
+          <h1 className="heroCV__title">{info.titleHouse}</h1>
         </div>
         <div className="heroCV__wrapper--slider">
           <SliderCV images={info.image} />
