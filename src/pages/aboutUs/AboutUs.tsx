@@ -1,3 +1,5 @@
+import { AboutUsDirector } from "../../components/aboutUsDirector/AboutUsDirector";
+import { AboutUsHistory } from "../../components/aboutUsHistory/AboutUsHistory";
 import { AboutUsInfo } from "../../components/aboutUsInfo/AboutUsInfo";
 
 import { CompaniValue } from "../../components/companiValues/CompaniValue";
@@ -9,7 +11,9 @@ const AboutUs = () => {
     <>
       <HeroAboutUS />
       <AboutUsInfo />
+      <AboutUsDirector />
       <CompaniValue backgroundColor="#F4F5F6" padding="80px 0" />
+      <AboutUsHistory />
       <FooterForm />
     </>
   );

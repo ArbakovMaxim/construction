@@ -1,0 +1,85 @@
+.aboutUsDirector__section {
+  padding: 120px 0;
+}
+
+.aboutUsDirector__wrapper {
+  display: flex;
+}
+
+.aboutUsDirector__wrapper--img {
+  max-width: 525px;
+  width: 100%;
+  height: 580px;
+}
+
+.aboutUsDirector__img {
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+.aboutUsDirector__text {
+  margin-left: 30px;
+  max-width: 495px;
+  width: 100%;
+
+  color: #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.aboutUsDirector__text--name {
+  color: #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.aboutUsDirector__text--CEO {
+  color: #787a80;
+
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.aboutUsDirector__wrapper--text {
+  display: flex;
+}
+
+.aboutUsDirector__wrapper--name {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.aboutUsDirector__wrapper--info {
+  margin-left: 58px;
+}
+
+.aboutUsDirector__wrapper--message {
+  height: 570px;
+  padding: 80px 77px;
+
+  position: relative;
+  z-index: 1;
+  margin-top: -120px;
+  margin-left: -30px;
+
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}

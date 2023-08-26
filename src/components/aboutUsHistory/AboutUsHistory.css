@@ -1,0 +1,85 @@
+.aboutUsHistory__section {
+  padding: 100px 0;
+}
+
+.aboutUsHistory__wrapper--slide {
+  max-width: 810px;
+  width: 100%;
+}
+
+.aboutUsHistory__slide--img {
+  border-radius: 4px;
+}
+
+.aboutUsHistory__slide--text {
+  margin-top: 36px;
+  color: #424551;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+/* .slick-dots {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} */
+
+.slick-dots li {
+  width: 250px;
+  height: 42px;
+}
+
+.custom-dots {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.custom-dots--itenm:not(:first-child) {
+  margin-top: 20px;
+}
+
+.custom-dot {
+  display: flex;
+  align-items: center;
+}
+
+.custom-dot.active .dot-text {
+  color: #333;
+}
+
+.customDots__circle {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #9a9ca5;
+}
+
+.customDots__circle::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 62px;
+  background-color: #9a9ca5;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+
+.customDots__text {
+  margin-left: 32px;
+  color: #9a9ca5;
+
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
