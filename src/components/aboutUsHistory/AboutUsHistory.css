@@ -2,6 +2,16 @@
   padding: 100px 0;
 }
 
+.aboutUsHistory__title {
+  color: #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
 .aboutUsHistory__wrapper--slide {
   max-width: 810px;
   width: 100%;
@@ -12,7 +22,7 @@
 }
 
 .aboutUsHistory__slide--text {
-  margin-top: 36px;
+  margin-top: 46px;
   color: #424551;
   font-family: Ubuntu;
   font-size: 16px;
@@ -21,23 +31,22 @@
   line-height: 160%;
 }
 
-/* .slick-dots {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-} */
-
 .slick-dots li {
   width: 250px;
   height: 42px;
 }
 
+.slick-dots li:not(:first-child) {
+  margin-top: 20px;
+}
+
+.slick-list {
+  margin-left: 130px;
+}
+
 .custom-dots {
   padding: 0;
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -68,9 +77,6 @@
   width: 2px;
   height: 62px;
   background-color: #9a9ca5;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -30px;
 }
 
 .customDots__text {
@@ -82,4 +88,26 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+}
+
+.slick-slider {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.slick-dots {
+  position: static;
+}
+
+.slick-active .customDots__circle {
+  background-color: #ff5a30;
+}
+
+.slick-active .customDots__circle::after {
+  background-color: #ff5a30;
+}
+
+.slick-active .customDots__text {
+  color: #ff5a30;
 }

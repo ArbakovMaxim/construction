@@ -1,5 +1,6 @@
 import "./AboutUsHistory.css";
 import "../../ui/container.css";
+import "../projectSlider/ProjectSlider.css";
 import Slider from "react-slick";
 import HistoryImg from "../../image/HistorySlide.jpg";
 import {
@@ -7,7 +8,10 @@ import {
   ReactElement,
   ReactNode,
   ReactPortal,
+  useState,
 } from "react";
+import { ArrowsRight } from "../../image/svg/ArrowsRight";
+import { ArrowsLeft } from "../../image/svg/ArrowsLeft";
 
 const customDotTexts = [
   "Present",
@@ -21,13 +25,44 @@ const customDotTexts = [
   "June 2000",
 ];
 
+interface CustomArrowProps {
+  onClick?: () => void;
+}
+
 export const AboutUsHistory = () => {
+  const [hoveredRight, setHoveredRight] = useState(false);
+  const [hoveredLeft, setHoveredLeft] = useState(false);
+
+  const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
+    <div
+      className="project__home--custom-arrow project__home--custom-arrowRight"
+      onClick={onClick}
+      onMouseEnter={() => setHoveredRight(true)}
+      onMouseLeave={() => setHoveredRight(false)}
+    >
+      <ArrowsRight color={hoveredRight ? "#fff" : "#424551"} />
+    </div>
+  );
+
+  const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
+    <div
+      className="project__home--custom-arrow project__home--custom-arrowLeft"
+      onClick={onClick}
+      onMouseEnter={() => setHoveredLeft(true)}
+      onMouseLeave={() => setHoveredLeft(false)}
+    >
+      <ArrowsLeft color={hoveredLeft ? "#fff" : "#424551"} />
+    </div>
+  );
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
     appendDots: (
       dots:
         | string
@@ -55,7 +90,7 @@ export const AboutUsHistory = () => {
     <section className="aboutUsHistory__section">
       <div className="container">
         <div>
-          <h2>Vertical Dots Slider</h2>
+          <h2 className="aboutUsHistory__title">Our history</h2>
           <Slider {...settings}>
             <div className="aboutUsHistory__wrapper--slide">
               <img
