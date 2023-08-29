@@ -58,6 +58,8 @@ export const AboutUsHistory = () => {
   const settings = {
     dots: true,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -89,7 +91,7 @@ export const AboutUsHistory = () => {
   return (
     <section className="aboutUsHistory__section">
       <div className="container">
-        <div>
+        <div className="aboutUsHistory__slide">
           <h2 className="aboutUsHistory__title">Our history</h2>
           <Slider {...settings}>
             <div className="aboutUsHistory__wrapper--slide">

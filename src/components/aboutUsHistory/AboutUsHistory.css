@@ -1,4 +1,5 @@
 .aboutUsHistory__section {
+  background-color: #f4f5f6;
   padding: 100px 0;
 }
 
@@ -31,16 +32,20 @@
   line-height: 160%;
 }
 
-.slick-dots li {
+.aboutUsHistory__slide .slick-dots li {
   width: 250px;
   height: 42px;
 }
 
-.slick-dots li:not(:first-child) {
+.aboutUsHistory__slide .slick-dots li:not(:first-child) {
   margin-top: 20px;
 }
 
-.slick-list {
+.aboutUsHistory__slide .slick-dots {
+  position: static;
+}
+
+.aboutUsHistory__slide .slick-list {
   margin-left: 130px;
 }
 
@@ -77,6 +82,9 @@
   width: 2px;
   height: 62px;
   background-color: #9a9ca5;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
 }
 
 .customDots__text {
@@ -94,10 +102,6 @@
   margin-top: 60px;
   display: flex;
   flex-direction: row-reverse;
-}
-
-.slick-dots {
-  position: static;
 }
 
 .slick-active .customDots__circle {
