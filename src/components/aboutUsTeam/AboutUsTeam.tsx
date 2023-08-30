@@ -90,7 +90,13 @@ export const AboutUsTeam = () => {
             Become a part of the best team in the construction market of the
             USA.
           </p>
-          <NavLink to="/Positions" className="aboutUsTeam__link">
+          <NavLink
+            to="/About/Positions"
+            className="aboutUsTeam__link"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
             Available Positions
           </NavLink>
         </div>
