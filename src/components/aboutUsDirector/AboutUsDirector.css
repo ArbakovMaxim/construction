@@ -4,6 +4,22 @@
 
 .aboutUsDirector__wrapper {
   display: flex;
+  position: relative;
+}
+
+.aboutUsDirector__wrapper::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  opacity: 0.2;
+  right: -700px;
+  top: 300px;
+  width: 791px;
+  height: 638px;
+  background-image: url(../../image/FactHome.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .aboutUsDirector__wrapper--img {

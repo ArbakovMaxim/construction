@@ -3,6 +3,7 @@ import { AboutUsHistory } from "../../components/aboutUsHistory/AboutUsHistory";
 import { AboutUsInfo } from "../../components/aboutUsInfo/AboutUsInfo";
 import { AboutUsPartners } from "../../components/aboutUsPartners/AboutUsPartners";
 import { AboutUsTeam } from "../../components/aboutUsTeam/AboutUsTeam";
+import { AboutUsWorldwide } from "../../components/aboutUsWorldwide/AboutUsWorldwide";
 
 import { CompaniValue } from "../../components/companiValues/CompaniValue";
 import { FooterForm } from "../../components/footerForm/FooterForm";
@@ -18,6 +19,7 @@ const AboutUs = () => {
       <AboutUsHistory />
       <AboutUsPartners />
       <AboutUsTeam />
+      <AboutUsWorldwide />
       <FooterForm />
     </>
   );

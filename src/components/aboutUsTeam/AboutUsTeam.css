@@ -1,0 +1,68 @@
+.aboutUsTeam__section {
+  padding: 80px 0 120px 0;
+}
+
+.aboutUsTeam__title {
+  color: #1e212c;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.aboutUsTeam__text {
+  margin-top: 24px;
+  margin-bottom: 60px;
+  color: #787a80;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.aboutUsTeam__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.aboutUsTeam__item {
+  width: calc(25% - 30px);
+  box-sizing: border-box;
+}
+
+.aboutUsTeam__wrapper--link {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUsTeam__link--text {
+  color: #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.aboutUsTeam__link {
+  color: #ff5a30;
+
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration-line: underline;
+}
