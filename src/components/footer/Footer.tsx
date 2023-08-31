@@ -119,7 +119,7 @@ export const Footer = () => {
                 </NavLink>
               </li>
               <li className="footer__adresse--item">
-                <NavLink to="/" onClick={up}>
+                <NavLink to="/About/Positions" onClick={up}>
                   <span className="footer__button--text footer__button--span">
                     Available Positions
                   </span>

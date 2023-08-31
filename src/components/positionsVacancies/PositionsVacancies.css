@@ -1,0 +1,173 @@
+.positionsVacancies__section {
+  padding: 120px 0 90px 0;
+}
+
+.positionsVacancies__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.positionsVacancies__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 707px;
+  padding: 32px 40px;
+
+  border-radius: 4px;
+  border: 1px solid #e5e8ed;
+  background: #fff;
+
+  color: #787a80;
+
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  transition: box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.positionsVacancies__items:not(:first-child) {
+  margin-top: 24px;
+}
+
+.positionsVacancies__item:focus,
+.positionsVacancies__items:hover {
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+
+.positionsVacancies__wrapper--info {
+  display: flex;
+  align-items: center;
+}
+
+.positionsVacancies__text {
+  margin-left: 8px;
+}
+
+.positionsVacancies__text--drop {
+  margin: 0 12px;
+}
+
+.positionsVacancies__namePosition {
+  margin-top: 8px;
+  color: #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.positionsVacancies__btn {
+  cursor: pointer;
+  padding: 0 32px;
+
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ff5a30;
+
+  color: #ff5a30;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: background-color 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+    color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.positionsVacancies__btn:hover,
+.positionsVacancies__btn:focus {
+  color: #fff;
+  background-color: #ff5a30;
+}
+
+.positionsVacancies__title {
+  color: #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.positionsVacancies__info--cv {
+  margin-top: 24px;
+  color: #424551;
+
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.positionsVacancies__wraper--cv {
+  max-width: 380px;
+  width: 100%;
+}
+
+.positionsVacancies__btn--newsletter {
+  cursor: pointer;
+  width: 180px;
+  padding: 0 40px;
+
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.positionsVacancies__btn--subscribe {
+  border-radius: 4px;
+  border: 1px solid #ff5a30;
+  background-color: #fff;
+  color: #ff5a30;
+
+  transition: background-color 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+    color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.positionsVacancies__btn--cv {
+  border: 1px solid #ff5a30;
+  border-radius: 4px;
+  background-color: #ff5a30;
+  color: #fff;
+
+  transition: background-color 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+    color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.positionsVacancies__btn--subscribe:hover,
+.positionsVacancies__btn--subscribe:focus {
+  background-color: #ff5a30;
+  color: #fff;
+}
+
+.positionsVacancies__btn--cv:hover,
+.positionsVacancies__btn--cv:focus {
+  background-color: #fff;
+  color: #ff5a30;
+}
+
+.positionsVacancies__wrapper--btn {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
