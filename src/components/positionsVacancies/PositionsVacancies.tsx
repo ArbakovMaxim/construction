@@ -1,9 +1,32 @@
 import "./PositionsVacancies.css";
 import "../../ui/container.css";
+import ModalContainer from "../modalContainer/ModalContainer";
 import { MapMarker } from "../../image/svg/MapMarker";
 import { Clock } from "../../image/svg/Clock";
+import { useState } from "react";
+import { ModalSubscribe } from "../modalSubscribe/ModalSubscribe";
+import { ModalCV } from "../modalSubscribe/ModalCV";
 
 export const PositionsVacancies = () => {
+  const [subscribeModalOpen, setSubscribeModalOpen] = useState(false);
+  const [cvModalOpen, setCVModalOpen] = useState(false);
+
+  const openSubscribeModal = () => {
+    setSubscribeModalOpen(true);
+  };
+
+  const closeSubscribeModal = () => {
+    setSubscribeModalOpen(false);
+  };
+
+  const openCVModal = () => {
+    setCVModalOpen(true);
+  };
+
+  const closeCVModal = () => {
+    setCVModalOpen(false);
+  };
+
   return (
     <section className="positionsVacancies__section">
       <div className="container positionsVacancies__wrapper">
@@ -108,14 +131,31 @@ export const PositionsVacancies = () => {
             about new vacancies.
           </p>
           <div className="positionsVacancies__wrapper--btn">
-            <button className="positionsVacancies__btn--newsletter  positionsVacancies__btn--subscribe">
+            <button
+              className="positionsVacancies__btn--newsletter  positionsVacancies__btn--subscribe"
+              onClick={openSubscribeModal}
+            >
               subscribe
             </button>
-            <button className="positionsVacancies__btn--newsletter positionsVacancies__btn--cv">
+            <button
+              className="positionsVacancies__btn--newsletter positionsVacancies__btn--cv"
+              onClick={openCVModal}
+            >
               send cv
             </button>
           </div>
         </div>
+        {subscribeModalOpen && (
+          <ModalContainer onClose={closeSubscribeModal}>
+            <ModalSubscribe onClose={closeSubscribeModal} />
+          </ModalContainer>
+        )}
+
+        {cvModalOpen && (
+          <ModalContainer onClose={closeCVModal}>
+            <ModalCV onClose={closeCVModal} />
+          </ModalContainer>
+        )}
       </div>
     </section>
   );
