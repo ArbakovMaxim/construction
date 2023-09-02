@@ -4,8 +4,8 @@ import ModalContainer from "../modalContainer/ModalContainer";
 import { MapMarker } from "../../image/svg/MapMarker";
 import { Clock } from "../../image/svg/Clock";
 import { useState } from "react";
-import { ModalSubscribe } from "../modalSubscribe/ModalSubscribe";
-import { ModalCV } from "../modalSubscribe/ModalCV";
+import { ModalSubscribe } from "../PositionsModal/ModalSubscribe";
+import { ModalCV } from "../PositionsModal/ModalCV";
 
 export const PositionsVacancies = () => {
   const [subscribeModalOpen, setSubscribeModalOpen] = useState(false);

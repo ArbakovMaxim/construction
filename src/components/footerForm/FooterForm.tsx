@@ -101,6 +101,7 @@ export const FooterForm = () => {
                 Massage*
               </label>
               <Field
+                as="textarea"
                 id="massage"
                 name="massage"
                 type="text"
