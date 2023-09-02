@@ -46,7 +46,7 @@ export const WorkProject = () => {
   }, [activ]);
 
   const loadMore = () => {
-    setVisibleItems((prevCount) => prevCount + 3); // При нажатии увеличиваем отображаемое количество на 3
+    setVisibleItems((prevCount) => prevCount + 3);
   };
 
   return (

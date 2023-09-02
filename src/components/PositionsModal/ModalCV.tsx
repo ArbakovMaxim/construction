@@ -15,7 +15,7 @@ const validationSchema = Yup.object({
   phone: Yup.string()
     .matches(/^\+?[0-9]+$/, "Invalid phone number")
     .max(20, "Must be 20 characters or less")
-    .required("Required"),
+    .required("Phone is required"),
   massage: Yup.string().max(150, "Must be 150 characters or less"),
   location: Yup.string()
     .oneOf(["New York", "San Francisco", "New Jersey"], "Location is required")

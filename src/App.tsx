@@ -21,6 +21,7 @@ const Portfolio = lazy(() => import("./pages/portfolio/Portfolio"));
 const Project = lazy(() => import("./pages/project/Project"));
 const AboutUs = lazy(() => import("./pages/aboutUs/AboutUs"));
 const Positions = lazy(() => import("./pages/positions/Positions"));
+const News = lazy(() => import("./pages/news/News"));
 
 export const App = () => {
   return (
@@ -41,6 +42,7 @@ export const App = () => {
             <Route path="/Work/:ID" element={<Project />} />
             <Route path="/About" element={<AboutUs />} />
             <Route path="/About/Positions" element={<Positions />} />
+            <Route path="/News" element={<News />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

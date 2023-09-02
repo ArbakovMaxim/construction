@@ -1,0 +1,29 @@
+.newsCategories__section {
+  padding: 120px 0 180px 0;
+}
+.newsCategories__list {
+  display: flex;
+}
+
+.newsCategories__item {
+  width: 205px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #9a9ca5;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.newsCategories__item:hover {
+  transform: scale(1.1);
+}
