@@ -1,0 +1,290 @@
+[
+  {
+    "id": "1",
+    "image": "/img/News/news1.png",
+    "nameNews": "How to Build Climate Change-Resilient Infrastructure",
+    "category": "Industry News",
+    "date": "June 24, 2020",
+    "comments": "4"
+  },
+  {
+    "id": "2",
+    "image": "/img/News/news2.png",
+    "nameNews": "How Construction Can Help Itself",
+    "category": "Innovation",
+    "date": "June 12, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "3",
+    "image": "/img/News/news3.png",
+    "nameNews": "The Difference Between a Digger and an Excavator",
+    "category": "Expert Tips",
+    "date": "May 16, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "4",
+    "image": "/img/News/news4.png",
+    "nameNews": "Building Construction Hand Tools",
+    "category": "Expert Tips",
+    "date": "February 25, 2020",
+    "comments": "1"
+  },
+  {
+    "id": "5",
+    "image": "/img/News/news5.png",
+    "nameNews": "Top 10 Construction Trends",
+    "category": "Industry News",
+    "date": "January 14, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "6",
+    "image": "/img/News/news6.png",
+    "nameNews": "Types of Flooring Materials",
+    "category": "Company News",
+    "date": "December 1, 2019",
+    "comments": "No"
+  },
+  {
+    "id": "7",
+    "image": "/img/News/news6.png",
+    "nameNews": "Types of Flooring Materials",
+    "category": "Company News",
+    "date": "December 1, 2019",
+    "comments": "No"
+  },
+  {
+    "id": "8",
+    "image": "/img/News/news5.png",
+    "nameNews": "Top 10 Construction Trends",
+    "category": "Industry News",
+    "date": "January 14, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "9",
+    "image": "/img/News/news4.png",
+    "nameNews": "Building Construction Hand Tools",
+    "category": "Expert Tips",
+    "date": "February 25, 2020",
+    "comments": "1"
+  },
+  {
+    "id": "10",
+    "image": "/img/News/news3.png",
+    "nameNews": "The Difference Between a Digger and an Excavator",
+    "category": "Expert Tips",
+    "date": "May 16, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "11",
+    "image": "/img/News/news2.png",
+    "nameNews": "How Construction Can Help Itself",
+    "category": "Innovation",
+    "date": "June 12, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "12",
+    "image": "/img/News/news1.png",
+    "nameNews": "How to Build Climate Change-Resilient Infrastructure",
+    "category": "Industry News",
+    "date": "June 24, 2020",
+    "comments": "4"
+  },
+  {
+    "id": "13",
+    "image": "/img/News/news1.png",
+    "nameNews": "How to Build Climate Change-Resilient Infrastructure",
+    "category": "Industry News",
+    "date": "June 24, 2020",
+    "comments": "4"
+  },
+  {
+    "id": "14",
+    "image": "/img/News/news2.png",
+    "nameNews": "How Construction Can Help Itself",
+    "category": "Innovation",
+    "date": "June 12, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "15",
+    "image": "/img/News/news3.png",
+    "nameNews": "The Difference Between a Digger and an Excavator",
+    "category": "Expert Tips",
+    "date": "May 16, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "16",
+    "image": "/img/News/news4.png",
+    "nameNews": "Building Construction Hand Tools",
+    "category": "Expert Tips",
+    "date": "February 25, 2020",
+    "comments": "1"
+  },
+  {
+    "id": "17",
+    "image": "/img/News/news5.png",
+    "nameNews": "Top 10 Construction Trends",
+    "category": "Industry News",
+    "date": "January 14, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "18",
+    "image": "/img/News/news6.png",
+    "nameNews": "Types of Flooring Materials",
+    "category": "Company News",
+    "date": "December 1, 2019",
+    "comments": "No"
+  },
+  {
+    "id": "19",
+    "image": "/img/News/news1.png",
+    "nameNews": "How to Build Climate Change-Resilient Infrastructure",
+    "category": "Industry News",
+    "date": "June 24, 2020",
+    "comments": "4"
+  },
+  {
+    "id": "20",
+    "image": "/img/News/news2.png",
+    "nameNews": "How Construction Can Help Itself",
+    "category": "Innovation",
+    "date": "June 12, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "21",
+    "image": "/img/News/news3.png",
+    "nameNews": "The Difference Between a Digger and an Excavator",
+    "category": "Expert Tips",
+    "date": "May 16, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "22",
+    "image": "/img/News/news4.png",
+    "nameNews": "Building Construction Hand Tools",
+    "category": "Expert Tips",
+    "date": "February 25, 2020",
+    "comments": "1"
+  },
+  {
+    "id": "23",
+    "image": "/img/News/news5.png",
+    "nameNews": "Top 10 Construction Trends",
+    "category": "Industry News",
+    "date": "January 14, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "24",
+    "image": "/img/News/news6.png",
+    "nameNews": "Types of Flooring Materials",
+    "category": "Company News",
+    "date": "December 1, 2019",
+    "comments": "No"
+  },
+  {
+    "id": "25",
+    "image": "/img/News/news1.png",
+    "nameNews": "How to Build Climate Change-Resilient Infrastructure",
+    "category": "Industry News",
+    "date": "June 24, 2020",
+    "comments": "4"
+  },
+  {
+    "id": "26",
+    "image": "/img/News/news2.png",
+    "nameNews": "How Construction Can Help Itself",
+    "category": "Innovation",
+    "date": "June 12, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "27",
+    "image": "/img/News/news3.png",
+    "nameNews": "The Difference Between a Digger and an Excavator",
+    "category": "Expert Tips",
+    "date": "May 16, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "28",
+    "image": "/img/News/news4.png",
+    "nameNews": "Building Construction Hand Tools",
+    "category": "Expert Tips",
+    "date": "February 25, 2020",
+    "comments": "1"
+  },
+  {
+    "id": "29",
+    "image": "/img/News/news5.png",
+    "nameNews": "Top 10 Construction Trends",
+    "category": "Industry News",
+    "date": "January 14, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "30",
+    "image": "/img/News/news6.png",
+    "nameNews": "Types of Flooring Materials",
+    "category": "Company News",
+    "date": "December 1, 2019",
+    "comments": "No"
+  },
+  {
+    "id": "31",
+    "image": "/img/News/news1.png",
+    "nameNews": "How to Build Climate Change-Resilient Infrastructure",
+    "category": "Industry News",
+    "date": "June 24, 2020",
+    "comments": "4"
+  },
+  {
+    "id": "32",
+    "image": "/img/News/news2.png",
+    "nameNews": "How Construction Can Help Itself",
+    "category": "Innovation",
+    "date": "June 12, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "33",
+    "image": "/img/News/news3.png",
+    "nameNews": "The Difference Between a Digger and an Excavator",
+    "category": "Expert Tips",
+    "date": "May 16, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "34",
+    "image": "/img/News/news4.png",
+    "nameNews": "Building Construction Hand Tools",
+    "category": "Expert Tips",
+    "date": "February 25, 2020",
+    "comments": "1"
+  },
+  {
+    "id": "35",
+    "image": "/img/News/news5.png",
+    "nameNews": "Top 10 Construction Trends",
+    "category": "Industry News",
+    "date": "January 14, 2020",
+    "comments": "No"
+  },
+  {
+    "id": "36",
+    "image": "/img/News/news6.png",
+    "nameNews": "Types of Flooring Materials",
+    "category": "Company News",
+    "date": "December 1, 2019",
+    "comments": "No"
+  }
+]

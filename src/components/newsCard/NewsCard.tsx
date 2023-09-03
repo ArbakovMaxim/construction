@@ -9,6 +9,7 @@ interface Props {
   date: string;
   comments: string;
   cardNoraml?: boolean;
+  cardPage?: boolean;
 }
 
 export const NewsCard = ({
@@ -18,15 +19,28 @@ export const NewsCard = ({
   date,
   comments,
   cardNoraml = true,
+  cardPage = false,
 }: Props) => {
   return (
     <div
-      className={cardNoraml ? "newsCard__wrapper" : "newsCard__wrapper--small"}
+      className={
+        cardPage
+          ? "newsCard__wrapperList-newsCategory"
+          : cardNoraml
+          ? "newsCard__wrapper"
+          : "newsCard__wrapper--small"
+      }
     >
       <img
         src={foto}
         alt="foto news"
-        className={cardNoraml ? "newsCard__img" : "newsCard__img--small"}
+        className={
+          cardPage
+            ? "newsCard__img--newsCategory"
+            : cardNoraml
+            ? "newsCard__img"
+            : "newsCard__img--small"
+        }
       />
       <div
         className={
