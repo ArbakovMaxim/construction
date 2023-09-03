@@ -3,6 +3,7 @@ import "../../../ui/container.css";
 import "./HeroCV.css";
 import { SliderCV } from "../../sliderCV/SliderCV";
 import CV from "../../../util/CV/CV.json";
+import { toast } from "react-toastify";
 
 interface Props {
   ID: string | undefined;
@@ -27,7 +28,7 @@ export const HeroCV = ({ ID }: Props) => {
   const projectInfo = CV.find((item) => item.id === ID);
 
   if (!projectInfo) {
-    return <div>Project not found</div>;
+    return <div>{toast.error("Project not found")}</div>;
   }
 
   const info: ProjectData = projectInfo;

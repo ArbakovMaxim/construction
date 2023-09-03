@@ -44,6 +44,7 @@ export const NewsCategories = () => {
     .map((news: News) => (
       <li className="news__item" key={news.id}>
         <NewsCard
+          id={news.id}
           foto={news.image}
           nameNews={news.nameNews}
           category={news.category}

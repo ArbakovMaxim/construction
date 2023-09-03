@@ -96,7 +96,7 @@
   line-height: 150%;
 }
 
-.slick-dots li {
+.heroHome__slider--wrapper .slick-dots li {
   text-align: start;
   width: 178px;
   height: 54px;

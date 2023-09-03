@@ -10,6 +10,7 @@ interface Props {
   comments: string;
   cardNoraml?: boolean;
   cardPage?: boolean;
+  id: string;
 }
 
 export const NewsCard = ({
@@ -18,6 +19,7 @@ export const NewsCard = ({
   category,
   date,
   comments,
+  id,
   cardNoraml = true,
   cardPage = false,
 }: Props) => {
@@ -48,10 +50,17 @@ export const NewsCard = ({
         }
       >
         <h2 className="newsCard__title">
-          <NavLink to="/">{nameNews}</NavLink>
+          <NavLink
+            to={`/News/${id}`}
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            {nameNews}
+          </NavLink>
         </h2>
         <div className="newsCard__wrapper--infoBlock">
-          <NavLink className="newsCard__category" to="/">
+          <NavLink className="newsCard__category" to="/News">
             {category}
           </NavLink>
           <time className="newsCard__date" dateTime="">

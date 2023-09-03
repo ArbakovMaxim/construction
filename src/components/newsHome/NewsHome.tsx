@@ -13,6 +13,7 @@ export const NewsHome = () => {
         <h1 className="newsHome__title">Recent news</h1>
         <div className="newsHome__wrapperCard">
           <NewsCard
+            id="1"
             foto={news1}
             nameNews="How to Build Climate Change-Resilient Infrastructure"
             category="Industry News"
@@ -21,6 +22,7 @@ export const NewsHome = () => {
           />
           <div className="newsHome__wrapperCard--small">
             <NewsCard
+              id="2"
               foto={news2}
               nameNews="How Construction Can Help Itself"
               category="Innovation"
@@ -29,6 +31,7 @@ export const NewsHome = () => {
               cardNoraml={false}
             />
             <NewsCard
+              id="3"
               foto={news3}
               nameNews="Types of Flooring Materials"
               category="Company News"
