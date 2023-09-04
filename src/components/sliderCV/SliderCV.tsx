@@ -49,16 +49,18 @@ export const SliderCV = ({ images }: Props) => {
   };
 
   return (
-    <Slider {...settings}>
-      {images.map((image, index) => (
-        <div key={index}>
-          <img
-            className="sliderCV__img"
-            src={image}
-            alt={`Slide ${index + 1}`}
-          />
-        </div>
-      ))}
-    </Slider>
+    <div className="wrapper__sliderCV">
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index}>
+            <img
+              className="sliderCV__img"
+              src={image}
+              alt={`Slide ${index + 1}`}
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 };

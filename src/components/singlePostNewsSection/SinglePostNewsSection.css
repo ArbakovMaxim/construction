@@ -1,0 +1,115 @@
+.singlePostNewsSection__wraper--img {
+  position: relative;
+  margin-top: -80px;
+  width: 100%;
+  height: 500px;
+}
+
+.singlePostNewsSection__container {
+  padding: 80px 0;
+  max-width: 810px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.singlePostNewsSection__title {
+  color: #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.singlePostNewsSection__text {
+  margin-top: 24px;
+  color: #424551;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.singlePostNewsSection__wrapper--quote {
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 24px;
+
+  color: #1e212c;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.singlePostNewsSection__quote--text {
+  margin-left: 30px;
+}
+
+.singlePostNewsSection__wrapper--svg {
+  width: 28px;
+  height: 20px;
+}
+
+.singlePostNewsSection__list {
+  margin-top: 24px;
+}
+
+.singlePostNewsSection__item {
+  display: flex;
+  align-items: center;
+}
+
+.singlePostNewsSection__item:not(:first-child) {
+  margin-top: 4px;
+}
+
+.singlePostNewsSection__item--text {
+  margin-left: 16px;
+  color: var(--gray-800, #424551);
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.singlePostNewsSection__sicialBlock--list {
+  display: flex;
+  align-items: center;
+}
+
+.singlePostNewsSection__sicialBlock--item {
+  margin-left: 12px;
+}
+
+.singlePostNewsSection__social--icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.singlePostNewsSection__social--icon:hover,
+.singlePostNewsSection__social--icon:focus {
+  transform: scale(1.3);
+}
+
+.singlePostNewsSection__sicialBlock--text {
+  color: #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.singlePostNewsSection__wrapper--socialBlock {
+  display: flex;
+  margin-top: 60px;
+}

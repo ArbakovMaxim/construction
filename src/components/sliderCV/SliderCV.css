@@ -10,7 +10,7 @@
   object-fit: cover;
 }
 
-.slick-dots li {
+.wrapper__sliderCV .slick-dots li {
   margin: 10px;
   border-radius: 4px;
   opacity: 0.6;
@@ -18,13 +18,13 @@
   height: 100px;
 }
 
-.slick-dots {
+.wrapper__sliderCV .slick-dots {
   bottom: auto;
   text-align: start;
   margin: -10px;
   margin-top: 20px;
 }
 
-.slick-dots .slick-active {
+.wrapper__sliderCV .slick-dots .slick-active {
   opacity: 1;
 }

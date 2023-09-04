@@ -1,5 +1,6 @@
 import "./HeroSinglePost.css";
 import "../../../ui/container.css";
+import "../../../ui/textStyled.css";
 import { NavLink } from "react-router-dom";
 import { Comments } from "../../../image/svg/Comments";
 import News from "../../../util/News/AllNews.json";
@@ -19,6 +20,7 @@ interface NewsData {
   category: string;
   date: string;
   comments: string;
+  singleImage: string;
 }
 
 export const HeroSinglePost = ({ ID }: Props) => {
@@ -34,15 +36,15 @@ export const HeroSinglePost = ({ ID }: Props) => {
     <section className="heroSinglePost__section">
       <div className="container">
         <div className="heroSinglePost__wraper--content">
-          <p className="heroSinglePost__link--text">
-            <NavLink className="heroSinglePost__link" to="/">
+          <p className="hero__link--text">
+            <NavLink className="hero__link" to="/">
               Homepage
             </NavLink>
-            <span className="heroSinglePost__link--span ">/</span>
-            <NavLink className="heroSinglePost__link" to="/News">
+            <span className="hero__link--span ">/</span>
+            <NavLink className="hero__link" to="/News">
               News
             </NavLink>
-            <span className="heroSinglePost__link--span ">/</span>
+            <span className="hero__link--span ">/</span>
             {info.nameNews}
           </p>
           <h1 className="heroSinglePost__title">{info.nameNews}</h1>

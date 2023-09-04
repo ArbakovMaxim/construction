@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "../../../ui/container.css";
+import "../../../ui/textStyled.css";
 import "./HeroCV.css";
 import { SliderCV } from "../../sliderCV/SliderCV";
 import CV from "../../../util/CV/CV.json";
@@ -37,18 +38,18 @@ export const HeroCV = ({ ID }: Props) => {
     <section className="heroCV__section">
       <div className="container">
         <div className="heroCV__wraper--content">
-          <p className="heroCV__link--text">
-            <NavLink className="heroCV__link" to="/">
+          <p className="hero__link--text">
+            <NavLink className="hero__link" to="/">
               Homepage
             </NavLink>
-            <span className="heroCV__link--span ">/</span>
-            <NavLink className="heroCV__link" to="/Work">
+            <span className="hero__link--span">/</span>
+            <NavLink className="hero__link" to="/Work">
               Work
             </NavLink>
-            <span className="heroCV__link--span ">/</span>
+            <span className="hero__link--span">/</span>
             {info.titleHouse}
           </p>
-          <h1 className="heroCV__title">{info.titleHouse}</h1>
+          <h1 className="heroCV__title heroTitle">{info.titleHouse}</h1>
         </div>
         <div className="heroCV__wrapper--slider">
           <SliderCV images={info.image} />

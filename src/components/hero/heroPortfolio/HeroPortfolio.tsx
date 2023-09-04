@@ -1,22 +1,23 @@
 import { NavLink } from "react-router-dom";
 import "../../../ui/container.css";
+import "../../../ui/textStyled.css";
 import "../heroServices/HeroServices.css";
 import "./HeroPortfolio.css";
 
 export const HeroPortfolio = () => {
   return (
-    <section className="heroServices__section--InteriorDesing">
+    <section className="heroPortfolio__section">
       <div className="container">
-        <div className="heroServices__wraper--content">
-          <p className="heroServices__link--text">
-            <NavLink className="heroServices__link" to="/">
+        <div className="heroPortfolio__wraper--content">
+          <p className="hero__link--text">
+            <NavLink className="hero__link" to="/">
               Homepage
             </NavLink>
-            <span className="heroServices__link--span ">/</span>
+            <span className="hero__link--span ">/</span>
             Work
           </p>
-          <h1 className="heroServices__title">OUR WORK</h1>
-          <p className="heroServices__text">
+          <h1 className="heroPortfolio__title heroTitle">OUR WORK</h1>
+          <p className="hero__text">
             Our portfolio represents 20 years of construction experience backed
             by a passion for perfect client service, quality and innovations in
             consctuction industry.

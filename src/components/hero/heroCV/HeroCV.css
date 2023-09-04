@@ -25,32 +25,9 @@
   z-index: 1;
 }
 
-.heroCV__link {
-  color: #424551;
-}
-
-.heroCV__link--text {
-  font-family: Ubuntu;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  color: #9a9ca5;
-}
-
-.heroCV__link--span {
-  margin: 0 8px;
-}
-
 .heroCV__title {
   margin-top: 40px;
   color: #1e212c;
-  font-family: Ubuntu;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-  letter-spacing: 1px;
 }
 
 .heroCV__wrapper--slider {

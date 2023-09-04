@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { FooterForm } from "../../components/footerForm/FooterForm";
 import { HeroSinglePost } from "../../components/hero/heroSinglePost/HeroSinglePost";
+import { SinglePostNewsSection } from "../../components/singlePostNewsSection/SinglePostNewsSection";
 
 const SinglePost = () => {
   const { ID } = useParams();
@@ -8,6 +9,7 @@ const SinglePost = () => {
   return (
     <>
       <HeroSinglePost ID={id} />
+      <SinglePostNewsSection ID={id} />
       <FooterForm />
     </>
   );

@@ -1,11 +1,11 @@
-.heroServices__section--InteriorDesing {
+.heroPortfolio__section {
   position: relative;
   padding: 152px 0 106px 0;
   background-color: #f4f5f6;
   margin-top: -92px;
 }
 
-.heroServices__section--InteriorDesing::before {
+.heroPortfolio__section::before {
   content: "";
   max-width: 975px;
   width: 100%;
@@ -19,4 +19,16 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.heroPortfolio__wraper--content {
+  position: relative;
+  z-index: 1;
+  width: 600px;
+  height: 362px;
+}
+
+.heroPortfolio__title {
+  margin-top: 40px;
+  color: #1e212c;
 }

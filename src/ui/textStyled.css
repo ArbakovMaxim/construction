@@ -1,0 +1,37 @@
+.heroTitle {
+  font-family: Ubuntu;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 1px;
+}
+
+.hero__link--text {
+  color: #9a9ca5;
+
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.hero__link {
+  color: #424551;
+}
+
+.hero__link--span {
+  margin: 0 8px;
+}
+
+.hero__text {
+  margin-top: 24px;
+
+  color: #787a80;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}

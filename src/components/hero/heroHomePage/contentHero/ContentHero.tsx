@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "../../../../ui/container.css";
+import "../../../../ui/textStyled.css";
 import "./ContentHero.css";
 
 export const ContentHero = () => {
   return (
     <div className="container">
       <div className="contentHero__wrapper">
-        <h1 className="contentHero__title">
+        <h1 className="contentHero__title heroTitle">
           CREATE<span className="contentHero__span">X</span> CONSTRUCTION
         </h1>
         <p className="contentHero__text">

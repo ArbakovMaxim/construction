@@ -27,41 +27,7 @@
   height: 362px;
 }
 
-.heroServices__link {
-  color: #424551;
-}
-
-.heroServices__link--text {
-  font-family: Ubuntu;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  color: #9a9ca5;
-}
-
-.heroServices__link--span {
-  margin: 0 8px;
-}
-
 .heroServices__title {
   margin-top: 40px;
   color: #1e212c;
-  font-family: Ubuntu;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-  letter-spacing: 1px;
-}
-
-.heroServices__text {
-  margin-top: 24px;
-  color: #787a80;
-
-  font-family: Ubuntu;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
 }
