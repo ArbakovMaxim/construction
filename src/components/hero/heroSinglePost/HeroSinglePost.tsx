@@ -3,11 +3,12 @@ import "../../../ui/container.css";
 import "../../../ui/textStyled.css";
 import { NavLink } from "react-router-dom";
 import { Comments } from "../../../image/svg/Comments";
-import News from "../../../util/News/AllNews.json";
 import { toast } from "react-toastify";
 import { Facebook } from "../../../image/svg/Facebook";
 import { Twitter } from "../../../image/svg/Twitter";
 import { LinkedIn } from "../../../image/svg/LinkedIn";
+import { useSelector } from "react-redux";
+import { selectNewsById } from "../../../redux/newsSlice";
 
 interface Props {
   ID: string | undefined;
@@ -24,7 +25,7 @@ interface NewsData {
 }
 
 export const HeroSinglePost = ({ ID }: Props) => {
-  const newsInfo = News.find((item) => item.id === ID);
+  const newsInfo = useSelector((state) => selectNewsById(state, ID));
 
   if (!newsInfo) {
     return <div>{toast.error("Project not found")}</div>;

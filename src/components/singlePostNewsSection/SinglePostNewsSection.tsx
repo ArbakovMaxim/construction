@@ -1,12 +1,13 @@
 import "./SinglePostNewsSection.css";
 import "../../ui/container.css";
 import { toast } from "react-toastify";
-import News from "../../util/News/AllNews.json";
 import { Quotes } from "../../image/svg/Quotes";
 import { Check } from "../../image/svg/Check";
 import { Facebook } from "../../image/svg/Facebook";
 import { LinkedIn } from "../../image/svg/LinkedIn";
 import { Twitter } from "../../image/svg/Twitter";
+import { useSelector } from "react-redux";
+import { selectNewsById } from "../../redux/newsSlice";
 
 interface Props {
   ID: string | undefined;
@@ -23,7 +24,7 @@ interface NewsData {
 }
 
 export const SinglePostNewsSection = ({ ID }: Props) => {
-  const newsInfo = News.find((item) => item.id === ID);
+  const newsInfo = useSelector((state) => selectNewsById(state, ID));
   if (!newsInfo) {
     return <div>{toast.error("Project not found")}</div>;
   }

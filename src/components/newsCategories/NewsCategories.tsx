@@ -1,11 +1,12 @@
 import "./NewsCategories.css";
 import "../../ui/container.css";
-import AllNews from "../../util/News/AllNews.json";
 import { useEffect, useState } from "react";
 import { NewsCard } from "../newsCard/NewsCard";
 import ReactPaginate from "react-paginate";
 import { ArrowsLeft } from "../../image/svg/ArrowsLeft";
 import { ArrowsRight } from "../../image/svg/ArrowsRight";
+import { useSelector } from "react-redux";
+import store from "../../redux/store";
 
 interface News {
   id: string;
@@ -22,9 +23,13 @@ export const NewsCategories = () => {
   const [filteredNews, setFilteredNews] = useState<News[]>([]);
   const itemsPerPage = 6;
 
+  const newsList = useSelector(
+    (state: ReturnType<typeof store.getState>) => state.news.newsList
+  );
+
   //фильтрация по категориям
   useEffect(() => {
-    const filtered = AllNews.filter((news: News) => {
+    const filtered = newsList.filter((news: News) => {
       if (activ === "all") {
         return true;
       } else {
@@ -33,7 +38,7 @@ export const NewsCategories = () => {
     });
     setFilteredNews(filtered);
     setCurrentPage(0);
-  }, [activ]);
+  }, [activ, newsList]);
 
   const handlePageChange = ({ selected }: { selected: number }) => {
     setCurrentPage(selected);
