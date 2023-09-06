@@ -16,7 +16,7 @@ const validationSchema = Yup.object({
     .matches(/^\+?[0-9]+$/, "Invalid phone number")
     .max(20, "Must be 20 characters or less")
     .required("Phone is required"),
-  massage: Yup.string().max(150, "Must be 150 characters or less"),
+  message: Yup.string().max(150, "Must be 150 characters or less"),
   location: Yup.string()
     .oneOf(["New York", "San Francisco", "New Jersey"], "Location is required")
     .required("Location is required"),
@@ -41,7 +41,7 @@ export const ModalCV = ({ onClose }: Props) => {
       name: "",
       email: "",
       phone: "",
-      massage: "",
+      message: "",
       location: "",
       file: null,
     },
@@ -172,11 +172,11 @@ export const ModalCV = ({ onClose }: Props) => {
               className="footerForm__field modal__label--massage"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values.massage}
+              value={formik.values.message}
             />
-            {formik.touched.massage && formik.errors.massage ? (
+            {formik.touched.message && formik.errors.message ? (
               <div className="footerForm__error-container">
-                {formik.errors.massage}
+                {formik.errors.message}
               </div>
             ) : null}
           </div>

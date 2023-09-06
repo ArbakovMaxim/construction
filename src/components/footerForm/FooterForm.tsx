@@ -28,14 +28,13 @@ export const FooterForm = () => {
               .max(20, "Must be 20 characters or less")
               .required("Required"),
             email: Yup.string().email("Invalid email address"),
-            massage: Yup.string()
-              .max(150, "Must be 150 characters or less")
-              .required("Required"),
+            massage: Yup.string().max(150, "Must be 150 characters or less"),
           })}
-          onSubmit={(values) => {
+          onSubmit={(values, { resetForm }) => {
             if (isChecked) {
               toast.success("Your application has been successfully accepted");
               console.log(values);
+              resetForm();
             } else {
               toast.warn("Please take checkBox");
             }
@@ -97,13 +96,13 @@ export const FooterForm = () => {
             </div>
 
             <div className="footerForm__wrapper--input">
-              <label className="footerForm__label" htmlFor="massage">
+              <label className="footerForm__label" htmlFor="message">
                 Massage*
               </label>
               <Field
                 as="textarea"
-                id="massage"
-                name="massage"
+                id="message"
+                name="message"
                 type="text"
                 placeholder="Your message"
                 className="footerForm__field  footerForm__field--massage"
@@ -133,9 +132,12 @@ export const FooterForm = () => {
                 </span>
               </label>
             </div>
-            <button className="footerForm__button " type="submit">
-              Submit
-            </button>
+
+            <div className="footerForm__button--wrapper">
+              <button className="footerForm__button " type="submit">
+                send request
+              </button>
+            </div>
           </Form>
         </Formik>
       </div>

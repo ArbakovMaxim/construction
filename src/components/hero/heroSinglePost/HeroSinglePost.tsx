@@ -22,6 +22,7 @@ interface NewsData {
   date: string;
   comments: string;
   singleImage: string;
+  textComent: Comment[];
 }
 
 export const HeroSinglePost = ({ ID }: Props) => {
@@ -32,6 +33,7 @@ export const HeroSinglePost = ({ ID }: Props) => {
   }
 
   const info: NewsData = newsInfo;
+  const quantityComments = Object.keys(info.textComent).length;
 
   return (
     <section className="heroSinglePost__section">
@@ -58,7 +60,7 @@ export const HeroSinglePost = ({ ID }: Props) => {
               </time>
               <Comments />
               <span className="heroSinglePost__comments">
-                {info.comments} comments
+                {quantityComments === 0 ? "no" : quantityComments} comments
               </span>
             </div>
 

@@ -1,6 +1,22 @@
 import { NavLink } from "react-router-dom";
 import { Comments } from "../../image/svg/Comments";
 import "./NewsCard.css";
+import { toast } from "react-toastify";
+import { selectNewsById } from "../../redux/newsSlice";
+import { useSelector } from "react-redux";
+
+interface Comment {
+  name: string;
+  email: string;
+  DateComent: string;
+  reply: string;
+  textComent: string;
+}
+
+interface NewsData {
+  id: string;
+  textComent: Comment[];
+}
 
 interface Props {
   foto: string;
@@ -23,6 +39,15 @@ export const NewsCard = ({
   cardNoraml = true,
   cardPage = false,
 }: Props) => {
+  const newsInfo = useSelector((state) => selectNewsById(state, id));
+  if (!newsInfo) {
+    return <div>{toast.error("Project not found")}</div>;
+  }
+
+  const info: NewsData = newsInfo;
+
+  const quantityComments = Object.keys(info.textComent).length;
+
   return (
     <div
       className={
@@ -67,7 +92,9 @@ export const NewsCard = ({
             {date}
           </time>
           <Comments />
-          <span className="newsCard__comments">{comments} comments</span>
+          <span className="newsCard__comments">
+            {quantityComments === 0 ? "no" : quantityComments} comments
+          </span>
         </div>
         {cardNoraml ? (
           <p className="newsCard__text">

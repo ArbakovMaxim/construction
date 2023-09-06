@@ -8,9 +8,20 @@ import { LinkedIn } from "../../image/svg/LinkedIn";
 import { Twitter } from "../../image/svg/Twitter";
 import { useSelector } from "react-redux";
 import { selectNewsById } from "../../redux/newsSlice";
+import { ShareArrow } from "../../image/svg/ShareArrow";
+import { useState } from "react";
+import { SingleCommentForm } from "../singleCommentForm/SingleCommentForm";
 
 interface Props {
   ID: string | undefined;
+}
+
+interface Comment {
+  name: string;
+  email: string;
+  DateComent: string;
+  reply: string;
+  textComent: string;
 }
 
 interface NewsData {
@@ -21,15 +32,18 @@ interface NewsData {
   date: string;
   comments: string;
   singleImage: string;
+  textComent: Comment[];
 }
 
 export const SinglePostNewsSection = ({ ID }: Props) => {
+  const [reply, setReply] = useState("");
   const newsInfo = useSelector((state) => selectNewsById(state, ID));
   if (!newsInfo) {
     return <div>{toast.error("Project not found")}</div>;
   }
 
   const info: NewsData = newsInfo;
+  const quantityComments = Object.keys(info.textComent).length;
 
   return (
     <section>
@@ -146,8 +160,39 @@ export const SinglePostNewsSection = ({ ID }: Props) => {
               </li>
             </ul>
           </div>
+          <p className="coment__title">
+            {quantityComments === 0 ? "no" : quantityComments} comments
+          </p>
+          <ul>
+            {Object.entries(info.textComent).map(([commentKey, comment]) => (
+              <li key={commentKey} className="comment__item">
+                <div className="comment__info">
+                  <p className="comment__name">{comment.name}</p>
+                  <p className="comment__date">{comment.DateComent}</p>
+                </div>
+                <div className="comment__wrapper--text">
+                  <p className="comment__text">
+                    <span className="comment__text--reply">
+                      {comment.reply === "" ? null : comment.reply}
+                    </span>{" "}
+                    {comment.textComent}
+                  </p>
+                  <button
+                    className="comment__btn"
+                    onClick={() => {
+                      setReply(`@${comment.name}`);
+                    }}
+                  >
+                    <ShareArrow />
+                    <span className="comment__btn--span">Reply</span>
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
+      <SingleCommentForm reply={reply} ID={ID} />
     </section>
   );
 };
