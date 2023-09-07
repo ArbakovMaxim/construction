@@ -1,0 +1,45 @@
+.HeroContacts__section {
+  position: relative;
+  padding: 152px 0 106px 0;
+  background-color: #f4f5f6;
+  margin-top: -92px;
+  overflow: hidden;
+}
+
+.HeroContacts__section::before {
+  content: "";
+  max-width: 975px;
+  width: 100%;
+  height: 620px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+
+  background-image: url("../../../image/contactHero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.HeroContacts__section::after {
+  content: "";
+  max-width: 975px;
+  width: 100%;
+  height: 620px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: linear-gradient(90deg, #f4f5f6 0%, rgba(244, 245, 246, 0) 41.15%);
+}
+
+.HeroContacts__wraper--content {
+  position: relative;
+  z-index: 1;
+  width: 600px;
+  height: 362px;
+}
+
+.heroNews__title {
+  margin-top: 40px;
+  color: #1e212c;
+}

@@ -23,6 +23,7 @@ const AboutUs = lazy(() => import("./pages/aboutUs/AboutUs"));
 const Positions = lazy(() => import("./pages/positions/Positions"));
 const News = lazy(() => import("./pages/news/News"));
 const SinglePost = lazy(() => import("./pages/singlePost/SinglePost"));
+const Contacts = lazy(() => import("./pages/contacts/Contacts"));
 
 export const App = () => {
   return (
@@ -45,6 +46,7 @@ export const App = () => {
             <Route path="/About/Positions" element={<Positions />} />
             <Route path="/News" element={<News />} />
             <Route path="/News/:ID" element={<SinglePost />} />
+            <Route path="/Contacts" element={<Contacts />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

@@ -105,7 +105,7 @@ export const Navigation = () => {
                   ? "nav__link--active"
                   : "nav__link--passive"
               }
-              to="/"
+              to="/Contacts"
             >
               Contacts
             </NavLink>
