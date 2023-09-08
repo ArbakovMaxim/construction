@@ -1,0 +1,250 @@
+.contactsForm__section {
+  padding: 120px 0;
+}
+
+.contactsForm__title {
+  color: #1e212c;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.contactsForm__text {
+  margin-top: 24px;
+  color: #787a80;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contactsForm__wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactsForm__wrapper--img {
+  max-width: 495px;
+  width: 100%;
+  height: 586px;
+  border-radius: 4px;
+}
+
+.contactsForm__wrapper--formBlock {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+
+.contactsForm__wrapper--input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contactsForm__label {
+  margin-bottom: 8px;
+  color: #424551;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contactsForm__label--message {
+  display: flex;
+  align-items: center;
+  min-height: 128px;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 44px;
+  padding: 11px 16px 11px 16px;
+  border-radius: 4px;
+  border: 1px solid #d7dadd;
+  background: #f4f5f6;
+
+  color: #424551;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contactsForm__field {
+  width: 285px;
+  margin-bottom: 20px;
+  height: 44px;
+  padding: 11px 16px 11px 16px;
+  border-radius: 4px;
+  border: 1px solid #d7dadd;
+  background: #f4f5f6;
+
+  color: #424551;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contactsForm__field--select {
+  appearance: none;
+}
+
+.contactsForm__select {
+  position: relative;
+  width: 285px;
+  display: inline-block;
+}
+
+.contactsForm__select:after {
+  content: "▼";
+  padding: 0 8px;
+  font-size: 12px;
+  position: absolute;
+  right: 8px;
+  top: 14px;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.contactsForm__wrapper--btn {
+  width: 210px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #ff5a30;
+  border: 1px solid #ff5a30;
+  box-sizing: border-box;
+
+  color: #fff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.contactsForm__wrapper--btn:hover,
+.contactsForm__wrapper--btn:focus {
+  background-color: #fff;
+  color: #ff5a30;
+}
+
+.contactsForm__option {
+  color: #424551;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contactsForm__field {
+  margin-bottom: 20px;
+  height: 44px;
+  padding: 11px 0 11px 16px;
+  border-radius: 4px;
+  border: 1px solid #d7dadd;
+  background: #f4f5f6;
+
+  color: #424551;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contactsForm__error-container {
+  position: absolute;
+  top: -8px;
+  right: 0;
+
+  color: #ff5a30;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+}
+
+.contactsForm__chekbox--span {
+  margin-left: 12px;
+}
+
+.custom-checkbox {
+  margin-top: 10px;
+  display: inline-block;
+  width: 21px;
+  height: 18px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox.checked {
+  background-color: #ff5a30;
+  border-color: #ff5a30;
+  color: white;
+}
+
+.contactsForm__chekbox--wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 42px;
+}
+
+.contactsForm__chekbox--massege {
+  display: flex;
+  align-items: flex-start;
+
+  color: #424551;
+
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contactsForm__wrapper--chekboxBlock {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactsForm__redio--btn {
+  margin-left: 24px;
+}
+
+.contactsForm__rediobtn--span {
+  margin-left: 12px;
+}
+
+.contactsForm__wrapper--radioBlock {
+  display: flex;
+  align-items: center;
+  height: 44px;
+}

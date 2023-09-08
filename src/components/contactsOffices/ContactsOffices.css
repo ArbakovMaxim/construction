@@ -1,0 +1,87 @@
+.contactsOffices__section {
+  padding: 80px 0 60px 0;
+  background-color: #f4f5f6;
+}
+
+.contactsOffices__title {
+  color: #1e212c;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.contactsOffices__text {
+  margin-top: 24px;
+  color: #787a80;
+  text-align: center;
+
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contacts__list {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__item--title {
+  color: #1e212c;
+  margin-bottom: 24px;
+
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.contacts__item {
+  width: 250px;
+}
+
+.constacts__item--text {
+  color: #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.constacts__item--linkAdress {
+  color: #ff5a30;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-decoration-line: underline;
+}
+
+.constacts__item--link {
+  margin-top: 4px;
+  color: #787a80;
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.constacts--item__tel {
+  margin-top: 20px;
+}
+
+.constacts--item__infoBlock {
+  margin-top: 4px;
+}

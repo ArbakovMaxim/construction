@@ -1,14 +1,21 @@
 interface Props {
   color?: string;
   opacity?: string;
+  width?: string;
+  height?: string;
 }
 
-export const YouTube = ({ color = "#fff", opacity = "0.6" }: Props) => {
+export const YouTube = ({
+  color = "#fff",
+  opacity = "0.6",
+  width = "24",
+  height = "24",
+}: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
     >

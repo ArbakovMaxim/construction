@@ -1,0 +1,38 @@
+.contsctsSocial__section {
+  padding: 60px 0 120px 0;
+  background-color: #f4f5f6;
+}
+
+.contsctsSocial__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contsctsSocial__title {
+  color: #1e212c;
+
+  font-family: Ubuntu;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.social-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  transform: scale(1.1);
+}
+
+.contsctsSocial__wrapper--socialBlock {
+  margin-top: 40px;
+  width: 256px;
+  display: flex;
+  justify-content: space-between;
+}

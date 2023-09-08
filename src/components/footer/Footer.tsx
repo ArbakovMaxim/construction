@@ -126,7 +126,7 @@ export const Footer = () => {
                 </NavLink>
               </li>
               <li className="footer__adresse--item">
-                <NavLink to="/" onClick={up}>
+                <NavLink to="/Contacts" onClick={up}>
                   <span className="footer__button--text footer__button--span">
                     Contacts
                   </span>
@@ -152,7 +152,7 @@ export const Footer = () => {
                 </NavLink>
               </li>
               <li className="footer__adresse--item">
-                <NavLink to="/" onClick={up}>
+                <NavLink to="/News" onClick={up}>
                   <span className="footer__button--text footer__button--span">
                     News
                   </span>
