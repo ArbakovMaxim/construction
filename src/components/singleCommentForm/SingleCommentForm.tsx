@@ -19,6 +19,7 @@ export const SingleCommentForm = ({ reply, ID }: Props) => {
     month: "long",
     day: "numeric",
   };
+  
   const formattedDate = today.toLocaleDateString("en-US", options);
 
   const validationSchema = Yup.object().shape({

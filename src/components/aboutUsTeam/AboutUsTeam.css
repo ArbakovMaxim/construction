@@ -65,4 +65,10 @@
   font-weight: 400;
   line-height: 150%;
   text-decoration-line: underline;
+  transition: transform 0.3s ease;
+}
+
+.aboutUsTeam__link:hover,
+.aboutUsTeam__link:focus {
+  transform: scale(1.1);
 }

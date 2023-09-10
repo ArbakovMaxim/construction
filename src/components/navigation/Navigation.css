@@ -24,10 +24,16 @@
 
 .nav__item {
   margin-left: 40px;
+  transition: transform 0.3s ease;
 }
 
 .nav__link--passive {
   color: #424551;
+}
+
+.nav__item:hover,
+.nav__item:focus {
+  transform: scale(1.1);
 }
 
 .nav__link--active {

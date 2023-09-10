@@ -85,4 +85,10 @@
 .teamCard__item {
   display: inline-block;
   margin: 0 12px;
+  transition: transform 0.3s ease;
+}
+
+.teamCard__item:hover,
+.teamCard__item:focus {
+  transform: scale(1.3);
 }

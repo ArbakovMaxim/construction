@@ -88,19 +88,26 @@
 }
 
 .heroHome__slider--wrapper .custom-dots {
+  height: 100%;
   color: #fff;
   font-family: Ubuntu;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  border-bottom: 2px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.heroHome__slider--wrapper .custom-dots:hover,
+.heroHome__slider--wrapper .custom-dots:focus {
+  transform: scale(1.1);
 }
 
 .heroHome__slider--wrapper .slick-dots li {
   text-align: start;
   width: 178px;
   height: 54px;
-  border-bottom: 2px solid #fff;
   opacity: 0.6;
 }
 

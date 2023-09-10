@@ -530,7 +530,8 @@ const newsData = [
         "category": "Innovation",
         "date": "June 12, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png"
+        "singleImage": "/img/News/newsPage_1.png",
+        "textComent": {}
     },
     {
         "id": "33",

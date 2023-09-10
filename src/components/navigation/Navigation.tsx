@@ -27,6 +27,7 @@ export const Navigation = () => {
       <nav>
         <ul className="nav__list">
           <li
+            className="nav__item"
             onClick={() => {
               setNavActive("AboutUs");
             }}
