@@ -1,6 +1,9 @@
-.nav__list {
-  margin-left: 60px;
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
+.nav__list {
   display: flex;
 
   font-family: Ubuntu;

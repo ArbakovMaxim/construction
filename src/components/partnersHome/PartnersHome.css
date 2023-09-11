@@ -26,6 +26,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: 140px;
+
+  @media (max-width: 949px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .partnersHome__wrapper--reviewsSlider {
@@ -45,4 +50,11 @@
   border-radius: 4px;
   z-index: 1;
   margin-bottom: -60px;
+
+  max-width: 495px;
+  width: 100%;
+  object-fit: cover;
+  @media (max-width: 949px) {
+    display: none;
+  }
 }

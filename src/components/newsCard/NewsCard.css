@@ -11,6 +11,12 @@
     0px 80px 80px -20px rgba(154, 156, 165, 0.08);
 }
 
+.newsCard__wrapper--home {
+  @media (max-width: 1230px) {
+    /* width: 100%; */
+  }
+}
+
 .newsCard__wrapperList-newsCategory {
   width: 600px;
   height: 515px;
@@ -40,7 +46,7 @@
 .newsCard__img {
   width: 705px;
   height: 360px;
-
+  object-fit: contain;
   border-radius: 4px 4px 0px 0px;
 }
 

@@ -29,10 +29,22 @@
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  @media (max-width: 1229px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .serviceHome__item {
   cursor: pointer;
+  @media (max-width: 1229px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 40px;
+  }
 }
 
 .serviceHome__item--fon {

@@ -17,11 +17,13 @@ export const PartnerHome = () => {
             </h2>
             <SliderReview />
           </div>
-          <img
-            src={PartnerFoto}
-            alt="Foto partner"
-            className="partnersHome__img"
-          />
+          <div className="partnersHome__img">
+            <img
+              src={PartnerFoto}
+              alt="Foto partner"
+              className="partnersHome__img"
+            />
+          </div>
         </div>
       </div>
     </section>

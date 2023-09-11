@@ -1,40 +1,29 @@
-import { NavLink, useLocation, useMatch } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./Navigation.css";
-import { useState } from "react";
-import { Logo } from "../../image/svg/Logo";
+import { useEffect, useState } from "react";
 
 export const Navigation = () => {
   const [navActive, setNavActive] = useState("home");
   const url = useLocation();
-  const match = useMatch({
-    path: url.pathname,
-    end: url.pathname.length === 1,
-  });
+  const pathSegments = url.pathname.split("/");
 
-  console.log(match);
+  useEffect(() => {
+    if (pathSegments.length > 1 && pathSegments[1] !== "") {
+      const firstSegment = pathSegments[1];
+      setNavActive(firstSegment);
+    } else {
+      setNavActive("home");
+    }
+  }, [pathSegments]);
 
   return (
-    <>
-      <div
-        className="nav__logo--wrapper"
-        onClick={() => {
-          setNavActive("home");
-        }}
-      >
-        <Logo color="#1E212C" />
-        <NavLink className="nav__logo--link" to="/" />
-      </div>
+    <div className="nav__wrapper">
       <nav>
         <ul className="nav__list">
-          <li
-            className="nav__item"
-            onClick={() => {
-              setNavActive("AboutUs");
-            }}
-          >
+          <li className="nav__item">
             <NavLink
               className={
-                navActive === "AboutUs"
+                navActive === "About"
                   ? "nav__link--active"
                   : "nav__link--passive"
               }
@@ -43,12 +32,7 @@ export const Navigation = () => {
               About Us
             </NavLink>
           </li>
-          <li
-            className="nav__item"
-            onClick={() => {
-              setNavActive("Services");
-            }}
-          >
+          <li className="nav__item">
             <NavLink
               className={
                 navActive === "Services"
@@ -60,12 +44,7 @@ export const Navigation = () => {
               Services
             </NavLink>
           </li>
-          <li
-            className="nav__item"
-            onClick={() => {
-              setNavActive("Work");
-            }}
-          >
+          <li className="nav__item">
             <NavLink
               className={
                 navActive === "Work"
@@ -77,12 +56,7 @@ export const Navigation = () => {
               Work
             </NavLink>
           </li>
-          <li
-            className="nav__item"
-            onClick={() => {
-              setNavActive("News");
-            }}
-          >
+          <li className="nav__item">
             <NavLink
               className={
                 navActive === "News"
@@ -94,12 +68,7 @@ export const Navigation = () => {
               News
             </NavLink>
           </li>
-          <li
-            className="nav__item"
-            onClick={() => {
-              setNavActive("Contacts");
-            }}
-          >
+          <li className="nav__item">
             <NavLink
               className={
                 navActive === "Contacts"
@@ -113,6 +82,6 @@ export const Navigation = () => {
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   );
 };

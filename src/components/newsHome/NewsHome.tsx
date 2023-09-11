@@ -2,11 +2,13 @@ import "../../ui/container.css";
 import { NewsCard } from "../newsCard/NewsCard";
 import { NavLink } from "react-router-dom";
 import "./NewsHome.css";
+import { useResize } from "../../hook/useResize";
 import news1 from "../../image/news1.png";
 import news2 from "../../image/news2.png";
 import news3 from "../../image/news3.png";
 
 export const NewsHome = () => {
+  const { isScreenXxxl } = useResize();
   return (
     <section className="newsHome__section">
       <div className="container">
@@ -18,6 +20,7 @@ export const NewsHome = () => {
             nameNews="How to Build Climate Change-Resilient Infrastructure"
             category="Industry News"
             date="June 24, 2020"
+            cardHome={true}
             comments="4"
           />
           <div className="newsHome__wrapperCard--small">
@@ -28,7 +31,8 @@ export const NewsHome = () => {
               category="Innovation"
               date="June 12, 2020"
               comments="No"
-              cardNoraml={false}
+              cardHome={true}
+              cardNoraml={isScreenXxxl ? false : true}
             />
             <NewsCard
               id="3"
@@ -37,7 +41,8 @@ export const NewsHome = () => {
               category="Company News"
               date="December 1, 2019"
               comments="No"
-              cardNoraml={false}
+              cardHome={true}
+              cardNoraml={isScreenXxxl ? false : true}
             />
           </div>
         </div>

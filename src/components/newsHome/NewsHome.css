@@ -17,12 +17,21 @@
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1230px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .newsHome__wrapperCard--small {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 1230px) {
+    display: block;
+  }
 }
 
 .newsHome__footerSection--wrapper {

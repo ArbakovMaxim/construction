@@ -27,6 +27,7 @@ interface Props {
   cardNoraml?: boolean;
   cardPage?: boolean;
   id: string;
+  cardHome?: boolean;
 }
 
 export const NewsCard = ({
@@ -38,6 +39,7 @@ export const NewsCard = ({
   id,
   cardNoraml = true,
   cardPage = false,
+  cardHome = false,
 }: Props) => {
   const newsInfo = useSelector((state) => selectNewsById(state, id));
   if (!newsInfo) {
@@ -51,11 +53,12 @@ export const NewsCard = ({
   return (
     <div
       className={
-        cardPage
+        (cardHome ? "newsCard__wrapper--home " : "") +
+        (cardPage
           ? "newsCard__wrapperList-newsCategory"
           : cardNoraml
           ? "newsCard__wrapper"
-          : "newsCard__wrapper--small"
+          : "newsCard__wrapper--small")
       }
     >
       <img

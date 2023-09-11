@@ -102,7 +102,7 @@ export const ContactsForm = () => {
                 </div>
 
                 <div className="contactsForm__wrapper--input">
-                  <label className="contactsForm__label" htmlFor="massage">
+                  <label className="contactsForm__label" htmlFor="phone">
                     phone*
                   </label>
                   <input

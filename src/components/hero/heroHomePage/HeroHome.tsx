@@ -10,13 +10,13 @@ interface CustomArrowProps {
 
 export const HeroHome = () => {
   const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
-    <div className="custom-arrow next-arrow" onClick={onClick}>
+    <div className="custom-arrow next-arrow arrow-home" onClick={onClick}>
       <ArrowsRight color="#424551" />
     </div>
   );
 
   const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
-    <div className="custom-arrow prev-arrow" onClick={onClick}>
+    <div className="custom-arrow prev-arrow arrow-home" onClick={onClick}>
       <ArrowsLeft color="#424551" />
     </div>
   );

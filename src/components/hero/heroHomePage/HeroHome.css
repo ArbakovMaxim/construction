@@ -114,3 +114,9 @@
 .slick-dots li.slick-active {
   opacity: 1;
 }
+
+.arrow-home {
+  @media (max-width: 1399px) {
+    display: none;
+  }
+}
