@@ -3,12 +3,21 @@
   justify-content: space-between;
   max-width: 421px;
   width: 100%;
+
+  @media (max-width: 1065px) {
+    flex-direction: column;
+  }
 }
 
 .contactBlock__wrapper--contact {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1065px) {
+    justify-content: start;
+    margin-top: 24px;
+  }
 }
 
 .contactBlock__wrapper--text {
@@ -33,4 +42,11 @@
   line-height: 150%;
 
   color: #1e212c;
+
+  transition: color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.contactBlock__link:hover,
+.contactBlock__link:focus {
+  color: #ff5a30;
 }

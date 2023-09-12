@@ -11,7 +11,12 @@
   font-style: normal;
   font-weight: 700;
   line-height: 160%;
+
+  @media (max-width: 1065px) {
+    flex-direction: column;
+  }
 }
+
 .nav__logo--link {
   position: absolute;
   top: 0;
@@ -28,6 +33,11 @@
 .nav__item {
   margin-left: 40px;
   transition: transform 0.3s ease;
+
+  @media (max-width: 1065px) {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
 }
 
 .nav__link--passive {

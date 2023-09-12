@@ -35,6 +35,9 @@
 
 .partnersHome__wrapper--reviewsSlider {
   width: 600px;
+  @media (max-width: 769px) {
+    width: 100%;
+  }
 }
 
 .partnersHome__title--reviews {

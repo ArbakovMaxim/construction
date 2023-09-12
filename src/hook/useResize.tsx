@@ -11,8 +11,6 @@ export const useResize = () => {
 
   const [width, setWidth] = useState(window.innerWidth);
 
-  console.log(width);
-
   useEffect(() => {
     const handleResize = (event: any) => {
       setWidth(event.target.innerWidth);

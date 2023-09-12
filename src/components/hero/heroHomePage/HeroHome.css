@@ -109,6 +109,10 @@
   width: 178px;
   height: 54px;
   opacity: 0.6;
+
+  @media (max-width: 769px) {
+    width: 100px;
+  }
 }
 
 .slick-dots li.slick-active {

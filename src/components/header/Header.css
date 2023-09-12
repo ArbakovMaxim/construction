@@ -14,3 +14,8 @@
 .header__wrapper--logoNavBlock {
   display: flex;
 }
+
+.header__Burger--btn {
+  border: none;
+  background-color: transparent;
+}

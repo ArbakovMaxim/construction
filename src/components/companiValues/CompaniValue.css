@@ -28,6 +28,17 @@
   gap: calc(var(--mission-gap) * 2);
 
   margin-top: 60px;
+
+  @media (max-width: 1200px) {
+    --mission-gap: 54px;
+  }
+
+  @media (max-width: 769px) {
+    --mission-gap: 24px;
+  }
+  @media (max-width: 769px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .companiValue__item {
@@ -52,6 +63,10 @@
   top: 0;
   width: 1px;
   height: 100%;
+
+  @media (max-width: 769px) {
+    padding: 0 5px;
+  }
 }
 
 .companiValue__values--text {

@@ -1,0 +1,73 @@
+body.modal-open {
+  overflow: hidden;
+}
+
+.mobMenuHeader__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.mobMenuHeader__backdrop::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1e212c;
+  opacity: 0.75;
+}
+
+.mobMenuHeader__wrapper {
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  max-width: 300px;
+  background-color: white;
+  padding: 20px;
+
+  border-radius: 4px;
+  border: 1px solid #e5e8ed;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),
+    0px 12px 10px -6px rgba(30, 33, 44, 0.08),
+    0px 26px 24px -10px rgba(30, 33, 44, 0.1),
+    0px 60px 80px -20px rgba(30, 33, 44, 0.16);
+}
+
+.mobMenuHeader__wrapper.open {
+  transform: translateX(0);
+}
+
+.mobMenuHeader__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  transition: transform 0.3s ease,
+    background-color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mobMenuHeader__btn:hover,
+.mobMenuHeader__btn:focus {
+  transform: scale(1.1);
+  background-color: #ff5a30;
+}
