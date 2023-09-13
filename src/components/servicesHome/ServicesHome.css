@@ -13,6 +13,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+
+  @media (max-width: 600px) {
+    font-size: 36px;
+  }
 }
 
 .serviceHome__text {
@@ -113,10 +117,15 @@
   transition: color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.serviceHome__service--swrapper {
+.serviceHome__service--wrapper {
   margin-top: 85px;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 868px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .serviceHome__service--title {
@@ -128,6 +137,12 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+
+  @media (max-width: 868px) {
+    margin-right: 0px;
+    font-size: 22px;
+    text-align: center;
+  }
 }
 
 .serviceHome__service--button {
@@ -148,6 +163,10 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   transition: background-color 0.5s ease;
+
+  @media (max-width: 868px) {
+    margin-top: 25px;
+  }
 }
 
 .serviceHome__service--button:hover,

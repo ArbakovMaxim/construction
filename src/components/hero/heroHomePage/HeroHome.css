@@ -115,6 +115,10 @@
   }
 }
 
+.heroHome__customDots--list {
+  display: flex;
+}
+
 .slick-dots li.slick-active {
   opacity: 1;
 }

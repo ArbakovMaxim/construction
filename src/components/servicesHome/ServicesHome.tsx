@@ -66,7 +66,7 @@ export const ServicesHome = () => {
             />
           </li>
         </ul>
-        <div className="serviceHome__service--swrapper ">
+        <div className="serviceHome__service--wrapper ">
           <h2 className="serviceHome__service--title">
             Learn more about our services
           </h2>

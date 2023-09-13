@@ -6,6 +6,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+
+  @media (max-width: 600px) {
+    font-size: 36px;
+  }
 }
 
 .companiValue-text {

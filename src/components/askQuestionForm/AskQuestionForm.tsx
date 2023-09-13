@@ -66,7 +66,7 @@ export const AskQuestionForm = () => {
             ) : null}
           </label>
         </div>
-        <div className="askForm__wrapper--label">
+        <div className="askForm__wrapper--label askForm__wrapper--labelBtnGroup">
           <label className="askForm__label">
             <span className="askForm__label--span">Message</span>
             <input

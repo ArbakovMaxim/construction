@@ -4,8 +4,8 @@ export const useResize = () => {
   const SCREEN_SM = 501;
   const SCREEN_MD = 786;
   const SCREEN_LG = 992;
-  const SCREEN_XL = 1145;
-  const SCREEN_XLL = 1300;
+  const SCREEN_tabl_mini = 620;
+  const SCREEN_tabl = 868;
   const SCREEN_Hero = 1065;
   const SCREEN_XXXL = 1230;
 
@@ -26,8 +26,8 @@ export const useResize = () => {
     isScreenSm: width >= SCREEN_SM,
     isScreenMd: width >= SCREEN_MD,
     isScreenLg: width >= SCREEN_LG,
-    isScreenXl: width >= SCREEN_XL,
-    isScreenXll: width >= SCREEN_XLL,
+    isScreenTableMini: width >= SCREEN_tabl_mini,
+    isScreenTable: width >= SCREEN_tabl,
     isScreenHero: width >= SCREEN_Hero,
     isScreenXxxl: width >= SCREEN_XXXL,
   };

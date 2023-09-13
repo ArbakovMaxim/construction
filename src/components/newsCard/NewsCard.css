@@ -113,6 +113,24 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
+}
+
+.newsCard__wrapper--categoryAndDate {
+  display: flex;
+  @media (max-width: 450px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.newsCard__wrapper--comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .newsCard__text {
@@ -151,6 +169,10 @@
 .newsCard__date {
   position: relative;
   margin-right: 25px;
+
+  @media (max-width: 450px) {
+    margin-right: 0;
+  }
 }
 
 .newsCard__date::after {
@@ -162,7 +184,11 @@
   width: 1px;
   height: 12px;
 }
-
+@media (max-width: 450px) {
+  .newsCard__date::after {
+    display: none;
+  }
+}
 .newsCard__comments {
   margin-left: 8px;
 }

@@ -7,6 +7,7 @@ import { ArrowsRight } from "../../image/svg/ArrowsRight";
 import { ArrowsLeft } from "../../image/svg/ArrowsLeft";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useResize } from "../../hook/useResize";
 
 interface CustomArrowProps {
   onClick?: () => void;
@@ -25,6 +26,7 @@ interface Props {
 }
 
 export const ProjectSlider = ({ works, title }: Props) => {
+  const { isScreenXxxl, isScreenTable } = useResize();
   const [hoveredRight, setHoveredRight] = useState(false);
   const [hoveredLeft, setHoveredLeft] = useState(false);
 
@@ -50,11 +52,13 @@ export const ProjectSlider = ({ works, title }: Props) => {
     </div>
   );
 
+  const slidesToShow = isScreenXxxl ? 3 : isScreenTable ? 2 : 1;
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,

@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import { useResize } from "../../hook/useResize";
 import PartnersLogo1 from "../../image/Partner1.png";
 import PartnersLogo2 from "../../image/Partner2.png";
 import PartnersLogo3 from "../../image/Partner3.png";
@@ -13,14 +14,16 @@ import PartnersLogo11 from "../../image/Partner11.png";
 import PartnersLogo12 from "../../image/Partner12.png";
 
 export const SliderPartners = () => {
+  const { isScreenTable, isScreenTableMini } = useResize();
+  const nuberSlider = isScreenTable ? 6 : isScreenTableMini ? 4 : 2;
   const settings = {
     dots: false,
     infinite: true,
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 4000,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: nuberSlider,
+    slidesToScroll: nuberSlider,
     arrows: false,
   };
 

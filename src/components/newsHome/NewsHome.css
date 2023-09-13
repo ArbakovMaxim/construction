@@ -11,6 +11,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+
+  @media (max-width: 620px) {
+    font-size: 36px;
+  }
 }
 
 .newsHome__wrapperCard {
@@ -38,6 +42,11 @@
   margin-top: 85px;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 868px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .newsHome__footerSection--title {
@@ -48,6 +57,11 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+
+  @media (max-width: 868px) {
+    font-size: 22px;
+    line-height: 120%;
+  }
 }
 
 .newsHome__footerSection--button {
@@ -68,6 +82,11 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   transition: background-color 0.5s ease;
+
+  @media (max-width: 868px) {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
 }
 
 .newshome__footersection--button:focus,

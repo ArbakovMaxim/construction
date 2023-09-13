@@ -12,6 +12,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+
+  @media (max-width: 600px) {
+    font-size: 36px;
+  }
 }
 
 .partnersHome__slide {
@@ -30,6 +34,7 @@
   @media (max-width: 949px) {
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
   }
 }
 

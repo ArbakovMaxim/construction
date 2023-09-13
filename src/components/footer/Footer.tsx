@@ -108,57 +108,59 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <h2 className="footer__button--title">WHO WE ARE</h2>
-            <ul className="footer__adresse--list">
-              <li className="footer__adresse--item">
-                <NavLink to="/About" onClick={up}>
-                  <span className="footer__button--text footer__button--span">
-                    About Us
-                  </span>
-                </NavLink>
-              </li>
-              <li className="footer__adresse--item">
-                <NavLink to="/About/Positions" onClick={up}>
-                  <span className="footer__button--text footer__button--span">
-                    Available Positions
-                  </span>
-                </NavLink>
-              </li>
-              <li className="footer__adresse--item">
-                <NavLink to="/Contacts" onClick={up}>
-                  <span className="footer__button--text footer__button--span">
-                    Contacts
-                  </span>
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="footer__button--title">OUR EXPERIENCE</h2>
-            <ul className="footer__adresse--list">
-              <li className="footer__adresse--item">
-                <NavLink to="/Services" onClick={up}>
-                  <span className="footer__button--text footer__button--span">
-                    Services
-                  </span>
-                </NavLink>
-              </li>
-              <li className="footer__adresse--item">
-                <NavLink to="/Work" onClick={up}>
-                  <span className="footer__button--text footer__button--span">
-                    Work
-                  </span>
-                </NavLink>
-              </li>
-              <li className="footer__adresse--item">
-                <NavLink to="/News" onClick={up}>
-                  <span className="footer__button--text footer__button--span">
-                    News
-                  </span>
-                </NavLink>
-              </li>
-            </ul>
+          <div className="footer__wrapper--infoBLock">
+            <div>
+              <h2 className="footer__button--title">WHO WE ARE</h2>
+              <ul className="footer__adresse--list">
+                <li className="footer__adresse--item">
+                  <NavLink to="/About" onClick={up}>
+                    <span className="footer__button--text footer__button--span">
+                      About Us
+                    </span>
+                  </NavLink>
+                </li>
+                <li className="footer__adresse--item">
+                  <NavLink to="/About/Positions" onClick={up}>
+                    <span className="footer__button--text footer__button--span">
+                      Available Positions
+                    </span>
+                  </NavLink>
+                </li>
+                <li className="footer__adresse--item">
+                  <NavLink to="/Contacts" onClick={up}>
+                    <span className="footer__button--text footer__button--span">
+                      Contacts
+                    </span>
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="footer__button--title">OUR EXPERIENCE</h2>
+              <ul className="footer__adresse--list">
+                <li className="footer__adresse--item">
+                  <NavLink to="/Services" onClick={up}>
+                    <span className="footer__button--text footer__button--span">
+                      Services
+                    </span>
+                  </NavLink>
+                </li>
+                <li className="footer__adresse--item">
+                  <NavLink to="/Work" onClick={up}>
+                    <span className="footer__button--text footer__button--span">
+                      Work
+                    </span>
+                  </NavLink>
+                </li>
+                <li className="footer__adresse--item">
+                  <NavLink to="/News" onClick={up}>
+                    <span className="footer__button--text footer__button--span">
+                      News
+                    </span>
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <p className="footer__reserved ">

@@ -6,6 +6,10 @@
 .footer__topBlock {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 868px) {
+    flex-direction: column;
+  }
 }
 
 .footer__wrapper--logo {
@@ -15,6 +19,10 @@
 .footer__wrapper--logoBlock {
   max-width: 493px;
   width: 100%;
+
+  @media (max-width: 868px) {
+    max-width: 100%;
+  }
 }
 
 .footer__socialBlock--text {
@@ -74,6 +82,12 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   transition: background-color 0.5s ease;
+
+  @media (max-width: 500px) {
+    position: static;
+    width: 100%;
+    margin-top: 15px;
+  }
 }
 
 .footer__button:focus,
@@ -97,7 +111,17 @@
   position: relative;
   max-width: 495px;
   width: 100%;
+
+  @media (max-width: 1000px) {
+    margin-left: 15px;
+  }
+
+  @media (max-width: 868px) {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
 }
+
 .footer__input--wrapper {
   margin-top: 24px;
 }
@@ -153,10 +177,15 @@
   max-width: 885px;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 868px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .footer__reserved {
-  display: flex;
   margin-top: 60px;
   color: #fff;
   font-family: Ubuntu;
@@ -164,10 +193,26 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+
+  @media (max-width: 868px) {
+    text-align: center;
+    margin-top: 30px;
+  }
 }
 
 .footer__reserved--span {
   margin: 0 4px;
   display: inline-block;
   vertical-align: middle;
+}
+
+.footer__wrapper--infoBLock {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 868px) {
+    margin-top: 25px;
+    width: 100%;
+    justify-content: space-around;
+  }
 }

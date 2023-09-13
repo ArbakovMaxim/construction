@@ -88,16 +88,20 @@ export const NewsCard = ({
           </NavLink>
         </h2>
         <div className="newsCard__wrapper--infoBlock">
-          <NavLink className="newsCard__category" to="/News">
-            {category}
-          </NavLink>
-          <time className="newsCard__date" dateTime="">
-            {date}
-          </time>
-          <Comments />
-          <span className="newsCard__comments">
-            {quantityComments === 0 ? "no" : quantityComments} comments
-          </span>
+          <div className="newsCard__wrapper--categoryAndDate">
+            <NavLink className="newsCard__category" to="/News">
+              {category}
+            </NavLink>
+            <time className="newsCard__date" dateTime="">
+              {date}
+            </time>
+          </div>
+          <div className="newsCard__wrapper--comments">
+            <Comments />
+            <span className="newsCard__comments">
+              {quantityComments === 0 ? "no" : quantityComments} comments
+            </span>
+          </div>
         </div>
         {cardNoraml ? (
           <p className="newsCard__text">

@@ -21,6 +21,11 @@
   line-height: 150%;
 
   margin-top: 24px;
+
+  @media (max-width: 600px) {
+    text-align: center;
+    font-size: 16px;
+  }
 }
 
 .contentHero__button {
@@ -44,6 +49,10 @@
 
   transition: background-color 0.5s cubic-bezier(0.23, 1, 0.32, 1),
     border 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+  @media (max-width: 600px) {
+    width: 310px;
+  }
 }
 
 .contentHero__button:hover,
@@ -64,8 +73,21 @@
 
 .contentHero__button--submit {
   margin-left: 24px;
+
+  @media (max-width: 600px) {
+    margin-left: 0;
+    margin-top: 24px;
+  }
 }
 
 .contentHero__button--wrapper {
   margin-top: 61px;
+  display: flex;
+
+  @media (max-width: 600px) {
+    margin-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

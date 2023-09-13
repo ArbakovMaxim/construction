@@ -31,7 +31,7 @@ export const HeroHome = () => {
     prevArrow: <CustomPrevArrow />,
     appendDots: (dots) => (
       <div>
-        <ul> {dots} </ul>
+        <ul className="heroHome__customDots--list"> {dots} </ul>
       </div>
     ),
     customPaging: (i) => <div className="custom-dots">0{i + 1}</div>,

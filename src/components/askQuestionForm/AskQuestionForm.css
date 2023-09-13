@@ -18,6 +18,10 @@
   @media (max-width: 1230px) {
     justify-content: space-around;
   }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 
 .askForm__wrapper--label {
@@ -32,6 +36,15 @@
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+.askForm__wrapper--labelBtnGroup {
+  @media (max-width: 1229px) {
+    margin-left: 15px;
+  }
+  @media (max-width: 600px) {
+    margin-left: 0px;
   }
 }
 

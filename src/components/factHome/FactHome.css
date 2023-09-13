@@ -19,6 +19,8 @@
 @media (max-width: 769px) {
   .factHome__section::before {
     width: 320px;
+    left: 0px;
+    top: 150px;
   }
 }
 
@@ -31,6 +33,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+
+  @media (max-width: 620px) {
+    font-size: 36px;
+  }
 }
 
 .factHome__list {

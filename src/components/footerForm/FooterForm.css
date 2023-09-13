@@ -126,8 +126,8 @@
 .custom-checkbox {
   margin-top: 10px;
   display: inline-block;
-  width: 21px;
-  height: 18px;
+  min-width: 21px;
+  min-height: 18px;
   background-color: white;
   border: 1px solid #ccc;
   box-sizing: border-box;

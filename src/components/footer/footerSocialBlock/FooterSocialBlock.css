@@ -3,6 +3,10 @@
   display: flex;
   width: 184px;
   justify-content: space-between;
+
+  @media (max-width: 868px) {
+    margin-left: 20px;
+  }
 }
 
 .social-icon {

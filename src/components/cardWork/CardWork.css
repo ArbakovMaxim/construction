@@ -12,6 +12,10 @@
     0px 12px 10px -6px rgba(154, 156, 165, 0.08),
     0px 30px 24px -10px rgba(154, 156, 165, 0.1),
     0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+
+  @media (max-width: 500px) {
+    width: 310px;
+  }
 }
 
 .cardImage {
@@ -23,6 +27,10 @@
   background-position: center;
 
   border-radius: 4px 4px 0px 0px;
+
+  @media (max-width: 500px) {
+    width: 310px;
+  }
 }
 
 .workCard__title {
