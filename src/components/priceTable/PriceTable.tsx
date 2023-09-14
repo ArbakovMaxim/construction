@@ -1,13 +1,15 @@
 import { CheckMark } from "../../image/svg/CheckMark";
 import "./PriceTable.css";
+import { useResize } from "../../hook/useResize";
 
 export const PriceTable = () => {
+  const { isScreenSm } = useResize();
   return (
     <div className="priceTable__wrapper">
       <table className="custom-table">
         <thead>
           <tr>
-            <th className="priceTable__thTitlefirst">items</th>
+            <th className="priceTable__thTitlefirst"></th>
             <th>
               <h2 className="priceTable__thTitle">BASIC</h2>
               <p className="priceTable__thText">$20 per m2</p>
@@ -142,13 +144,19 @@ export const PriceTable = () => {
           <tr>
             <td></td>
             <td>
-              <button className="priceTable__button">send request</button>
+              <button className="priceTable__button">
+                {isScreenSm ? "send request" : "request"}
+              </button>
             </td>
             <td>
-              <button className="priceTable__button">send request</button>
+              <button className="priceTable__button">
+                {isScreenSm ? "send request" : "request"}
+              </button>
             </td>
             <td>
-              <button className="priceTable__button">send request</button>
+              <button className="priceTable__button">
+                {isScreenSm ? "send request" : "request"}
+              </button>
             </td>
           </tr>
         </tfoot>

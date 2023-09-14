@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export const useResize = () => {
-  const SCREEN_SM = 501;
+  const SCREEN_SM = 450;
   const SCREEN_MD = 786;
   const SCREEN_LG = 992;
   const SCREEN_tabl_mini = 620;

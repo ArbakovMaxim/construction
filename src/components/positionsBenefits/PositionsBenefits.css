@@ -10,6 +10,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+
+  @media (max-width: 600px) {
+    font-size: 36px;
+  }
 }
 
 .positionsBenefits-text {
@@ -32,6 +36,14 @@
   gap: calc(var(--mission-gap) * 2);
 
   margin-top: 60px;
+
+  @media (max-width: 1200px) {
+    --mission-gap: 54px;
+  }
+  @media (max-width: 769px) {
+    --mission-gap: 24px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .positionsBenefits__item {
@@ -56,6 +68,12 @@
   top: 0;
   width: 1px;
   height: 100%;
+}
+
+@media (max-width: 769px) {
+  .positionsBenefits__item:not(:last-child)::after {
+    display: none;
+  }
 }
 
 .positionsBenefits__values--text {

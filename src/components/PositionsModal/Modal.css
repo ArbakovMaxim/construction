@@ -33,7 +33,7 @@ body.modal-open {
   margin-right: auto;
   max-width: 486px;
   width: 100%;
-  max-height: 780px;
+  max-height: 680px;
   background-color: #fff;
   padding: 48px;
 
@@ -43,6 +43,10 @@ body.modal-open {
     0px 12px 10px -6px rgba(30, 33, 44, 0.08),
     0px 26px 24px -10px rgba(30, 33, 44, 0.1),
     0px 60px 80px -20px rgba(30, 33, 44, 0.16);
+
+  /* @media (max-width: 769px) {
+      max-height: 380px;
+    } */
 }
 
 .modal__title {

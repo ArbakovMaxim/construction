@@ -5,6 +5,18 @@
 .positionsVacancies__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1230px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.positionsVacancies__list {
+  @media (max-width: 1230px) {
+    margin-top: 24px;
+  }
 }
 
 .positionsVacancies__items {
@@ -27,6 +39,16 @@
   line-height: 150%;
 
   transition: box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+  @media (max-width: 868px) {
+    width: 500px;
+    padding: 12px 10px;
+  }
+  @media (max-width: 550px) {
+    flex-direction: column;
+    width: 300px;
+    padding: 12px 10px;
+  }
 }
 
 .positionsVacancies__items:not(:first-child) {
@@ -63,6 +85,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+
+  @media (max-width: 550px) {
+    text-align: center;
+  }
 }
 
 .positionsVacancies__btn {
@@ -84,6 +110,10 @@
   text-transform: uppercase;
   transition: background-color 0.5s cubic-bezier(0.23, 1, 0.32, 1),
     color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+  @media (max-width: 550px) {
+    margin-top: 15px;
+  }
 }
 
 .positionsVacancies__btn:hover,
@@ -116,6 +146,10 @@
 .positionsVacancies__wraper--cv {
   max-width: 380px;
   width: 100%;
+
+  @media (max-width: 390px) {
+    text-align: center;
+  }
 }
 
 .positionsVacancies__btn--newsletter {
@@ -151,6 +185,10 @@
 
   transition: background-color 0.5s cubic-bezier(0.23, 1, 0.32, 1),
     color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+  @media (max-width: 390px) {
+    margin-top: 15px;
+  }
 }
 
 .positionsVacancies__btn--subscribe:hover,
@@ -170,4 +208,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 390px) {
+    flex-direction: column;
+  }
 }

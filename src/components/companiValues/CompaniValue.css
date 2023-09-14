@@ -36,11 +36,8 @@
   @media (max-width: 1200px) {
     --mission-gap: 54px;
   }
-
   @media (max-width: 769px) {
     --mission-gap: 24px;
-  }
-  @media (max-width: 769px) {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -67,9 +64,11 @@
   top: 0;
   width: 1px;
   height: 100%;
+}
 
-  @media (max-width: 769px) {
-    padding: 0 5px;
+@media (max-width: 769px) {
+  .companiValue__item:not(:last-child)::after {
+    display: none;
   }
 }
 

@@ -19,6 +19,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+
+  @media (max-width: 600px) {
+    font-size: 36px;
+  }
 }
 
 .servicesBenefits__text {
@@ -37,13 +41,29 @@
 }
 
 .servicesBenefits__list {
+  --mission-gap: 94px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 27px;
+  gap: calc(var(--mission-gap) * 2);
+
   margin-top: 60px;
-  display: flex;
+
+  @media (max-width: 1200px) {
+    --mission-gap: 54px;
+  }
+  @media (max-width: 810px) {
+    --mission-gap: 24px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .servicesBenefits__item {
   position: relative;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 380px;
   width: 100%;
 }
@@ -51,24 +71,16 @@
 .servicesBenefits__item--centr {
   max-width: 475px;
   width: 100%;
+
+  @media (max-width: 810px) {
+    max-width: 380px;
+  }
 }
 
-.servicesBenefits__item:not(:last-child) {
-  padding-right: 95px;
-}
-
-.servicesBenefits__item:not(:first-child) {
-  padding-left: 95px;
-}
-
-.servicesBenefits__item:not(:last-child)::before {
+.servicesBenefits__item:not(:last-child)::after {
   content: "";
   position: absolute;
-  right: 0;
-  width: 1px;
-  height: 188px;
-
-  opacity: 0.4;
+  right: calc(-1 * var(--mission-gap));
   background: linear-gradient(
     315deg,
     rgba(218, 219, 221, 0) 0%,
@@ -77,6 +89,15 @@
     rgba(218, 219, 221, 0.5) 87.85%,
     rgba(218, 219, 221, 0) 100%
   );
+  top: 0;
+  width: 1px;
+  height: 100%;
+}
+
+@media (max-width: 810px) {
+  .servicesBenefits__item:not(:last-child)::after {
+    display: none;
+  }
 }
 
 .servicesBenefits__item--title {
@@ -124,6 +145,11 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   transition: background-color 0.5s ease;
+
+  @media (max-width: 810px) {
+    font-size: 12px;
+    font-weight: 400;
+  }
 }
 
 .servicesBenefits__button:focus,
@@ -133,4 +159,8 @@
 
 .servicesBenefits__link {
   padding: 0 112px;
+
+  @media (max-width: 810px) {
+    padding: 0 50px;
+  }
 }

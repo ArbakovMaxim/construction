@@ -31,7 +31,7 @@ export const PositionsVacancies = () => {
     <section className="positionsVacancies__section">
       <div className="container positionsVacancies__wrapper">
         <div>
-          <ul>
+          <ul className="positionsVacancies__list">
             <li className="positionsVacancies__items">
               <div>
                 <div className="positionsVacancies__wrapper--info">

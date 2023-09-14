@@ -29,13 +29,14 @@
 .aboutUsTeam__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   padding: 0;
   list-style: none;
 }
 
 .aboutUsTeam__item {
-  width: calc(25% - 30px);
   box-sizing: border-box;
 }
 
@@ -44,6 +45,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
 .aboutUsTeam__link--text {
@@ -54,6 +59,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+
+  @media (max-width: 800px) {
+    text-align: center;
+  }
 }
 
 .aboutUsTeam__link {

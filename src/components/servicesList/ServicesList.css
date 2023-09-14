@@ -4,10 +4,20 @@
 
 .services__item {
   display: flex;
+
+  @media (max-width: 620px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .services__item:nth-child(2n) {
   flex-direction: row-reverse;
+
+  @media (max-width: 620px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .services__item:not(:first-child) {
@@ -16,28 +26,47 @@
 
 .services__img {
   border-radius: 4px;
+  width: 575px;
+  object-fit: cover;
+
+  @media (max-width: 900px) {
+    width: 380px;
+  }
+
+  @media (max-width: 620px) {
+    width: 100%;
+  }
 }
 
 .services__wrapper-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 620px) {
+    align-items: center;
+  }
 }
 
 .services__wrapper-contentEvent {
   position: relative;
   margin-right: 80px;
+
+  @media (max-width: 900px) {
+    margin-right: 10px;
+  }
 }
 
 .services__wrapper--bg4 {
   position: relative;
+  overflow: hidden;
 }
 
 .services__wrapper--bg4::before {
   content: "";
   z-index: -1;
   position: absolute;
-  left: -600px;
+  left: -400px;
   top: 100px;
   width: 791px;
   height: 638px;
@@ -50,6 +79,7 @@
 }
 
 .services__wrapper--bg2 {
+  overflow: hidden;
   position: relative;
 }
 
@@ -58,7 +88,7 @@
   z-index: -1;
   position: absolute;
   opacity: 0.2;
-  right: -700px;
+  right: -300px;
   top: 300px;
   width: 791px;
   height: 638px;
@@ -68,8 +98,21 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: 769px) {
+  .services__wrapper--bg2::before {
+    display: none;
+  }
+  .services__wrapper--bg4::before {
+    display: none;
+  }
+}
+
 .services__wrapper-contentAdd {
   margin-left: 80px;
+
+  @media (max-width: 900px) {
+    margin-left: 10px;
+  }
 }
 
 .services__title {
@@ -118,6 +161,11 @@
   transition: background 0.5s cubic-bezier(0.23, 1, 0.32, 1),
     border 0.5s cubic-bezier(0.23, 1, 0.32, 1),
     color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+
+  @media (max-width: 620px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .services__button:hover,

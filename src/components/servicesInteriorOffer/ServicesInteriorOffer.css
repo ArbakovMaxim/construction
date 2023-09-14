@@ -17,6 +17,10 @@
 
 .servicesInteriorOffer__wrapper--offer {
   margin-left: 105px;
+
+  @media (max-width: 868px) {
+    margin-left: 10px;
+  }
 }
 
 .servicesInteriorOffer__title {
@@ -67,4 +71,20 @@
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+
+.servicesInteriorOffer__wrapper--img {
+  max-width: 705px;
+  width: 100%;
+  object-fit: contain;
+
+  @media (max-width: 868px) {
+    display: none;
+  }
+}
+
+.servicesInteriorOffer__img {
+  max-width: 705px;
+  width: 100%;
+  object-fit: contain;
 }

@@ -1,10 +1,20 @@
 .aboutUsDirector__section {
   padding: 120px 0;
+
+  @media (max-width: 620px) {
+    display: none;
+  }
 }
 
 .aboutUsDirector__wrapper {
   display: flex;
   position: relative;
+  overflow: hidden;
+
+  @media (max-width: 1230px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .aboutUsDirector__wrapper::before {
@@ -12,7 +22,7 @@
   z-index: -1;
   position: absolute;
   opacity: 0.2;
-  right: -700px;
+  right: -300px;
   top: 300px;
   width: 791px;
   height: 638px;
@@ -26,6 +36,10 @@
   max-width: 525px;
   width: 100%;
   height: 580px;
+
+  @media (max-width: 1230px) {
+    display: none;
+  }
 }
 
 .aboutUsDirector__img {

@@ -10,18 +10,41 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+
+  @media (max-width: 1065px) {
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 34px;
+  }
 }
 
 .servicesDoIT__list {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1065px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .servicesDoIT__item {
   position: relative;
   max-width: 285px;
   width: 100%;
+
+  @media (max-width: 1065px) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 40px;
+    height: 191px;
+    min-width: 262px;
+  }
 }
 
 .servicesDoIT__item:hover .servicesDoIT__number::before,

@@ -9,7 +9,13 @@ export const ServicesInteriorOffer = () => {
     <section className="servicesInteriorOffer__section">
       <div className="container">
         <div className="servicesInteriorOffer__wrapper">
-          <img src={ServicesInterior} alt="Services Interior" />
+          <div className="servicesInteriorOffer__wrapper--img">
+            <img
+              src={ServicesInterior}
+              alt="Services Interior"
+              className="servicesInteriorOffer__img"
+            />
+          </div>
           <div className="servicesInteriorOffer__wrapper--offer">
             <h2 className="servicesInteriorOffer__title">We offer</h2>
             <div className="servicesInteriorOffer__wrapper--minus">
