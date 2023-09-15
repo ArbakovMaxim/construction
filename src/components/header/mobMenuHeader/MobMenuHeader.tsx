@@ -36,7 +36,7 @@ export const MobMenuHeader = ({ onClose }: Props) => {
         >
           <Close />
         </button>
-        <Navigation />
+        <Navigation onClose={onClose} setIsMenu={setIsMenu} />
         <ContactBlock />
       </div>
     </div>

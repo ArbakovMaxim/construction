@@ -50,3 +50,9 @@
 .contactBlock__link:focus {
   color: #ff5a30;
 }
+
+.contactBlock__link--email {
+  @media (max-width: 360px) {
+    font-size: 14px;
+  }
+}

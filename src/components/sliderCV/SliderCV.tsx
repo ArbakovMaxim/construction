@@ -14,13 +14,13 @@ interface CustomArrowProps {
 
 export const SliderCV = ({ images }: Props) => {
   const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
-    <div className="custom-arrow next-arrow" onClick={onClick}>
+    <div className="custom-arrow next-arrow sliderCV-arrow" onClick={onClick}>
       <ArrowsRight color="#424551" />
     </div>
   );
 
   const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
-    <div className="custom-arrow prev-arrow" onClick={onClick}>
+    <div className="custom-arrow prev-arrow sliderCV-arrow" onClick={onClick}>
       <ArrowsLeft color="#424551" />
     </div>
   );

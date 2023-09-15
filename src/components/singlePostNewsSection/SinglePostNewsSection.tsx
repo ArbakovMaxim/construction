@@ -49,7 +49,11 @@ export const SinglePostNewsSection = ({ ID }: Props) => {
     <section>
       <div className="container">
         <div className="singlePostNewsSection__wraper--img">
-          <img src={info.singleImage} alt="News" />
+          <img
+            src={info.singleImage}
+            alt="News"
+            className="singlePostNewsSection__img"
+          />
         </div>
         <div className="singlePostNewsSection__container">
           <p className="singlePostNewsSection__title">
@@ -91,26 +95,34 @@ export const SinglePostNewsSection = ({ ID }: Props) => {
           </p>
           <ul className="singlePostNewsSection__list">
             <li className="singlePostNewsSection__item">
-              <Check />
+              <div className="singlePostNewsSection__wrapper--check">
+                <Check />
+              </div>
               <span className="singlePostNewsSection__item--text">
                 A fermentum in morbi pretium aliquam adipiscing donec tempus.
               </span>
             </li>
             <li className="singlePostNewsSection__item">
-              <Check />
+              <div className="singlePostNewsSection__wrapper--check">
+                <Check />
+              </div>
               <span className="singlePostNewsSection__item--text">
                 Vulputate placerat amet pulvinar lorem nisl.
               </span>
             </li>
             <li className="singlePostNewsSection__item">
-              <Check />
+              <div className="singlePostNewsSection__wrapper--check">
+                <Check />
+              </div>
               <span className="singlePostNewsSection__item--text">
                 Consequat feugiat habitant gravida quisque elit bibendum id
                 adipiscing sed.
               </span>
             </li>
             <li className="singlePostNewsSection__item">
-              <Check />
+              <div className="singlePostNewsSection__wrapper--check">
+                <Check />
+              </div>
               <span className="singlePostNewsSection__item--text">
                 Etiam duis lobortis in fames ultrices commodo nibh.
               </span>

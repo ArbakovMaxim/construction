@@ -2,7 +2,12 @@ import { NavLink, useLocation } from "react-router-dom";
 import "./Navigation.css";
 import { useEffect, useState } from "react";
 
-export const Navigation = () => {
+interface Props {
+  setIsMenu?: (value: boolean) => void;
+  onClose?: () => void;
+}
+
+export const Navigation = ({ setIsMenu, onClose }: Props) => {
   const [navActive, setNavActive] = useState("home");
   const url = useLocation();
   const pathSegments = url.pathname.split("/");
@@ -20,7 +25,17 @@ export const Navigation = () => {
     <div className="nav__wrapper">
       <nav>
         <ul className="nav__list">
-          <li className="nav__item">
+          <li
+            className="nav__item"
+            onClick={() => {
+              if (onClose && setIsMenu) {
+                setTimeout(() => {
+                  onClose();
+                }, 300);
+                setIsMenu(false);
+              }
+            }}
+          >
             <NavLink
               className={
                 navActive === "About"
@@ -32,7 +47,17 @@ export const Navigation = () => {
               About Us
             </NavLink>
           </li>
-          <li className="nav__item">
+          <li
+            className="nav__item"
+            onClick={() => {
+              if (onClose && setIsMenu) {
+                setTimeout(() => {
+                  onClose();
+                }, 300);
+                setIsMenu(false);
+              }
+            }}
+          >
             <NavLink
               className={
                 navActive === "Services"
@@ -44,7 +69,17 @@ export const Navigation = () => {
               Services
             </NavLink>
           </li>
-          <li className="nav__item">
+          <li
+            className="nav__item"
+            onClick={() => {
+              if (onClose && setIsMenu) {
+                setTimeout(() => {
+                  onClose();
+                }, 300);
+                setIsMenu(false);
+              }
+            }}
+          >
             <NavLink
               className={
                 navActive === "Work"
@@ -56,7 +91,17 @@ export const Navigation = () => {
               Work
             </NavLink>
           </li>
-          <li className="nav__item">
+          <li
+            className="nav__item"
+            onClick={() => {
+              if (onClose && setIsMenu) {
+                setTimeout(() => {
+                  onClose();
+                }, 300);
+                setIsMenu(false);
+              }
+            }}
+          >
             <NavLink
               className={
                 navActive === "News"
@@ -68,7 +113,17 @@ export const Navigation = () => {
               News
             </NavLink>
           </li>
-          <li className="nav__item">
+          <li
+            className="nav__item"
+            onClick={() => {
+              if (onClose && setIsMenu) {
+                setTimeout(() => {
+                  onClose();
+                }, 300);
+                setIsMenu(false);
+              }
+            }}
+          >
             <NavLink
               className={
                 navActive === "Contacts"

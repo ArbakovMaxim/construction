@@ -74,11 +74,15 @@ export const ContactsForm = () => {
         </p>
         <div className="contactsForm__wrapper">
           <div className="contactsForm__wrapper--img">
-            <img src={ContactsFormImg} alt="employee" />
+            <img
+              src={ContactsFormImg}
+              alt="employee"
+              className="contactsForm__img"
+            />
           </div>
           <form onSubmit={formik.handleSubmit} className="contactsForm__form">
             <div className="contactsForm__wrapper--formBlock">
-              <div>
+              <div className="contactsForm__wrapper--info">
                 <div className="contactsForm__wrapper--input">
                   <label htmlFor="name" className="contactsForm__label">
                     Name*
@@ -306,9 +310,14 @@ export const ContactsForm = () => {
                   </span>
                 </label>
               </div>
-              <button className="contactsForm__wrapper--btn" type="submit">
-                send request
-              </button>
+              <div className="contactsForm__wrapper--btn">
+                <button
+                  className="contactsForm__btn--form-control"
+                  type="submit"
+                >
+                  send request
+                </button>
+              </div>
             </div>
           </form>
         </div>

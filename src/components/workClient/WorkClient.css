@@ -13,16 +13,29 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+
+  @media (max-width: 600px) {
+    font-size: 36px;
+  }
 }
 
 .work__wrapper--reviews {
   display: flex;
   justify-content: space-between;
   margin-top: 140px;
+
+  @media (max-width: 949px) {
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
 }
 
 .work__wrapper--reviewsSlider {
   width: 600px;
+  @media (max-width: 769px) {
+    width: 100%;
+  }
 }
 
 .work__title--reviews {
@@ -38,6 +51,13 @@
   border-radius: 4px;
   z-index: 1;
   margin-bottom: -60px;
+
+  max-width: 495px;
+  width: 100%;
+  object-fit: cover;
+  @media (max-width: 949px) {
+    display: none;
+  }
 }
 
 .workClients__section {

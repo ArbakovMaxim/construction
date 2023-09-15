@@ -30,6 +30,13 @@
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 868px) {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+  }
 }
 
 .contacts__item--title {
@@ -45,6 +52,10 @@
 
 .contacts__item {
   width: 250px;
+
+  @media (max-width: 868px) {
+    margin-top: 25px;
+  }
 }
 
 .constacts__item--text {

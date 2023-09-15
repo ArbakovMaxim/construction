@@ -54,14 +54,18 @@ export const HeroSinglePost = ({ ID }: Props) => {
 
           <div className="heroSinglePost__wrapper--infoBlock">
             <div className="heroSinglePost__wrapper--date">
-              <p className="heroSinglePost__category">{info.category}</p>
-              <time className="heroSinglePost__date" dateTime="">
-                {info.date}
-              </time>
-              <Comments />
-              <span className="heroSinglePost__comments">
-                {quantityComments === 0 ? "no" : quantityComments} comments
-              </span>
+              <div className="heroSinglePost__wrapper--categoryAndDate">
+                <p className="heroSinglePost__category">{info.category}</p>
+                <time className="heroSinglePost__date" dateTime="">
+                  {info.date}
+                </time>
+              </div>
+              <div className="heroSinglePost__wrapper--comments">
+                <Comments />
+                <span className="heroSinglePost__comments">
+                  {quantityComments === 0 ? "no" : quantityComments} comments
+                </span>
+              </div>
             </div>
 
             <ul className="heroSinglePost__sicialBlock--list">

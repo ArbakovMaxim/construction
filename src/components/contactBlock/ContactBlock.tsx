@@ -18,7 +18,10 @@ export const ContactBlock = () => {
         <Chat />
         <div className="contactBlock__wrapper--text">
           <p className="contactBlock__text">Talk to us</p>
-          <a className="contactBlock__link" href="mailto:hello@createx.com">
+          <a
+            className="contactBlock__link contactBlock__link--email"
+            href="mailto:hello@createx.com"
+          >
             hello@createx.com
           </a>
         </div>

@@ -24,6 +24,12 @@
 
 .hero__link {
   color: #424551;
+  transition: color 0.5s ease;
+}
+
+.hero__link:hover,
+.hero__link:focus {
+  color: #ff5a30;
 }
 
 .hero__link--span {

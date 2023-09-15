@@ -16,7 +16,9 @@ export const WorkClient = () => {
               </h2>
               <SliderReview />
             </div>
-            <img src={PartnerFoto} alt="Foto partner" className="work__img" />
+            <div className="work__img">
+              <img src={PartnerFoto} alt="Foto partner" className="work__img" />
+            </div>
           </div>
         </div>
       </section>

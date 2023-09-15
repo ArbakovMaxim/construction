@@ -7,6 +7,12 @@
   margin-top: -77px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1230px) {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
 }
 
 .workProject__item {
@@ -62,12 +68,16 @@
 .workProject__ListWork {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  gap: 15px;
+
+  @media (max-width: 1230px) {
+    justify-content: center;
+  }
 }
 
-.workProject__ItemWork {
+/* .workProject__ItemWork {
   margin: 15px;
-}
+} */
 
 .workProject__button {
   cursor: pointer;
