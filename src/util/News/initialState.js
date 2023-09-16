@@ -1,12 +1,12 @@
 const newsData = [
     {
         "id": "1",
-        "image": "/img/News/news1.png",
+        "image": "/construction/img/News/news1.png",
         "nameNews": "How to Build Climate Change-Resilient Infrastructure",
         "category": "Industry News",
         "date": "June 24, 2020",
         "comments": "4",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {
             "coment1": {
                 "name": "Devon Lane",
@@ -40,32 +40,32 @@ const newsData = [
     },
     {
         "id": "2",
-        "image": "/img/News/news2.png",
+        "image": "/construction/img/News/news2.png",
         "nameNews": "How Construction Can Help Itself",
         "category": "Innovation",
         "date": "June 12, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "3",
-        "image": "/img/News/news3.png",
+        "image": "/construction/img/News/news3.png",
         "nameNews": "The Difference Between a Digger and an Excavator",
         "category": "Expert Tips",
         "date": "May 16, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "4",
-        "image": "/img/News/news4.png",
+        "image": "/construction/img/News/news4.png",
         "nameNews": "Building Construction Hand Tools",
         "category": "Expert Tips",
         "date": "February 25, 2020",
         "comments": "1",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {
             "coment1": {
                 "name": "Devon Lane",
@@ -78,52 +78,52 @@ const newsData = [
     },
     {
         "id": "5",
-        "image": "/img/News/news5.png",
+        "image": "/construction/img/News/news5.png",
         "nameNews": "Top 10 Construction Trends",
         "category": "Industry News",
         "date": "January 14, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "6",
-        "image": "/img/News/news6.png",
+        "image": "/construction/img/News/news6.png",
         "nameNews": "Types of Flooring Materials",
         "category": "Company News",
         "date": "December 1, 2019",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "7",
-        "image": "/img/News/news6.png",
+        "image": "/construction/img/News/news6.png",
         "nameNews": "Types of Flooring Materials",
         "category": "Company News",
         "date": "December 1, 2019",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "8",
-        "image": "/img/News/news5.png",
+        "image": "/construction/img/News/news5.png",
         "nameNews": "Top 10 Construction Trends",
         "category": "Industry News",
         "date": "January 14, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "9",
-        "image": "/img/News/news4.png",
+        "image": "/construction/img/News/news4.png",
         "nameNews": "Building Construction Hand Tools",
         "category": "Expert Tips",
         "date": "February 25, 2020",
         "comments": "1",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {
             "coment1": {
                 "name": "Devon Lane",
@@ -136,32 +136,32 @@ const newsData = [
     },
     {
         "id": "10",
-        "image": "/img/News/news3.png",
+        "image": "/construction/img/News/news3.png",
         "nameNews": "The Difference Between a Digger and an Excavator",
         "category": "Expert Tips",
         "date": "May 16, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "11",
-        "image": "/img/News/news2.png",
+        "image": "/construction/img/News/news2.png",
         "nameNews": "How Construction Can Help Itself",
         "category": "Innovation",
         "date": "June 12, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "12",
-        "image": "/img/News/news1.png",
+        "image": "/construction/img/News/news1.png",
         "nameNews": "How to Build Climate Change-Resilient Infrastructure",
         "category": "Industry News",
         "date": "June 24, 2020",
         "comments": "4",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {
             "coment1": {
                 "name": "Devon Lane",
@@ -195,12 +195,12 @@ const newsData = [
     },
     {
         "id": "13",
-        "image": "/img/News/news1.png",
+        "image": "/construction/img/News/news1.png",
         "nameNews": "How to Build Climate Change-Resilient Infrastructure",
         "category": "Industry News",
         "date": "June 24, 2020",
         "comments": "4",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {
             "coment1": {
                 "name": "Devon Lane",
@@ -234,27 +234,27 @@ const newsData = [
     },
     {
         "id": "14",
-        "image": "/img/News/news2.png",
+        "image": "/construction/img/News/news2.png",
         "nameNews": "How Construction Can Help Itself",
         "category": "Innovation",
         "date": "June 12, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "15",
-        "image": "/img/News/news3.png",
+        "image": "/construction/img/News/news3.png",
         "nameNews": "The Difference Between a Digger and an Excavator",
         "category": "Expert Tips",
         "date": "May 16, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "16",
-        "image": "/img/News/news4.png",
+        "image": "/construction/img/News/news4.png",
         "nameNews": "Building Construction Hand Tools",
         "category": "Expert Tips",
         "date": "February 25, 2020",
@@ -272,32 +272,32 @@ const newsData = [
     },
     {
         "id": "17",
-        "image": "/img/News/news5.png",
+        "image": "/construction/img/News/news5.png",
         "nameNews": "Top 10 Construction Trends",
         "category": "Industry News",
         "date": "January 14, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "18",
-        "image": "/img/News/news6.png",
+        "image": "/construction/img/News/news6.png",
         "nameNews": "Types of Flooring Materials",
         "category": "Company News",
         "date": "December 1, 2019",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "19",
-        "image": "/img/News/news1.png",
+        "image": "/construction/img/News/news1.png",
         "nameNews": "How to Build Climate Change-Resilient Infrastructure",
         "category": "Industry News",
         "date": "June 24, 2020",
         "comments": "4",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {
             "coment1": {
                 "name": "Devon Lane",
@@ -331,32 +331,32 @@ const newsData = [
     },
     {
         "id": "20",
-        "image": "/img/News/news2.png",
+        "image": "/construction/img/News/news2.png",
         "nameNews": "How Construction Can Help Itself",
         "category": "Innovation",
         "date": "June 12, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "21",
-        "image": "/img/News/news3.png",
+        "image": "/construction/img/News/news3.png",
         "nameNews": "The Difference Between a Digger and an Excavator",
         "category": "Expert Tips",
         "date": "May 16, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "22",
-        "image": "/img/News/news4.png",
+        "image": "/construction/img/News/news4.png",
         "nameNews": "Building Construction Hand Tools",
         "category": "Expert Tips",
         "date": "February 25, 2020",
         "comments": "1",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {
             "coment1": {
                 "name": "Devon Lane",
@@ -369,32 +369,32 @@ const newsData = [
     },
     {
         "id": "23",
-        "image": "/img/News/news5.png",
+        "image": "/construction/img/News/news5.png",
         "nameNews": "Top 10 Construction Trends",
         "category": "Industry News",
         "date": "January 14, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "24",
-        "image": "/img/News/news6.png",
+        "image": "/construction/img/News/news6.png",
         "nameNews": "Types of Flooring Materials",
         "category": "Company News",
         "date": "December 1, 2019",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "25",
-        "image": "/img/News/news1.png",
+        "image": "/construction/img/News/news1.png",
         "nameNews": "How to Build Climate Change-Resilient Infrastructure",
         "category": "Industry News",
         "date": "June 24, 2020",
         "comments": "4",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {
             "coment1": {
                 "name": "Devon Lane",
@@ -428,32 +428,32 @@ const newsData = [
     },
     {
         "id": "26",
-        "image": "/img/News/news2.png",
+        "image": "/construction/img/News/news2.png",
         "nameNews": "How Construction Can Help Itself",
         "category": "Innovation",
         "date": "June 12, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "27",
-        "image": "/img/News/news3.png",
+        "image": "/construction/img/News/news3.png",
         "nameNews": "The Difference Between a Digger and an Excavator",
         "category": "Expert Tips",
         "date": "May 16, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "28",
-        "image": "/img/News/news4.png",
+        "image": "/construction/img/News/news4.png",
         "nameNews": "Building Construction Hand Tools",
         "category": "Expert Tips",
         "date": "February 25, 2020",
         "comments": "1",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {
             "coment1": {
                 "name": "Devon Lane",
@@ -466,32 +466,32 @@ const newsData = [
     },
     {
         "id": "29",
-        "image": "/img/News/news5.png",
+        "image": "/construction/img/News/news5.png",
         "nameNews": "Top 10 Construction Trends",
         "category": "Industry News",
         "date": "January 14, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "30",
-        "image": "/img/News/news6.png",
+        "image": "/construction/img/News/news6.png",
         "nameNews": "Types of Flooring Materials",
         "category": "Company News",
         "date": "December 1, 2019",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "31",
-        "image": "/img/News/news1.png",
+        "image": "/construction/img/News/news1.png",
         "nameNews": "How to Build Climate Change-Resilient Infrastructure",
         "category": "Industry News",
         "date": "June 24, 2020",
         "comments": "4",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {
             "coment1": {
                 "name": "Devon Lane",
@@ -525,32 +525,32 @@ const newsData = [
     },
     {
         "id": "32",
-        "image": "/img/News/news2.png",
+        "image": "/construction/img/News/news2.png",
         "nameNews": "How Construction Can Help Itself",
         "category": "Innovation",
         "date": "June 12, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "33",
-        "image": "/img/News/news3.png",
+        "image": "/construction/img/News/news3.png",
         "nameNews": "The Difference Between a Digger and an Excavator",
         "category": "Expert Tips",
         "date": "May 16, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "34",
-        "image": "/img/News/news4.png",
+        "image": "/construction/img/News/news4.png",
         "nameNews": "Building Construction Hand Tools",
         "category": "Expert Tips",
         "date": "February 25, 2020",
         "comments": "1",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {
             "coment1": {
                 "name": "Devon Lane",
@@ -584,22 +584,22 @@ const newsData = [
     },
     {
         "id": "35",
-        "image": "/img/News/news5.png",
+        "image": "/construction/img/News/news5.png",
         "nameNews": "Top 10 Construction Trends",
         "category": "Industry News",
         "date": "January 14, 2020",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     },
     {
         "id": "36",
-        "image": "/img/News/news6.png",
+        "image": "/construction/img/News/news6.png",
         "nameNews": "Types of Flooring Materials",
         "category": "Company News",
         "date": "December 1, 2019",
         "comments": "No",
-        "singleImage": "/img/News/newsPage_1.png",
+        "singleImage": "/construction/img/News/newsPage_1.png",
         "textComent": {}
     }
 ]

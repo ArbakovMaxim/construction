@@ -1,12 +1,13 @@
 import "./NewsCategories.css";
 import "../../ui/container.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NewsCard } from "../newsCard/NewsCard";
 import ReactPaginate from "react-paginate";
 import { ArrowsLeft } from "../../image/svg/ArrowsLeft";
 import { ArrowsRight } from "../../image/svg/ArrowsRight";
-import { useSelector } from "react-redux";
 import store from "../../redux/store";
+import { useSelector, useDispatch } from "react-redux";
+import { setCategories } from "../../redux/newsSlice";
 
 interface News {
   id: string;
@@ -18,14 +19,30 @@ interface News {
 }
 
 export const NewsCategories = () => {
-  const [activ, setActiv] = useState("all");
+  const [activ, setActiv] = useState("");
   const [currentPage, setCurrentPage] = useState(0);
   const [filteredNews, setFilteredNews] = useState<News[]>([]);
   const itemsPerPage = 6;
+  const dispatch = useDispatch();
+  const sectionRef = useRef<HTMLElement | null>(null);
 
   const newsList = useSelector(
     (state: ReturnType<typeof store.getState>) => state.news.newsList
   );
+
+  const activCategory = useSelector(
+    (state: ReturnType<typeof store.getState>) => state.news.categories
+  );
+
+  useEffect(() => {
+    if (window.location.hash === "#mySection" && sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [activ]);
+
+  useEffect(() => {
+    setActiv(activCategory);
+  }, [activCategory]);
 
   //фильтрация по категориям
   useEffect(() => {
@@ -60,7 +77,11 @@ export const NewsCategories = () => {
       </li>
     ));
   return (
-    <section className="newsCategories__section">
+    <section
+      className="newsCategories__section"
+      ref={sectionRef}
+      id="mySection"
+    >
       <div className="container">
         <h2 className="newsCategories__title">Categories</h2>
         <ul className="newsCategories__list">
@@ -70,7 +91,7 @@ export const NewsCategories = () => {
               (activ === "all" ? "newsCategories__item--activ" : "")
             }
             onClick={() => {
-              setActiv("all");
+              dispatch(setCategories("all"));
             }}
           >
             All News
@@ -81,7 +102,7 @@ export const NewsCategories = () => {
               (activ === "Company News" ? "newsCategories__item--activ" : "")
             }
             onClick={() => {
-              setActiv("Company News");
+              dispatch(setCategories("Company News"));
             }}
           >
             Company News
@@ -92,7 +113,7 @@ export const NewsCategories = () => {
               (activ === "Innovation" ? "newsCategories__item--activ" : "")
             }
             onClick={() => {
-              setActiv("Innovation");
+              dispatch(setCategories("Innovation"));
             }}
           >
             Innovation
@@ -103,7 +124,7 @@ export const NewsCategories = () => {
               (activ === "Industry News" ? "newsCategories__item--activ" : "")
             }
             onClick={() => {
-              setActiv("Industry News");
+              dispatch(setCategories("Industry News"));
             }}
           >
             Industry News
@@ -114,7 +135,7 @@ export const NewsCategories = () => {
               (activ === "Expert Tips" ? "newsCategories__item--activ" : "")
             }
             onClick={() => {
-              setActiv("Expert Tips");
+              dispatch(setCategories("Expert Tips"));
             }}
           >
             Expert Tips
@@ -125,7 +146,7 @@ export const NewsCategories = () => {
               (activ === "Marketing" ? "newsCategories__item--activ" : "")
             }
             onClick={() => {
-              setActiv("Marketing");
+              dispatch(setCategories("Marketing"));
             }}
           >
             Marketing

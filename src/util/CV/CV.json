@@ -2,12 +2,12 @@
   {
     "id": "1",
     "image": [
-      "/img/Work/CubesBuilding1.png",
-      "/img/Work/CubesBuilding1.png",
-      "/img/Work/CubesBuilding1.png",
-      "/img/Work/CubesBuilding1.png",
-      "/img/Work/CubesBuilding1.png",
-      "/img/Work/CubesBuilding1.png"
+      "/construction/img/Work/CubesBuilding1.png",
+      "/construction/img/Work/CubesBuilding1.png",
+      "/construction/img/Work/CubesBuilding1.png",
+      "/construction/img/Work/CubesBuilding1.png",
+      "/construction/img/Work/CubesBuilding1.png",
+      "/construction/img/Work/CubesBuilding1.png"
     ],
     "info": "Business Centers",
     "titleHouse": "Cubes Building",
@@ -23,12 +23,12 @@
   {
     "id": "2",
     "image": [
-      "/img/Work/ModernCottage1.jpg",
-      "/img/Work/ModernCottage1.jpg",
-      "/img/Work/ModernCottage1.jpg",
-      "/img/Work/ModernCottage1.jpg",
-      "/img/Work/ModernCottage1.jpg",
-      "/img/Work/ModernCottage1.jpg"
+      "/construction/img/Work/ModernCottage1.jpg",
+      "/construction/img/Work/ModernCottage1.jpg",
+      "/construction/img/Work/ModernCottage1.jpg",
+      "/construction/img/Work/ModernCottage1.jpg",
+      "/construction/img/Work/ModernCottage1.jpg",
+      "/construction/img/Work/ModernCottage1.jpg"
     ],
     "info": "Private houses",
     "titleHouse": "Modern Cottage",
@@ -44,12 +44,12 @@
   {
     "id": "3",
     "image": [
-      "/img/Work/LuxuryBeach1.png",
-      "/img/Work/LuxuryBeach1.png",
-      "/img/Work/LuxuryBeach1.png",
-      "/img/Work/LuxuryBeach1.png",
-      "/img/Work/LuxuryBeach1.png",
-      "/img/Work/LuxuryBeach1.png"
+      "/construction/img/Work/LuxuryBeach1.png",
+      "/construction/img/Work/LuxuryBeach1.png",
+      "/construction/img/Work/LuxuryBeach1.png",
+      "/construction/img/Work/LuxuryBeach1.png",
+      "/construction/img/Work/LuxuryBeach1.png",
+      "/construction/img/Work/LuxuryBeach1.png"
     ],
     "info": "Private houses",
     "titleHouse": "Luxury Beach House",
@@ -65,12 +65,12 @@
   {
     "id": "4",
     "image": [
-      "/img/Work/DoubleBedroom1.png",
-      "/img/Work/DoubleBedroom1.png",
-      "/img/Work/DoubleBedroom1.png",
-      "/img/Work/DoubleBedroom1.png",
-      "/img/Work/DoubleBedroom1.png",
-      "/img/Work/DoubleBedroom1.png"
+      "/construction/img/Work/DoubleBedroom1.png",
+      "/construction/img/Work/DoubleBedroom1.png",
+      "/construction/img/Work/DoubleBedroom1.png",
+      "/construction/img/Work/DoubleBedroom1.png",
+      "/construction/img/Work/DoubleBedroom1.png",
+      "/construction/img/Work/DoubleBedroom1.png"
     ],
     "info": "Apartments & flats",
     "titleHouse": "Modern Double Bedroom",
@@ -86,12 +86,12 @@
   {
     "id": "5",
     "image": [
-      "/img/Work/KidsBedroom1.png",
-      "/img/Work/KidsBedroom1.png",
-      "/img/Work/KidsBedroom1.png",
-      "/img/Work/KidsBedroom1.png",
-      "/img/Work/KidsBedroom1.png",
-      "/img/Work/KidsBedroom1.png"
+      "/construction/img/Work/KidsBedroom1.png",
+      "/construction/img/Work/KidsBedroom1.png",
+      "/construction/img/Work/KidsBedroom1.png",
+      "/construction/img/Work/KidsBedroom1.png",
+      "/construction/img/Work/KidsBedroom1.png",
+      "/construction/img/Work/KidsBedroom1.png"
     ],
     "info": "Apartments & flats",
     "titleHouse": "Kids Bedroom With Decorations",
@@ -107,12 +107,12 @@
   {
     "id": "6",
     "image": [
-      "/img/Work/PencilBuilding1.png",
-      "/img/Work/PencilBuilding1.png",
-      "/img/Work/PencilBuilding1.png",
-      "/img/Work/PencilBuilding1.png",
-      "/img/Work/PencilBuilding1.png",
-      "/img/Work/PencilBuilding1.png"
+      "/construction/img/Work/PencilBuilding1.png",
+      "/construction/img/Work/PencilBuilding1.png",
+      "/construction/img/Work/PencilBuilding1.png",
+      "/construction/img/Work/PencilBuilding1.png",
+      "/construction/img/Work/PencilBuilding1.png",
+      "/construction/img/Work/PencilBuilding1.png"
     ],
     "info": "Stores & Malls",
     "titleHouse": "The Pencil Building",
@@ -128,12 +128,12 @@
   {
     "id": "7",
     "image": [
-      "/img/Work/RedFingerBuilding1.png",
-      "/img/Work/RedFingerBuilding1.png",
-      "/img/Work/RedFingerBuilding1.png",
-      "/img/Work/RedFingerBuilding1.png",
-      "/img/Work/RedFingerBuilding1.png",
-      "/img/Work/RedFingerBuilding1.png"
+      "/construction/img/Work/RedFingerBuilding1.png",
+      "/construction/img/Work/RedFingerBuilding1.png",
+      "/construction/img/Work/RedFingerBuilding1.png",
+      "/construction/img/Work/RedFingerBuilding1.png",
+      "/construction/img/Work/RedFingerBuilding1.png",
+      "/construction/img/Work/RedFingerBuilding1.png"
     ],
     "info": "Business Centers",
     "titleHouse": "Red Finger Building",
@@ -149,12 +149,12 @@
   {
     "id": "8",
     "image": [
-      "/img/Work/Scandinavian1.png",
-      "/img/Work/Scandinavian1.png",
-      "/img/Work/Scandinavian1.png",
-      "/img/Work/Scandinavian1.png",
-      "/img/Work/Scandinavian1.png",
-      "/img/Work/Scandinavian1.png"
+      "/construction/img/Work/Scandinavian1.png",
+      "/construction/img/Work/Scandinavian1.png",
+      "/construction/img/Work/Scandinavian1.png",
+      "/construction/img/Work/Scandinavian1.png",
+      "/construction/img/Work/Scandinavian1.png",
+      "/construction/img/Work/Scandinavian1.png"
     ],
     "info": "Private houses",
     "titleHouse": "Scandinavian Style Interior",
@@ -170,12 +170,12 @@
   {
     "id": "9",
     "image": [
-      "/img/Work/BrownandGray1.png",
-      "/img/Work/BrownandGray1.png",
-      "/img/Work/BrownandGray1.png",
-      "/img/Work/BrownandGray1.png",
-      "/img/Work/BrownandGray1.png",
-      "/img/Work/BrownandGray1.png"
+      "/construction/img/Work/BrownandGray1.png",
+      "/construction/img/Work/BrownandGray1.png",
+      "/construction/img/Work/BrownandGray1.png",
+      "/construction/img/Work/BrownandGray1.png",
+      "/construction/img/Work/BrownandGray1.png",
+      "/construction/img/Work/BrownandGray1.png"
     ],
     "info": "Private houses",
     "titleHouse": "Brown and Gray Painted House",

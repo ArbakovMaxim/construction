@@ -3,7 +3,8 @@ import { Comments } from "../../image/svg/Comments";
 import "./NewsCard.css";
 import { toast } from "react-toastify";
 import { selectNewsById } from "../../redux/newsSlice";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { setCategories } from "../../redux/newsSlice";
 
 interface Comment {
   name: string;
@@ -41,6 +42,8 @@ export const NewsCard = ({
   cardPage = false,
   cardHome = false,
 }: Props) => {
+  const dispatch = useDispatch();
+
   const newsInfo = useSelector((state) => selectNewsById(state, id));
   if (!newsInfo) {
     return <div>{toast.error("Project not found")}</div>;
@@ -89,7 +92,13 @@ export const NewsCard = ({
         </h2>
         <div className="newsCard__wrapper--infoBlock">
           <div className="newsCard__wrapper--categoryAndDate">
-            <NavLink className="newsCard__category" to="/News">
+            <NavLink
+              className="newsCard__category"
+              to="/News#mySection"
+              onClick={() => {
+                dispatch(setCategories(category));
+              }}
+            >
               {category}
             </NavLink>
             <time className="newsCard__date" dateTime="">

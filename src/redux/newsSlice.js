@@ -3,6 +3,7 @@ import newsData from "../util/News/initialState"
 
 const initialState = {
     newsList: newsData,
+    categories: "all",
 };
 
 const newsSlice = createSlice({
@@ -17,11 +18,14 @@ const newsSlice = createSlice({
                 newsItem.comments += 1;
             }
         },
+        setCategories: (state, action) => {
+            state.categories = action.payload;
+        },
     },
 });
 
 export const selectNewsById = (state, newsId) =>
     state.news.newsList.find((news) => news.id === newsId);
 
-export const { addComment } = newsSlice.actions;
+export const { addComment, setCategories } = newsSlice.actions;
 export default newsSlice.reducer;
