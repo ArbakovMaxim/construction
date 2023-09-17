@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import { addComment } from "../../redux/newsSlice";
+import { useEffect, useState } from "react";
 
 interface Props {
   reply: string;
@@ -12,6 +13,12 @@ interface Props {
 
 export const SingleCommentForm = ({ reply, ID }: Props) => {
   const dispatch = useDispatch();
+  let replyInfo = reply;
+  const [replyState, SetReplyState] = useState(replyInfo);
+
+  useEffect(() => {
+    SetReplyState(reply);
+  }, [reply]);
 
   const today = new Date();
   const options: Intl.DateTimeFormatOptions = {
@@ -19,7 +26,7 @@ export const SingleCommentForm = ({ reply, ID }: Props) => {
     month: "long",
     day: "numeric",
   };
-  
+
   const formattedDate = today.toLocaleDateString("en-US", options);
 
   const validationSchema = Yup.object().shape({
@@ -40,18 +47,21 @@ export const SingleCommentForm = ({ reply, ID }: Props) => {
       name: "",
       email: "",
       message: "",
+      reply: "",
     },
     validationSchema: validationSchema,
     onSubmit: (values, { resetForm }) => {
       const comment = {
         name: values.name.trim(),
         email: values.email.trim(),
+        reply: replyState,
         DateComent: formattedDate,
         textComent: values.message.trim(),
       };
       dispatch(addComment({ newsId: ID, comment }));
       toast.success("Your comment has been successfully added.");
       resetForm();
+      SetReplyState("");
     },
   });
 
@@ -110,22 +120,21 @@ export const SingleCommentForm = ({ reply, ID }: Props) => {
           </div>
 
           <div className="singleCommentForm__wrapper--message">
-            <label className="singleCommentForm__label" htmlFor="message">
+            <label htmlFor="message" className="singleCommentForm__label">
               Your comment*
             </label>
-            <textarea
+            <div
+              contentEditable={true}
               id="message"
-              name="message"
-              placeholder="Type comment here"
-              className="singleCommentForm__input singleCommentForm__input--messege"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={
-                reply
-                  ? `${reply} ${formik.values.message}`
-                  : formik.values.message
-              }
-            />
+              className="singleCommentForm__input singleCommentForm__input--message"
+              onBlur={(event) => {
+                const updatedValue = event.currentTarget.innerHTML;
+                formik.setFieldValue("message", updatedValue);
+              }}
+              dangerouslySetInnerHTML={{
+                __html: `${replyState}`,
+              }}
+            ></div>
             {formik.touched.message && formik.errors.message ? (
               <div className="footerForm__error-container">
                 {formik.errors.message}

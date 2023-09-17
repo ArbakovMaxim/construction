@@ -84,8 +84,8 @@
   position: relative;
 }
 
-.singleCommentForm__input--messege {
-  height: 100px;
+.singleCommentForm__input--message {
+  min-height: 100px;
 }
 
 .singleCommentForm__wrapper--btn {
