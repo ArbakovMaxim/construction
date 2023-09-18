@@ -22,7 +22,7 @@ export const MobMenuHeader = ({ onClose }: Props) => {
   }, []);
 
   return (
-    <div className="mobMenuHeader__backdrop">
+    <div className="modal__backdrop">
       <div className={`mobMenuHeader__wrapper ${isMenu ? "open" : ""}`}>
         <button
           className="mobMenuHeader__btn"

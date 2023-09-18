@@ -76,10 +76,6 @@
   }
 }
 
-.news__item {
-  width: calc(50%-15px);
-}
-
 .wrapper__pagination {
   margin-top: 60px;
   display: flex;

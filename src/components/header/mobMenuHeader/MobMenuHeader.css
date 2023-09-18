@@ -2,7 +2,7 @@ body.modal-open {
   overflow: hidden;
 }
 
-.mobMenuHeader__backdrop {
+.modal__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@ body.modal-open {
   z-index: 1;
 }
 
-.mobMenuHeader__backdrop::before {
+.modal__backdrop::before {
   content: "";
   position: absolute;
   top: 0;
