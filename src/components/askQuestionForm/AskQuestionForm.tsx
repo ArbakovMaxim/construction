@@ -12,7 +12,8 @@ export const AskQuestionForm = () => {
       .required("Name is required"),
     phone: Yup.string()
       .matches(/^\+?[0-9]+$/, "Invalid phone number")
-      .max(20, "Must be 20 characters or less")
+      .min(10, "phone have minimum 10 numbers")
+      .max(20, "Must be 20 numbers or less")
       .required("Required"),
     message: Yup.string()
       .max(650, "Message must be at most 650 characters")
@@ -26,11 +27,25 @@ export const AskQuestionForm = () => {
       message: "",
     },
     validationSchema: validationSchema,
-    onSubmit: (values) => {
-      toast.success(
-        "Your application has been accepted, we will call you back"
+    onSubmit: (values, { resetForm }) => {
+      const trimmedValues: { name: string; phone: string; message: string } = {
+        name: values.name.trim(),
+        phone: values.phone.trim(),
+        message: values.message.trim(),
+      };
+
+      const isEmpty = Object.values(trimmedValues).some(
+        (value) => value === ""
       );
-      console.log(values);
+      if (isEmpty) {
+        toast.error("Please fill in all fields.");
+      } else {
+        toast.success(
+          "Your application has been accepted, we will call you back"
+        );
+        console.log(trimmedValues);
+        resetForm();
+      }
     },
   });
 
