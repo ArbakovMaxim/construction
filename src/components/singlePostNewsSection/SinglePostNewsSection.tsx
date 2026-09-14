@@ -1,4 +1,5 @@
 import "./SinglePostNewsSection.css";
+import { asset } from "../../util/asset";
 import "../../ui/container.css";
 import { toast } from "react-toastify";
 import { Quotes } from "../../image/svg/Quotes";
@@ -50,7 +51,7 @@ export const SinglePostNewsSection = ({ ID }: Props) => {
       <div className="container">
         <div className="singlePostNewsSection__wraper--img">
           <img
-            src={info.singleImage}
+            src={asset(info.singleImage)}
             alt="News"
             className="singlePostNewsSection__img"
           />

@@ -1,3 +1,4 @@
+import { asset } from "../../util/asset";
 import { useState } from "react";
 import "./CardWork.css";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +22,7 @@ export const CardWork = ({ backgroundImage, title, text, id }: Props) => {
     >
       <div
         className="cardImage"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url(${asset(backgroundImage)})` }}
       />
       <div className="workCard__wrapper--textGroup">
         <h2 className="workCard__title">{title}</h2>

@@ -33,6 +33,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:pages": "cross-env PUBLIC_URL=/construction react-scripts build",
+    "predeploy": "npm run build:pages",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -55,7 +58,9 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.0.0",
+    "cross-env": "^7.0.3"
   },
   "engines": {
     "node": "20.x"

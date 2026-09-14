@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import { asset } from "../../util/asset";
 import "./SliderCV.css";
 import "../hero/heroHomePage/HeroHome.css";
 import { ArrowsRight } from "../../image/svg/ArrowsRight";
@@ -32,7 +33,7 @@ export const SliderCV = ({ images }: Props) => {
         <a>
           <img
             className="sliderCV__img--mini"
-            src={images[i]}
+            src={asset(images[i])}
             alt={`Slide ${i}`}
           />
         </a>
@@ -55,7 +56,7 @@ export const SliderCV = ({ images }: Props) => {
           <div key={index}>
             <img
               className="sliderCV__img"
-              src={image}
+              src={asset(image)}
               alt={`Slide ${index + 1}`}
             />
           </div>

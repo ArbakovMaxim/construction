@@ -1,3 +1,4 @@
+import { asset } from "../../util/asset";
 import { NavLink } from "react-router-dom";
 import { Comments } from "../../image/svg/Comments";
 import "./NewsCard.css";
@@ -65,7 +66,7 @@ export const NewsCard = ({
       }
     >
       <img
-        src={foto}
+        src={asset(foto)}
         alt="foto news"
         className={
           cardPage
